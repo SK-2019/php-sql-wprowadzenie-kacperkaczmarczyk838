@@ -4,6 +4,8 @@
 echo("<li>zad 1 - SELECT * FROM pracownicy</li>");
 
     $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+    if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
     $result = $conn->query('SELECT * FROM pracownicy');
             echo("<table border = 1>");
             echo("<th>id</th>");
