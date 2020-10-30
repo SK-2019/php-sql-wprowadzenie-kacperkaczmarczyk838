@@ -3,7 +3,7 @@
 
 echo("<li>zad 1 - SELECT * FROM pracownicy </li>");
 
-    $conn = new mysqli("127.0.0.1","root","","nauka");
+    $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     $result = $conn->query('SELECT * FROM pracownicy');
             echo("<table border = 1>");
             echo("<th>id</th>");
