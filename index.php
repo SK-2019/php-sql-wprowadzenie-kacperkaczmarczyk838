@@ -1,10 +1,7 @@
 <h1>Kacper Kaczmarczyk 2Ti numer 13 </h1>
 <?php
 
-    $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-    if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-    }
+require_once('connect.php');
 
 $sql = 'SELECT * FROM pracownicy';
 
