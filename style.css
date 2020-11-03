@@ -20,8 +20,10 @@ th {
   background-color: black;
   color: white;
 }
-
-tr:nth-child(even) {background-color: #32d623;}
-tr:nth-child(odd) {background-color: #d3d623;}
-tr:hover {background-color: #888888;
-
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+th, td {
+  border-bottom: 1px solid #ddd;
+}
