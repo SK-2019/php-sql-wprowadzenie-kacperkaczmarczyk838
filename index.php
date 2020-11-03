@@ -2,7 +2,6 @@
 <?php
 
 require_once('connect.php');
-
 echo("<h2>Zadanie 1</h2>");
 echo("<li>SELECT * FROM pracownicy</li>");
 
