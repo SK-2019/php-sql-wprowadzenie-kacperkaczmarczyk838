@@ -10,3 +10,17 @@ h1 {
 table {
     color: darkblue;
 }
+table, th, td {
+  border: 1px solid red;
+}
+table {
+  border-collapse: collapse;
+}
+td {
+  text-align: center;
+}
+th {
+  background-color: red;
+  color: white;
+}
+
