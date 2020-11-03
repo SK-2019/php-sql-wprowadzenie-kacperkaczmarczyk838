@@ -1,5 +1,5 @@
 body {
-    background-color: lightgreen;
+    background-color: lightgrey;
   }
   h2 {
     color: mediumblue;
@@ -11,7 +11,7 @@ table {
     color: darkblue;
 }
 table, th, td {
-  border: 1px solid red;
+  border: 1px solid black;
 }
 table {
   border-collapse: collapse;
