@@ -2,13 +2,10 @@ body {
     background-color: lightgrey;
   }
   h2 {
-    color: mediumblue;
+    color: red;
 }
 h1 {
-  color: mediumblue;
-}
-table {
-    color: darkblue;
+  color: red;
 }
 table, th, td {
   border: 1px solid black;
