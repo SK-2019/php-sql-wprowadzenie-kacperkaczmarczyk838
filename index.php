@@ -3,10 +3,10 @@
 
 require_once('connect.php');
 
-$sql = 'SELECT * FROM pracownicy';
+echo("<li>zad 1 - SELECT * FROM</li>");
 
-echo("<li>zad 1 - ".$sql" </l1>");
-$result = $conn->query($sql);
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+$result = $conn->query('SELECT * FROM pracownicy');
             echo("<table border = 1>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
