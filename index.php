@@ -1,4 +1,11 @@
-<h1>Kacper Kaczmarczyk 2Ti numer 13 </h1>
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <h1>Kacper Kaczmarczyk 2Ti numer 13 </h1>
 <?php
 
 require_once('connect.php');
@@ -129,3 +136,6 @@ echo("<li>SELECT * FROM pracownicy where dzial = 1 and zarobki between 20 and 40
     echo("</table>");
 
 ?>
+ 
+</body>
+</html>
