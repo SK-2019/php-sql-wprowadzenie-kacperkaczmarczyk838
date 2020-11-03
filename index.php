@@ -14,7 +14,7 @@ $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `
             echo("<th>nazwa_dzial</th>");
                 while($row = $result->fetch_assoc()) {
         echo("<tr>");
-        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['nazwa_dzial']."</td>");
+        echo("<td>".$row['imie']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['nazwa_dzial']."</td>");
         echo("</tr>");
     }
     echo("</table>");
