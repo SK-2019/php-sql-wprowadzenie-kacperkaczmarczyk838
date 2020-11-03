@@ -21,3 +21,7 @@ th {
   color: white;
 }
 
+tr:nth-child(even) {background-color: #32d623;}
+tr:nth-child(odd) {background-color: #d3d623;}
+tr:hover {background-color: #888888;
+
