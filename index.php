@@ -94,7 +94,8 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy group
 ?>
 
 <?php
-echo("<h2>Zadanie 6 - SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy group by dzial</h2>");
+echo("<h2>Zadanie 6</h2>");
+echo("<li> SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy group by dzial</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy group by dzial');
