@@ -2,7 +2,12 @@ body {
     background-color: lightgreen;
   }
   h2 {
-    color: mediumblue
+    color: mediumblue;
+}
+h1 {
+  color: mediumblue;
+    li {
+  color: mediumblue;
 }
 table {
     color: darkblue;
