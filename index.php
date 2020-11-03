@@ -5,7 +5,7 @@ require_once('connect.php');
 
 $sql = 'SELECT * FROM pracownicy';
 
-echo("<li>zad 1 - ".$sql" );
+echo("<li>zad 1 - ".$sql" </l1>");
 $result = $conn->query($sql);
             echo("<table border = 1>");
             echo("<th>id</th>");
