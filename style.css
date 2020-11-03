@@ -20,10 +20,23 @@ th {
   background-color: black;
   color: white;
 }
-th, td {
-  padding: 15px;
-  text-align: left;
+table{
+    background-color:lightpurple;
 }
-th, td {
-  border-bottom: 1px solid #ddd;
+th{
+    height: 25px;
+    text-align: center;
+    background-color:orange;
 }
+td{
+    text-align: left;
+}
+th, td{
+    border-bottom:1px solid green;
+    border-top:1px solid green;
+    border-left: 1px solid green;
+    border-right: 1px solid green;
+}
+tr:nth-child(even){background-color:lightblue;}
+tr:hover{background-color:wheat;}
+
