@@ -6,7 +6,7 @@ require_once('connect.php');
 echo("<li>zad 1 - SELECT * FROM pracownicy</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM 'pracownicy', 'organizacja' where dzial = id_org');
+$result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` where dzial = id_org');
             echo("<table border = 1>");
             echo("<th>imie</th>");
             echo("<th>zarobki</th>");
