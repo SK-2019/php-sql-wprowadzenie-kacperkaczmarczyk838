@@ -3,15 +3,17 @@
 
 require_once('connect.php');
 
-echo("<li>zad 1 - SELECT * FROM</li>");
+echo("<li>zad 1 - SELECT * FROM pracownicy</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT * FROM pracownicy');
+$result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM 'pracownicy', 'organizacja' where dzial = id_org');
             echo("<table border = 1>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
             echo("<th>zarobki</th>");
+            echo("<th>data_urodzenia</th>");
+            echo("<th>nazwa_dzial</th>");
                 while($row = $result->fetch_assoc()) {
         echo("<tr>");
         echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
@@ -128,44 +130,6 @@ echo("<li>zad 8 - SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, m
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy group by dzial');
-            echo("<table border = 1>");
-            echo("<th>dzial</th>");
-            echo("<th>suma</th>");
-            echo("<th>srednia</th>");
-            echo("<th>min</th>");
-            echo("<th>max</th>");
-                while($row = $result->fetch_assoc()) {
-        echo("<tr>");
-        echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td><td>".$row['srednia']."</td><td>".$row['min']."</td><td>".$row['max']."</td>");
-        echo("</tr>");
-    }
-    echo("</table>");
-
-?>
-<?php
-echo("<li>zad 9 - SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy where imie like '%a' group by dzial</li>");
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy where imie like "%a" group by dzial ');
-            echo("<table border = 1>");
-            echo("<th>dzial</th>");
-            echo("<th>suma</th>");
-            echo("<th>srednia</th>");
-            echo("<th>min</th>");
-            echo("<th>max</th>");
-                while($row = $result->fetch_assoc()) {
-        echo("<tr>");
-        echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td><td>".$row['srednia']."</td><td>".$row['min']."</td><td>".$row['max']."</td>");
-        echo("</tr>");
-    }
-    echo("</table>");
-
-?>
-<?php
-echo("<li>zad 10 - SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy where imie not like '%a' group by dzial</li>");
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy where imie not like "%a" group by dzial ');
             echo("<table border = 1>");
             echo("<th>dzial</th>");
             echo("<th>suma</th>");
