@@ -1,24 +1,31 @@
 body {
-    background-color: lightgrey;
-  }
-  h2 {
-    color: red;
+  background-color: pink;
 }
+
 h1 {
-  color: red;
+  text-shadow: 25px 15px 3px darkblue;
+  color: navy;
+  margin-left: 20px;
 }
-table, th, td {
-  border: 1px solid black;
+
+
+.monospace {
+  font-family: "Lucida Console", Courier, monospace;
 }
-table {
-  border-collapse: collapse;
+
+
+h2 {
+  color: gray;
+  margin-left: 20px;
 }
-td {
-  text-align: center;
-}
-th {
-  background-color: black;
+
+h3 {
   color: white;
+  margin-left: 20px;
+}
+
+table, th, td{
+    border:1px solid blue;
 }
 table{
     background-color:lightpurple;
@@ -39,4 +46,3 @@ th, td{
 }
 tr:nth-child(even){background-color:lightblue;}
 tr:hover{background-color:wheat;}
-
