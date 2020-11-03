@@ -1,23 +1,23 @@
 <h1>Kacper Kaczmarczyk 2Ti numer 13 </h1>
 <?php
 
-require_once('connect.php');
+// require_once('connect.php');
 
-echo("<li>zad 1 - SELECT * FROM pracownicy</li>");
+// echo("<li>zad 1 - SELECT * FROM pracownicy</li>");
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM "pracownicy", "organizacja" where dzial = id_org');
-            echo("<table border = 1>");
-            echo("<th>imie</th>");
-            echo("<th>zarobki</th>");
-            echo("<th>data_urodzenia</th>");
-            echo("<th>nazwa_dzial</th>");
-                while($row = $result->fetch_assoc()) {
-        echo("<tr>");
-        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['nazwa_dzial']."</td>");
-        echo("</tr>");
-    }
-    echo("</table>");
+// $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+// $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM "pracownicy", "organizacja" where dzial = id_org');
+//             echo("<table border = 1>");
+//             echo("<th>imie</th>");
+//             echo("<th>zarobki</th>");
+//             echo("<th>data_urodzenia</th>");
+//             echo("<th>nazwa_dzial</th>");
+//                 while($row = $result->fetch_assoc()) {
+//         echo("<tr>");
+//         echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['data_urodzenia']."</td><td>".$row['nazwa_dzial']."</td>");
+//         echo("</tr>");
+//     }
+//     echo("</table>");
 
 ?>
 <?php
