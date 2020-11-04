@@ -3,8 +3,7 @@
 <head>
 <link rel="stylesheet" href="style.css">
 </head>
-<body>
-
+ 
  <h1>Kacper Kaczmarczyk 2Ti numer 13 </h1>
  <h2><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">Github</a><h2>
 <?php
@@ -140,5 +139,3 @@ echo("<li>SELECT * FROM pracownicy where dzial = 1 and zarobki between 20 and 40
 
 ?>
  
-</body>
-</html>
