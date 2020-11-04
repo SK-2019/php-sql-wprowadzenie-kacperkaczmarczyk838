@@ -93,19 +93,23 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
 require_once('connect.php');
 echo("<h2>Zadanie 5</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial</li>");
+echo("<li>SELECT dzial, sum(zarobki) as suma FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial');
-            echo("<table>");
-            echo("<th>dzial</th>");
-            echo("<th>suma</th>");
-                while($row = $result->fetch_assoc()) {
-        echo("<tr>");
-        echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td>");
-        echo("</tr>");
-    }
-    echo("</table>");
+ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
+        echo("<table>");
+        echo("<th>Dzial</th>");
+        echo("<th>Suma</th>");
+        echo("<th>Data_Urodzenia</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
 require_once('connect.php');
 echo("<h2>Zadanie 6</h2>");
