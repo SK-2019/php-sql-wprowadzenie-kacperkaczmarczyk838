@@ -6,7 +6,7 @@
  
  <h1>Kacper Kaczmarczyk 2Ti nr 13 </h1>
  <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
- <hr>
+ <hr style="color: black;">
 <?php
 
 require_once('connect.php');
