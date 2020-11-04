@@ -31,11 +31,10 @@ h3 {
     margin-top:20px; 
     text-align:center;
   }
- li {
+li {
     margin-bottom:10px; 
     margin-top:20px; 
   }
-}
-tr:nth-child(even){background-color: #6699CC;}
-tr:hover{background-color: #99CCFF;
-}
+hr {
+    color: black;
+   }
