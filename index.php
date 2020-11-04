@@ -96,14 +96,14 @@ echo("<h2>Zadanie 5</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
-//         echo("<th>Nazwa_Działu</th>");
+        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>"); 
+                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
                 echo("</tr>");
             }
