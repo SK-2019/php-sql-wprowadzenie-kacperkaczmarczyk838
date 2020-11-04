@@ -6,7 +6,9 @@ table {
 }
 th {
   font-color: #000000;
+  border: 1px solid black;
 }
 td {
   font-color: #000000;
+  border: 1px solid black;
 }
