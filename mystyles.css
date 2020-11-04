@@ -36,5 +36,5 @@ li {
     margin-top:20px; 
   }
 hr {
-    color: black;
-   }
+    border: 2px solid black;
+  }
