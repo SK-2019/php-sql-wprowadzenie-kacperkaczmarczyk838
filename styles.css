@@ -1,5 +1,5 @@
 body {
-  background-color: 	#FFB6C1;
+  background-color: #FFC0CB;
 }
 table {
   border: 3px solid black;
@@ -9,14 +9,14 @@ table {
 }
 th {
   color: black;
-  background-color: #FF1493;
+  background-color: #DB7093;
   border: 3px solid black;
  
 }
 td {
   font-color: #000000;
   border: 3px solid black;
-  background-color: #FF69B4;
+  background-color: #DDA0DD;
 }
 h1 {
     font-size:40px; 
