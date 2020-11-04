@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" href="styles.css">
+ <link rel="stylesheet" href="mystyles.css">
 </head>
  
  <h1>Kacper Kaczmarczyk 2Ti nr 13 </h1>
