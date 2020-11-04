@@ -38,3 +38,7 @@ h3 {
 td:hover {
   color: black;
   background-color: #A9A9A9;
+}
+tr:nth-child(even){background-color:rgb(168, 160, 211);}
+tr:hover{background-color: #A9A9A9;
+}
