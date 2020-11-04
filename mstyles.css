@@ -39,8 +39,12 @@ hr {
     border: 1px solid black;
   }
 tr:nth-child(even) {
-  background: #3399CC;
+  background: red;
 }
-tr:hover {
-  background-color: #66CCFF;
+tr:nth-child(odd) {
+  background: red;
+}
+
+tr:nth-child(even) {
+  background: blue;
 }
