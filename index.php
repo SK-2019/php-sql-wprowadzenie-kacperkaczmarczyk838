@@ -31,23 +31,23 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
 require_once('connect.php');
 echo("<h2>Zadanie 2</h2>");
-echo("<li>SELECT * FROM pracownicy where imie like %a</li>");
+echo("<li>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
-            echo("<table border = 1>");
-            echo("<th>ID</th>");
-            echo("<th>Imie</th>");
-            echo("<th>Dzial</th>");
-            echo("<th>Zarobki</th>");
-            echo("<th>Data_Urodzenia</th>");
-            echo("<th>Nazwa_Działu</th>");
-                while($row = $result->fetch_assoc()) {
-        echo("<tr>");
-        echo("<td>".$row['id']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
-        echo("</tr>");
-    }
-    echo("</table>");
+ $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
+        echo("<table border=1>");
+        echo("<th>Imie</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_Urodzenia</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
 require_once('connect.php');
 echo("<h2>Zadanie 3</h2>");
