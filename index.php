@@ -112,16 +112,16 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
 require_once('connect.php');
 echo("<h2>Zadanie 6</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM pracownicy group by dzial</li>");
+echo("<li>SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` group by dzial</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM pracownicy group by dzial');
+$result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` group by dzial');
             echo("<table>");
-            echo("<th>dzial</th>");
-            echo("<th>suma</th>");
-            echo("<th>srednia</th>");
-            echo("<th>min</th>");
-            echo("<th>max</th>");
+            echo("<th>Dział</th>");
+            echo("<th>Suma</th>");
+            echo("<th>Średnia</th>");
+            echo("<th>Min</th>");
+            echo("<th>Max</th>");
             echo("<th>Nazwa_Działu</th>");
                 while($row = $result->fetch_assoc()) {
         echo("<tr>");
