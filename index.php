@@ -34,15 +34,17 @@ echo("<h2>Zadanie 2</h2>");
 echo("<li>SELECT * FROM pracownicy where imie like %a</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT * FROM pracownicy where imie like "%a"');
+$result = $conn->query('SELECT id, imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"');
             echo("<table border = 1>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
             echo("<th>zarobki</th>");
+            echo("<th>Data_Urodzenia</th>");
+            echo("<th>Nazwa_Działu</th>");
                 while($row = $result->fetch_assoc()) {
         echo("<tr>");
-        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td>");
+        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>");
         echo("</tr>");
     }
     echo("</table>");
