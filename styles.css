@@ -1,5 +1,5 @@
 body {
-  background-color: #90EE90;
+  background-color: #A9A9A9;
 }
 table {
   border: 3px solid black;
@@ -26,6 +26,11 @@ h1 {
   }
 h3 {
     font-size:40px; 
+    margin-bottom:10px; 
+    margin-top:20px; 
+    text-align:center;
+  }
+ li {
     margin-bottom:10px; 
     margin-top:20px; 
     text-align:center;
