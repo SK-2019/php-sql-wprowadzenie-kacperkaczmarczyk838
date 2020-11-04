@@ -34,7 +34,7 @@ echo("<li>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"');
-        echo("<table border=1>");
+        echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Zarobki</th>");
         echo("<th>Data_Urodzenia</th>");
@@ -54,7 +54,7 @@ echo("<li>SELECT * FROM pracownicy where imie like %a and (dzial=1 or dzial=4)</
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT * FROM pracownicy where imie like "%a" and (dzial=1 or dzial=4)');
-            echo("<table border = 1>");
+            echo("<table>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
@@ -72,7 +72,7 @@ echo("<li>SELECT * FROM pracownicy zarobki<30 and (dzial=1 or dzial=2)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT * FROM pracownicy where zarobki<30 and (dzial=1 or dzial=2)');
-            echo("<table border = 1>");
+            echo("<table>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
@@ -90,7 +90,7 @@ echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial</li>
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy group by dzial');
-            echo("<table border = 1>");
+            echo("<table>");
             echo("<th>dzial</th>");
             echo("<th>suma</th>");
                 while($row = $result->fetch_assoc()) {
@@ -106,7 +106,7 @@ echo("<li>SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarob
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max FROM pracownicy group by dzial');
-            echo("<table border = 1>");
+            echo("<table>");
             echo("<th>dzial</th>");
             echo("<th>suma</th>");
             echo("<th>srednia</th>");
@@ -125,7 +125,7 @@ echo("<li>SELECT * FROM pracownicy where dzial = 1 and zarobki between 20 and 40
 
     $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     $result = $conn->query('SELECT * FROM pracownicy where dzial = 1 and zarobki between 20 and 40 ');
-            echo("<table border = 1>");
+            echo("<table>");
             echo("<th>id</th>");
             echo("<th>imie</th>");
             echo("<th>dzial</th>");
