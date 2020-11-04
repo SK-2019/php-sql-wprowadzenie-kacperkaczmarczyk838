@@ -1,16 +1,14 @@
 body {
   background-color: lightgreen;
 }
-  h2 {
-    color: mediumblue;
-    color: red;
+h2 { 
+  color: mediumblue;
 }
 h1 {
   color: mediumblue;
 }
 table {
-    color: darkblue;
-  color: red;
+  color: darkblue;
 }
 table, th, td {
   border: 1px solid black;
