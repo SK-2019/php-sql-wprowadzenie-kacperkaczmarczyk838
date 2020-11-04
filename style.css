@@ -8,9 +8,11 @@ h1 {
   color: mediumblue;
 }
 table {
-  color: darkblue;
-}
-table, th, td {
   border: 1px solid black;
+}
+th {
+  color: black;
+}
+td {
   color: black;
 }
