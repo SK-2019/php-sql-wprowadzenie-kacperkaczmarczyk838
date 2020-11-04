@@ -6,9 +6,9 @@
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
  <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
- echo("<hr />");
 <?php
 
+<hr>
 require_once('connect.php');
 echo("<h2>Zadanie 1</h2>");
 echo("<li>SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
