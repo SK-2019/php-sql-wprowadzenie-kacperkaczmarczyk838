@@ -1,5 +1,5 @@
 body {
-  background-color: #7FFFD4;
+  background-color: #87CEEB;
 }
 table {
   border: 1px solid black;
@@ -7,6 +7,7 @@ table {
 th {
   font-color: #000000;
   border: 1px solid black;
+  background-color: blue;
 }
 td {
   font-color: #000000;
