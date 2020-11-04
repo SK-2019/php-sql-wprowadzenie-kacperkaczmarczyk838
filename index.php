@@ -15,7 +15,7 @@ echo("<li>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
-        echo("<table border=1>");
+        echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Zarobki</th>");
         echo("<th>Data_Urodzenia</th>");
