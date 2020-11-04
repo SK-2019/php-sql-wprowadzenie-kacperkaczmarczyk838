@@ -38,4 +38,7 @@ h3 {
 tr:nth-child(even) {
   background-color: #A9A9A9;
 }
+tr:hover {
+  background-color: #ffffcc;
+}
 
