@@ -132,10 +132,10 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
 
 require_once('connect.php');
 echo("<h2>Zadanie 7</h2>");
-echo("<li>SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org where dzial = 1 and zarobki between 20 and 40</li>");
+echo("<li>SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and dzial = 1 and zarobki between 20 and 40</li>");
 
     $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-    $result = $conn->query('SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org where dzial = 1 and zarobki between 20 and 40');
+    $result = $conn->query('SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and dzial = 1 and zarobki between 20 and 40');
             echo("<table>");
             echo("<th>Imie</th>");
             echo("<th>Dział</th>");
