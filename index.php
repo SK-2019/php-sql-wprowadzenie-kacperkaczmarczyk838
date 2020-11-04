@@ -34,12 +34,12 @@ echo("<h2>Zadanie 2</h2>");
 echo("<li>SELECT * FROM pracownicy where imie like %a</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT id, imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
+$result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
             echo("<table border = 1>");
-            echo("<th>id</th>");
-            echo("<th>imie</th>");
-            echo("<th>dzial</th>");
-            echo("<th>zarobki</th>");
+            echo("<th>ID</th>");
+            echo("<th>Imie</th>");
+            echo("<th>Dzial</th>");
+            echo("<th>Zarobki</th>");
             echo("<th>Data_Urodzenia</th>");
             echo("<th>Nazwa_Działu</th>");
                 while($row = $result->fetch_assoc()) {
