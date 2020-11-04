@@ -5,9 +5,9 @@ table {
   border: 1px solid black;
 }
 th {
-  font-color: #F0F8FF;
+  color: white;
   border: 1px solid black;
-  background-color: #00BFFF;
+  background-color: #4169E1;
 }
 td {
   font-color: #000000;
