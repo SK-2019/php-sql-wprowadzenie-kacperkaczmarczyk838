@@ -30,7 +30,6 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
-  <hr>
 
 require_once('connect.php');
 echo("<h2>Zadanie 2</h2>");
@@ -51,7 +50,6 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
-  <hr>
 
 require_once('connect.php');
 echo("<h2>Zadanie 3</h2>");
@@ -73,7 +71,6 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
-  <hr>
 
 
 require_once('connect.php');
@@ -96,7 +93,6 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
-  <hr>
 
 require_once('connect.php');
 echo("<h2>Zadanie 5</h2>");
@@ -116,7 +112,6 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
-  <hr>
 
 require_once('connect.php');
 echo("<h2>Zadanie 6</h2>");
@@ -137,7 +132,7 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
         echo("</tr>");
     }
     echo("</table>");
-  <hr>
+
 
 require_once('connect.php');
 echo("<h2>Zadanie 7</h2>");
