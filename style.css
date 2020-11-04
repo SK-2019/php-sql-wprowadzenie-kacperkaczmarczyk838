@@ -5,8 +5,8 @@ table {
   border: 1px solid black;
 }
 th {
-  color: #000000;
+  font-color: #000000;
 }
 td {
-  color: #000000;
+  font-color: #000000;
 }
