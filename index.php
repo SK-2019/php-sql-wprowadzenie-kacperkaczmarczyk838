@@ -30,8 +30,8 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
         echo("</table>");
 
+echo("<hr />");
 require_once('connect.php');
-<hr>
 echo("<h2>Zadanie 2</h2>");
 echo("<li>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like %a</li>");
 
