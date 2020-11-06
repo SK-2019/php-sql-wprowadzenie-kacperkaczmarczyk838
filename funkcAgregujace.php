@@ -45,26 +45,23 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
                     echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
-
                 echo("</tr>");
             }
 
         echo("</table>");
 
 require_once('connect.php');
-echo("<h2>Zadanie 3- Suma zarobków mężczyzn pracujących w dziale 2 i 3.</h2>");
+echo("<h2>Zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3.</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org and imie not like %a and (dzial=3 or dzial=2) group by dzial</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org and imie not like "%a" and (dzial=3 or dzial=2)');
+ $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie not like "%a" and (dzial=3 or dzial=2)');
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
-
+                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>");
                 echo("</tr>");
             }
 
