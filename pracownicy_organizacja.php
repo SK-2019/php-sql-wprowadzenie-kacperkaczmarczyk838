@@ -10,7 +10,6 @@
 	<a class="nav1" href="funkcAgregujace.php">Funkcje Agregujace</a>
 	<a class="nav2" href="index.php">Strona Główna</a>
 </div>
-<h2>Pracownicy - wstęp</h2>	 
 <?php
 	 
 echo("<hr />");
