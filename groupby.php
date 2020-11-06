@@ -32,5 +32,24 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
         echo("</table>");
 	 
+
+require_once('connect.php');
+echo("<hr />");
+echo("<h2>Zadanie 2 - Ilość pracowników w poszczególnych działach.</h2>");
+echo("<li>SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+        echo("<table>");
+        echo("<th>Dział</th>");
+        echo("<th>Ilość</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["dzial"]."</td><td>".$row["ilosc"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                echo("</tr>");
+            }
+        echo("</table>");
+	 
   
   ?>
