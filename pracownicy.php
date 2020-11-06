@@ -136,10 +136,10 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 7</h2>");
-echo("<li>SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like %a and (dzial=1 or dzial=4)</li>");
+echo("<li>SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a" and (dzial=1 or dzial=4)');
+ $result = $conn->query('SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)');
         echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Dzial</th>");
