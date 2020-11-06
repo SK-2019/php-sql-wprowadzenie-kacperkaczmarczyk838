@@ -61,10 +61,10 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 require_once('connect.php'); 
 echo("<hr />");  
 echo("<h2>Zadanie 3 - Kobiety posortowane rosnąco po imieniu.</h2>");
-echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
+echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and imie like "%a" order by imie asc');
+ $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and imie like "%a" order by imie desc');
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
