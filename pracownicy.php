@@ -156,5 +156,24 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 8</h2>");
+echo("<li>SELECT * FROM pracownicy WHERE zarobki<30</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM pracownicy WHERE zarobki<30');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Zarobki</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
 ?>
