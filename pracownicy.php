@@ -10,12 +10,12 @@
 	<a class="nav1" href="funkcAgregujace.php">Funkcje Agregujace</a>
 	<a class="nav3" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
 	<a class="nav2" href="index.php">Strona Główna</a>
-</div>
-<h2>Pracownicy - wstęp</h2>	 
+</div>	 
 <?php
 
 require_once('connect.php');
-echo("<h2>Tabela Wszystkich Pracowników</h2>");
+echo("<h1>Pracownicy:</h1>");
+echo("<h2>Tabela Wszystkich Pracowników:</h2>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');
