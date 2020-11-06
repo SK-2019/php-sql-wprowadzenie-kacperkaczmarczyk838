@@ -13,21 +13,20 @@
 	<a class="nav4" href="sortowanie.php">Sorotwanie</a>
 </div>	 
 <?php
-
-require_once('connect.php');
-echo("<h1>Funkcje Agregujące:</h1>");
 echo("<hr />");
-echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy</li>");
+require_once('connect.php');
+echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
+echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy');
+ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
+        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td>"); 
+                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
                 echo("</tr>");
             }
