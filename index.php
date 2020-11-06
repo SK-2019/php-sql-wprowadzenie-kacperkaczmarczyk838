@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="mystyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
