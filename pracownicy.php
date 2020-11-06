@@ -14,6 +14,7 @@
 <?php
 
 require_once('connect.php');
+echo("<h1>Pracownicy:</h1>");
 echo("<h2>Tabela Pracowników</h2>");
 echo("<li>SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
@@ -74,7 +75,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
-echo("<h2>Zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30</h2>");
+echo("<h2>Zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30.</h2>");
 echo("<li>SELECT * FROM pracownicy WHERE zarobki<30</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
