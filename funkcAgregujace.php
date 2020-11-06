@@ -10,12 +10,11 @@
 	<a class="nav1" href="pracownicy.php">Pracownicy</a>
 	<a class="nav3" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
 	<a class="nav2" href="index.php">Strona Główna</a>
-</div>
-<h2>Funkcje Agregujące</h2>	 
+</div>	 
 <?php
 
 require_once('connect.php');
-
+echo("<h1>Funkcje Agregujące:</h1>");
 echo("<h2>Zadanie 1</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
