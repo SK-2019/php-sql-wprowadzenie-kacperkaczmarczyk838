@@ -35,7 +35,7 @@ $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = 
 
 echo("<hr />");
 require_once('connect.php');
-echo("<h2>Tabela Funkcji Agregujących</h2>");
+echo("<h2>Tabela Funkcji Agregujących:</h2>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as srednia, min(zarobki) as min, max(zarobki) as max, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
