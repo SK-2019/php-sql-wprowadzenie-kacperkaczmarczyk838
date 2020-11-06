@@ -35,7 +35,8 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
                 echo("</tr>");
             }
         echo("</table>");
-
+  
+require_once('connect.php');
 echo("<hr />");
 echo("<h2>Zadanie 2 - Pracownicy z działu 3 posortowani rosnąco po imieniu.</h2>");
 echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
@@ -57,6 +58,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
         echo("</table>");
   
+require_once('connect.php'); 
 echo("<hr />");  
 echo("<h2>Zadanie 3 - Kobiety posortowane rosnąco po imieniu.</h2>");
 echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
@@ -77,7 +79,8 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
                 echo("</tr>");
             }
         echo("</table>");
-   
+
+require_once('connect.php');
 echo("<hr />"); 
 echo("<h2>Zadanie 4 - Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach.</h2>");
 echo("<li>SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' and (dzial = 1 OR dzial=3) order by zarobki asc;</li>");
