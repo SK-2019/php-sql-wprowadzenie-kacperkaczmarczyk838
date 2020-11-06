@@ -9,6 +9,7 @@
  <div class="nav">
 	<a class="nav1" href="funkcAgregujace.php">Funkcje Agregujace</a>
 	<a class="nav1" href="pracownicy.php">Pracownicy</a>
+	<a class="nav4" href="sortowanie.php">Sorotwanie</a>
 	<a class="nav2" href="index.php">Strona Główna</a>
 </div>
 <?php
