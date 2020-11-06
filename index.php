@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
  <link rel="stylesheet" href="mystyles.css">
 </head>
@@ -10,6 +10,7 @@
 <a class="nav1" href="pracownicy.php">Pracownicy</a>
 <a class="nav2" href="funkcAgregujace.php">Funkcje Agregujace</a>
 <a class="nav3" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
+<a class="nav3" href="sortowanie.php">Sortowanie</a>
 </div>
 <?php
 
