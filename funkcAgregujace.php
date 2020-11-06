@@ -16,7 +16,8 @@
 
 require_once('connect.php');
 echo("<h1>Funkcje Agregujące:</h1>");
-echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
+echo("<hr />");
+echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
