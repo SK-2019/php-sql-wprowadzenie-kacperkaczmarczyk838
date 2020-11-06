@@ -33,22 +33,22 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
         echo("</table>");
 
-require_once('connect.php');
-echo("<hr />");
-echo("<h2>Zadanie 2 - Suma zarobków wszystkich kobiet.</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like %a</li>");
+// require_once('connect.php');
+// echo("<hr />");
+// echo("<h2>Zadanie 2 - Suma zarobków wszystkich kobiet.</h2>");
+// echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like %a</li>");
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like "%a"');
-            echo("<table>");
-            echo("<th>Dział</th>");
-            echo("<th>Suma</th>");
-                while($row = $result->fetch_assoc()) {
-        echo("<tr>");
-        echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td>");
-        echo("</tr>");
-    }
-    echo("</table>");
+// $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+// $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like "%a"');
+//             echo("<table>");
+//             echo("<th>Dział</th>");
+//             echo("<th>Suma</th>");
+//                 while($row = $result->fetch_assoc()) {
+//         echo("<tr>");
+//         echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td>");
+//         echo("</tr>");
+//     }
+//     echo("</table>");
 
 
 ?>
