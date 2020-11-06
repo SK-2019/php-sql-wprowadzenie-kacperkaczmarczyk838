@@ -107,7 +107,7 @@ echo("<h2>Zadanie 5 - Mężczyźni posortowani rosnąco: po nazwie działu a nas
 echo("<li>SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc');
+ $result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE "%a" order by  nazwa_dzial asc, zarobki asc');
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
