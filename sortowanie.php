@@ -86,7 +86,7 @@ echo("<h2>Zadanie 4 - Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach.
 echo("<li>SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' and (dzial = 1 OR dzial=3) order by zarobki desc</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE "%a" and (dzial = 1 OR dzial=3) order by zarobki desc');
+ $result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie LIKE "%a" and (dzial = 1 OR dzial=3) order by zarobki desc');
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
