@@ -52,7 +52,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 	 require_once('connect.php');
 echo("<h2>Zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3  .</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a" and (dzial=2 or dzial=3)</li>");
+echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like %a and (dzial=2 or dzial=3)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a" and (dzial=2 or dzial=3)');
