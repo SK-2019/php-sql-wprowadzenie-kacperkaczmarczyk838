@@ -37,7 +37,7 @@ echo("<h2>Zadanie 3 - Suma zarobków wszystkich kobiet.</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM pracownicy where imie like %a</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, sum(zarobki) as suma pracownicy where imie like "%a"');
+ $result = $conn->query('SELECT dzial, sum(zarobki) as suma pracownicy where imie like "%a" group by dzial');
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
