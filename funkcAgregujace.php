@@ -128,10 +128,10 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 7 - Ile kobiet pracuje łącznie w działach 1 i 3?</h2>");
-echo("<li>SELECT dzial, count(imie) as ilosc FROM `pracownicy` where imie like %a and (dzial=1 or dzial=3)</li>");
+echo("<li>SELECT dzial, count(imie) as ilosc FROM `pracownicy` where imie like %a and (dzial=1 or dzial=3) group by dzial</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, count(imie) as ilosc FROM `pracownicy` where imie like "%a" and (dzial=1 or dzial=3)');
+ $result = $conn->query('SELECT dzial, count(imie) as ilosc FROM `pracownicy` where imie like "%a" and (dzial=1 or dzial=3) group by dzial');
         echo("<table>");
 	echo("<th>Dzial</th>");
         echo("<th>Ilość</th>");
