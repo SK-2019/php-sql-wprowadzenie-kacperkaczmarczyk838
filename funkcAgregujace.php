@@ -107,6 +107,24 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 6 - Ilu jest wszystkich pracowników?</h2>");
+echo("<li>SELECT count(imie) as ilosc FROM `pracownicy`</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT count(imie) as ilosc FROM `pracownicy`');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Ilość</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["ilosc"]."</td>"); 
+                echo("</tr>");
+            }
+
+        echo("</table>");
 ?>
  
 
