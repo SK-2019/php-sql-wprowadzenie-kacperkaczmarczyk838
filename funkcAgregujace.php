@@ -33,9 +33,8 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
         echo("</table>");
 
+require_once('connect.php');
 echo("<hr />");
-	 
-
 echo("<h2>Zadanie 2 - Suma zarobków wszystkich kobiet.</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like %a</li>");
 
@@ -50,8 +49,6 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy where
         echo("</tr>");
     }
     echo("</table>");
-
-echo("<hr />");
 
 
 ?>
