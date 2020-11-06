@@ -69,4 +69,9 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
                 echo("</tr>");
             }
         echo("</table>");
+	 
+require_once('connect.php');
+echo("<hr />");
+echo("<h2>Zadanie 4 - Suma zarobków kobiet i mężczyzn.</h2>");
+
   ?>
