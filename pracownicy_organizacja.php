@@ -13,7 +13,6 @@
 </div>
 <?php
 	 
-echo("<hr />");
 require_once('connect.php');
 echo("<h1>Pracownicy i Organizacja:</h1>");
 echo("<h2>Zadanie 1 - Pracownicy z nazwą działów.</h2>");
@@ -66,6 +65,29 @@ echo("<li>SELECT * `pracownicy`, `organizacja` WHERE dzial = id_org and imie lik
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"');
+        echo("<table>");
+	echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+        echo("<th>Zarobki</th>");
+        echo("<th>Data_Urodzenia</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 3 - Lista mężczyzn z nazwami działów.</h2>");
+echo("<li>SELECT * `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like %a</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a"');
         echo("<table>");
 	echo("<th>ID</th>");
         echo("<th>Imie</th>");
