@@ -137,5 +137,24 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 7</h2>");
+echo("<li>SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
 ?>
