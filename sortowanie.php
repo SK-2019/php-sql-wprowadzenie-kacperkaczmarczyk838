@@ -15,7 +15,7 @@
 <?php
   
 require_once('connect.php');
-echo("<h1>Pracownicy:</h1>");
+echo("<h1>Sortowanie:</h1>");
 echo("<h2>Zadanie 1 - Pracownicy posortowani malejąco.</h2>");
 echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc</li>");
 
