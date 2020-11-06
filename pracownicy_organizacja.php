@@ -85,7 +85,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
-echo("<h2>Zadanie 3 - Lista mężczyzn z nazwami działów.</h2>");
+echo("<h2>Zadanie 4 - Lista mężczyzn z nazwami działów.</h2>");
 echo("<li>SELECT * `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like %a</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
