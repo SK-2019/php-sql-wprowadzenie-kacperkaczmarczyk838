@@ -13,7 +13,6 @@
 	<a class="nav4" href="sortowanie.php">Sorotwanie</a>
 </div>	 
 <?php
-echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
@@ -33,23 +32,25 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
         echo("</table>");
 
-// require_once('connect.php');
-// echo("<hr />");
-// echo("<h2>Zadanie 2 - Suma zarobków wszystkich kobiet.</h2>");
-// echo("<li>SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like %a</li>");
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 2 - Suma zarobków wszystkich kobiet.</h2>");
+echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like %a</li>");
 
-// $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-// $result = $conn->query('SELECT dzial, sum(zarobki) as suma FROM pracownicy where imie like "%a"');
-//             echo("<table>");
-//             echo("<th>Dział</th>");
-//             echo("<th>Suma</th>");
-//                 while($row = $result->fetch_assoc()) {
-//         echo("<tr>");
-//         echo("<td>".$row['dzial']."</td><td>".$row['suma']."</td>");
-//         echo("</tr>");
-//     }
-//     echo("</table>");
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial and imie like "%a"');
+        echo("<table>");
+        echo("<th>Dzial</th>");
+        echo("<th>Suma</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
 
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
 ?>
  
