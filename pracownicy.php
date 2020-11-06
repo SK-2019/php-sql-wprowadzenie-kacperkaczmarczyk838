@@ -14,7 +14,7 @@
 <?php
 
 require_once('connect.php');
-echo("<h2>Zadanie 1</h2>");
+echo("<h2>Tabela Pracowników</h2>");
 echo("<li>SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
@@ -36,7 +36,64 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
 echo("<hr />");
 require_once('connect.php');
-echo("<h2>Zadanie 2</h2>");
+echo("<h2>Zadanie 1 - Pracownicy tylko z działu 2.</h2>");
+echo("<li>SELECT * FROM pracownicy WHERE dzial = 2</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM pracownicy WHERE dzial = 2');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 2 - Pracownicy tylko z działu 2 i z działu 3.</h2>");
+echo("<li>SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30</h2>");
+echo("<li>SELECT * FROM pracownicy WHERE zarobki<30</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM pracownicy WHERE zarobki<30');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Zarobki</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie X</h2>");
 echo("<li>SELECT imie, zarobki, data_urodzenia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like %a</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
@@ -75,63 +132,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
 
         echo("</table>");
-
-	 echo("<hr />");
-require_once('connect.php');
-echo("<h2>Zadanie 4</h2>");
-echo("<li>SELECT * FROM pracownicy WHERE dzial = 2</li>");
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy WHERE dzial = 2');
-        echo("<table>");
-        echo("<th>Imie</th>");
-        echo("<th>Dzial</th>");
-            while($row=$result->fetch_assoc()){ 
-                echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td>"); 
-
-                echo("</tr>");
-            }
-
-        echo("</table>");
-	 
-echo("<hr />");
-require_once('connect.php');
-echo("<h2>Zadanie 5</h2>");
-echo("<li>SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)</li>");
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)');
-        echo("<table>");
-        echo("<th>Imie</th>");
-        echo("<th>Dzial</th>");
-            while($row=$result->fetch_assoc()){ 
-                echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td>"); 
-
-                echo("</tr>");
-            }
-
-        echo("</table>");
-	 
-echo("<hr />");
-require_once('connect.php');
-echo("<h2>Zadanie 6</h2>");
-echo("<li>SELECT * FROM pracownicy WHERE zarobki<30</li>");
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy WHERE zarobki<30');
-        echo("<table>");
-        echo("<th>Imie</th>");
-        echo("<th>Zarobki</th>");
-            while($row=$result->fetch_assoc()){ 
-                echo("<tr>");
-                    echo("<td>".$row["imie"]."</td><td>".$row["zarobki"]."</td>"); 
-
-                echo("</tr>");
-            }
-
-        echo("</table>");
+	
 
 echo("<hr />");
 require_once('connect.php');
