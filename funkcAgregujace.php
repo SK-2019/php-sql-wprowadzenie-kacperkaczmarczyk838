@@ -73,10 +73,10 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 4 - Średnia zarobków pracowników z działu 4.</h2>");
-echo("<li>SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like %a and (dzial=2 or dzial=3)</li>");
+echo("<li>SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org and dzial=4</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org dzial=4');
+ $result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org and dzial=4');
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Średnia</th>");
