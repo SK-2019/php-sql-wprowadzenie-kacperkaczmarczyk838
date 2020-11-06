@@ -118,5 +118,24 @@ echo("<li>SELECT imie, dzial, zarobki, data_urodzenia, nazwa_dzial FROM `pracown
         echo("</tr>");
     }
     echo("</table>");
+	 
+echo("<hr />");
+require_once('connect.php');
+echo("<h2>Zadanie 6</h2>");
+echo("<li>SELECT * FROM pracownicy WHERE dzial = 2</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT * FROM pracownicy WHERE dzial = 2');
+        echo("<table>");
+        echo("<th>Imie</th>");
+        echo("<th>Dzial</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["imie"]."</td><td>".$row["dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
 ?>
