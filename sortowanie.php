@@ -18,10 +18,10 @@
 require_once('connect.php');
 echo("<h1>Sortowanie:</h1>");
 echo("<h2>Zadanie 1 - Pracownicy posortowani malejąco.</h2>");
-echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc</li>");
+echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc');
+ $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc');
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
@@ -40,10 +40,10 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 require_once('connect.php');
 echo("<hr />");
 echo("<h2>Zadanie 2 - Pracownicy z działu 3 posortowani rosnąco po imieniu.</h2>");
-echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
+echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and dzial=3 order by imie asc');
+ $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and dzial=3 order by imie desc');
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
@@ -106,7 +106,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 require_once('connect.php'); 
 echo("<hr />");  
 echo("<h2>Zadanie 5 - Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków.</h2>");
-echo("<li>SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial asc, zarobki asc</li>");
+echo("<li>SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE '%a' order by  nazwa_dzial desc, zarobki desc</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT * FROM pracownicy,organizacja WHERE id_org=dzial and imie NOT LIKE "%a" order by  nazwa_dzial desc, zarobki desc');
