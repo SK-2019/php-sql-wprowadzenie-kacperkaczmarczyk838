@@ -80,7 +80,7 @@ echo("<h2>Zadanie 4 - Suma zarobków kobiet i mężczyzn.</h2>");
 echo("<li>SELECT sum(zarobki) as suma, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec FROM pracownicy group by plec</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT sum(zarobki) as suma, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec FROM pracownicy group by plec');
+ $result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", 'Kobiety', 'Mężczyźni') as plec FROM pracownicy group by plec');
         echo("<table>");
         echo("<th>Suma</th>");
         echo("<th>Płeć</th>");
