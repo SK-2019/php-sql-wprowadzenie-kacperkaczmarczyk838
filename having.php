@@ -38,4 +38,23 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
         echo("</table>");
 
+echo("<hr />");	
+echo("<h2>Zadanie 2 - Średnie zarobków mężczyzn w poszczególnych działach większe od 30.</h2>");
+echo("<li>SELECT avg(zarobki) as srednia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like %a group by dzial having avg(zarobki)>30</li>");
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
+        echo("<table>");
+        echo("<th>Średnia</th>");
+	echo("<th>Dzial</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["srednia"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+
 ?>
