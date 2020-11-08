@@ -12,6 +12,7 @@
 	<a class="nav3" href="pracownicy.php">Pracownicy</a>
 	<a class="nav4" href="sortowanie.php">Sorotwanie</a>
 	<a class="nav5" href="groupby.php">Group by</a>
+	<a class="nav6" href="having.php">Having</a>
 </div>
 <?php
 	 
