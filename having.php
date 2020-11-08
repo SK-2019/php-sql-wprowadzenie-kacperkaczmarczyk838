@@ -12,7 +12,6 @@
 	<a class="nav3" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
 	<a class="nav4" href="sortowanie.php">Sorotwanie</a>
 	<a class="nav5" href="groupby.php">Group by</a>
-  <a class="nav6" href="having">Having</a>
 </div>	 
 <?php
 
