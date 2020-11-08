@@ -74,21 +74,18 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
         echo("</table>");
 	 
-require_once('connect.php');
-echo("<hr />");
-echo("<h2>Zadanie 4 - Suma zarobków kobiet i mężczyzn.</h2>");
-echo("<li>SELECT sum(zarobki) as suma, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec FROM pracownicy group by plec</li>");
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", 'Kobiety', 'Mężczyźni') as plec FROM pracownicy group by plec');
-        echo("<table>");
-        echo("<th>Suma</th>");
-        echo("<th>Płeć</th>");
+require("connect.php");
+echo("<h2>Zadanie 4 - SELECT sum(zarobki) as suma, if(imie like '%a', 'Kobiety', 'Mężczyźni') as plec FROM pracownicy group by plec</h2>");
+$result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec'); 
+       echo("<table border>");
+       echo("<th>Suma</th>");
+       echo("<th>Płeć</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["suma"]."</td><td>".$row["plec"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                    echo("<td>".$row["suma"]."</td><td>".$row["plec"]."</td>"); 
                 echo("</tr>");
-            }
-        echo("</table>");
+                    }
+
+                echo("</table>");   
 
   ?>
