@@ -13,6 +13,7 @@
 <a class="nav4" href="sortowanie.php">Sortowanie</a>
 <a class="nav5" href="groupby.php">Group by</a>
 <a class="nav6" href="having.php">Having</a>
+<a class="nav4" href="limit.php">LIMIT</a>
 </div>
 <?php
 echo("<h1>Strona Główna</h1>");
