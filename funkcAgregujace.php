@@ -14,6 +14,7 @@
 	<a class="nav5" href="groupby.php">Group by</a>
 	<a class="nav6" href="having.php">Having</a>
 	<a class="nav7" href="limit.php">LIMIT</a>
+        <a class="nav8" href="dataiczas.php">Data i czas</a>
 </div>	 
 <?php
 require_once('connect.php');
