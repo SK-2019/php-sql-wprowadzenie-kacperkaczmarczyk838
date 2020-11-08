@@ -24,7 +24,7 @@ echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach mniejsza od 28.
 echo("<li>SELECT sum(zarobki) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki)<28</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT sum(zarobki) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki)<28');
+ $result = $conn->query('SELECT sum(zarobki) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org and GROUP BY dzial HAVING sum(zarobki)<28');
         echo("<table>");
         echo("<th>Suma</th>");
         echo("<th>Nazwa_Działu</th>");
