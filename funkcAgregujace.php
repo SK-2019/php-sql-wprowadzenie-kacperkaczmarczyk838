@@ -21,17 +21,15 @@
 require_once('connect.php');
 echo("<h1>Funkcje agregujące:</h1>");
 echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
+echo("<li>SELECT sum(zarobki) as suma from pracownicy</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+ $result = $conn->query('SELECT sum(zarobki) as suma from pracownicy');
         echo("<table>");
-        echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                    echo("<td>".$row["suma"]."</td>"); 
 
                 echo("</tr>");
             }
