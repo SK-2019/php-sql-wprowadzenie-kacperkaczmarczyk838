@@ -18,6 +18,7 @@
 </div>	 
 <?php
 require_once('connect.php');
+echo("<h1>Funkcje agregujące:</h1>");
 echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
 echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org</li>");
 
