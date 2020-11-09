@@ -55,11 +55,11 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
-echo("<h2>Zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3  .</h2>");
+echo("<h2>Zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3.</h2>");
 echo("<li>SELECT sum(zarobki) as suma from pracownicy where imie not like %a and (dzial=2 or dzial=3)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT sum(zarobki) as suma from pracownicy where imie not like %a and (dzial=2 or dzial=3)');
+ $result = $conn->query('SELECT sum(zarobki) as suma from pracownicy where imie not like "%a" and (dzial=2 or dzial=3)');
         echo("<table>");
         echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
