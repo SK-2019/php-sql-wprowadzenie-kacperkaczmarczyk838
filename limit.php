@@ -12,6 +12,7 @@
 <a class="nav2" href="funkcAgregujace.php">Funkcje Agregujace</a>
 <a class="nav3" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
 <a class="nav4" href="sortowanie.php">Sortowanie</a>
+<a class="nav6" href="having.php">Having</a>
 <a class="nav7" href="limit.php">LIMIT</a>
 <a class="nav8" href="dataiczas.php">Data i czas</a>
 </div>
