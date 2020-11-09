@@ -90,10 +90,10 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 5 - Średnia zarobków mężczyzn z działu 1 i 2 .</h2>");
-echo("<li>SELECT avg(zarobki) as srednia from pracownic where imie not like %a and (dzial=1 or dzial=2)</li>");
+echo("<li>SELECT avg(zarobki) as srednia from pracownicy where imie not like %a and (dzial=1 or dzial=2)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT avg(zarobki) as srednia from pracownic where imie not like "%a" and (dzial=1 or dzial=2)');
+ $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a" and (dzial=1 or dzial=2)');
         echo("<table>");
         echo("<th>Średnia</th>");
             while($row=$result->fetch_assoc()){ 
