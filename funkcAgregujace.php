@@ -61,9 +61,7 @@ echo("<li>SELECT sum(zarobki) as suma from pracownicy where imie not like %a and
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT sum(zarobki) as suma from pracownicy where imie not like "%a" and (dzial=2 or dzial=3)');
         echo("<table>");
-        echo("<th>Dzial</th>");
         echo("<th>Suma</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
                     echo("<td>".$row["suma"]."</td>"); 
@@ -92,17 +90,15 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 5 - Średnia zarobków mężczyzn z działu 1 i 2 .</h2>");
-echo("<li>SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org and imie not like %a and (dzial=1 or dzial=2) group by dzial</li>");
+echo("<li>SELECT avg(zarobki) as srednia from pracownic where imie not like %a and (dzial=1 or dzial=2)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial=id_org and imie not like "%a" and (dzial=1 or dzial=2) group by dzial');
+ $result = $conn->query('SELECT avg(zarobki) as srednia from pracownic where imie not like %a and (dzial=1 or dzial=2)');
         echo("<table>");
-        echo("<th>Dzial</th>");
         echo("<th>Średnia</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["srednia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
+                    echo("<td>".$row["srednia"]."</td>"); 
                 echo("</tr>");
             }
 
@@ -128,16 +124,15 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<hr />");
 require_once('connect.php');
 echo("<h2>Zadanie 7 - Ile kobiet pracuje łącznie w działach 1 i 3?</h2>");
-echo("<li>SELECT dzial, count(imie) as ilosc FROM `pracownicy` where imie like %a and (dzial=1 or dzial=3) group by dzial</li>");
+echo("<li>SELECT count(imie) as ilosc from pracownicy where imie like %a and (dzial=1 or dzial=3)</li>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, count(imie) as ilosc FROM `pracownicy` where imie like "%a" and (dzial=1 or dzial=3) group by dzial');
+ $result = $conn->query('SELECT count(imie) as ilosc from pracownicy where imie like %a and (dzial=1 or dzial=3)');
         echo("<table>");
-	echo("<th>Dzial</th>");
         echo("<th>Ilość</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["dzial"]."</td><td>".$row["ilosc"]."</td>"); 
+                    echo("<td>".$row["ilosc"]."</td>"); 
                 echo("</tr>");
             }
 
