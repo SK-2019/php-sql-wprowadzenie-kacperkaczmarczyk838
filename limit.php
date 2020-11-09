@@ -77,9 +77,9 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("<th>Data_Urodzenia</th>");
            while($row=$result->fetch_assoc()){
                 echo("<tr>");
-                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");
+                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["data_urodzenia"]."</td>");
                 echo("</tr>");}
-	 
+	  }
                 echo("</table>");
 
 ?>
