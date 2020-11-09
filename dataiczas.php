@@ -25,7 +25,7 @@ echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach).</h2>");
 echo("<li>SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org</li>");
 $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org');
         echo("<table border>");
-        echo("<th>Id</th>");
+        echo("<th>ID</th>");
         echo("<th>Imie</th>");
         echo("<th>Dział</th>");
         echo("<th>Nazwa_Działu</th>");
@@ -42,10 +42,10 @@ $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek f
   
   require("connect.php");
 echo("<h2>Zadanie 2 - Wiek poszczególnych pracowników (w latach) z działu serwis.</h2>");
-echo("<li>SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"</li>");
+echo("<li>SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial=serwis</li>");
 $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"');
         echo("<table border>");
-        echo("<th>Id</th>");
+        echo("<th>ID</th>");
         echo("<th>Imie</th>");
         echo("<th>Dział</th>");
         echo("<th>Nazwa_Działu</th>");
