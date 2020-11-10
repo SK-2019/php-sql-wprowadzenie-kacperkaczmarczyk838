@@ -126,7 +126,7 @@ $result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)
         echo("<th>Średnia_wieku-działy</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
-                   echo("<td>".$row["dzial"]."</td><td>".$row["wiek"]."</td>");                    
+                   echo("<td>".$row["dzial"]."</td><td>".$row["srednia"]."</td>");                    
                  echo("</tr>");
             }
    
