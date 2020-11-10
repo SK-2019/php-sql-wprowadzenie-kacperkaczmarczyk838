@@ -91,8 +91,8 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
   
     require("connect.php");
 echo("<h2>Zadanie 5 - Suma lat kobiet.</h2>");
-echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy WHERE dzial=id_org and mie like %a</li>");
-$result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy WHERE dzial=id_org and imie like "%a"');
+echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie like %a</li>");
+$result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie like "%a"');
         echo("<table border>");
         echo("<th>Wiek_kobiet</th>");
             while($row=$result->fetch_assoc()){ 
