@@ -34,7 +34,7 @@ $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek f
         echo("<th>Wiek</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
-                   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");                    echo("</tr>");
+                   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");                   
                  echo("</tr>");
             }
    
@@ -54,7 +54,22 @@ $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek F
         echo("<th>Wiek</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
-                   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");                    echo("</tr>");
+                   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["nazwa_dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["wiek"]."</td>");                  
+                 echo("</tr>");
+            }
+   
+           echo("</table>");
+  
+   require("connect.php");
+echo("<h2>Zadanie 3 - Suma lat wszystkich.</h2>");
+echo("<li>SELECT sum(wiek) as suma, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org</li>");
+$result = $conn->query('SELECT sum(wiek) as suma, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org');
+        echo("<table border>");
+        echo("<th>Suma</th>");
+        echo("<th>Wiek</th>");
+            while($row=$result->fetch_assoc()){ 
+                 echo("<tr>");
+                   echo("<td>".$row["suma"]."</td><td>".$row["wiek"]."</td>");                    
                  echo("</tr>");
             }
    
