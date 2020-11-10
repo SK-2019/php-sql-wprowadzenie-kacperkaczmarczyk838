@@ -205,5 +205,21 @@ $result = $conn->query('SELECT imie, min(YEAR(CURDATE()) - YEAR(data_urodzenia))
             }
    
            echo("</table>");
+  
+   require("connect.php");
+  echo("<hr />");
+echo("<h2>Zadanie 12 - Długość życia pracowników w dniach.</h2>");
+echo("<li>SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy</li>");
+$result = $conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy');
+        echo("<table border>");
+        echo("<th>Imie</th>");
+        echo("<th>Dni_życia</th>");
+            while($row=$result->fetch_assoc()){ 
+                 echo("<tr>");
+                   echo("<td>".$row["imie"]."</td><td>".$row["dni_zycia"]."</td>");                    
+                 echo("</tr>");
+            }
+   
+           echo("</table>");
 
 ?>
