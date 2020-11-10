@@ -193,15 +193,15 @@ $result = $conn->query('SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as mi
   echo("<hr />");
 echo("<h2>Zadanie 11 - Najmłodsi pracownicy z działu: handel i serwis (imię, nazwa_dział, wiek).</h2>");
 echo("<li>SELECT imie, min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial=handel or nazwa_dzial=serwis) group by nazwa_dzial</li>");
-$result = $conn->query('SELECT imie, min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" or nazwa_dzial="serwis") group by nazwa_dzial');
+$result = $conn->query('SELECT imie,min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek, nazwa_dzial from pracownicy,organizacja where dzial=id_org and nazwa_dzial="handel" or nazwa_dzial="serwis" group by nazwa_dzial');
         echo("<table border>");
-        echo("<th>imie</th>");
-        echo("<th>wiek</th>");
-        echo("<th>nazwa działu</th>");
+        echo("<th>Imię</th>");
+        echo("<th>Wiek</th>");
+        echo("<th>Nazwa_działu</th>");
             while($row=$result->fetch_assoc()){
                 echo("<tr>");
                   echo("<td>".$row['imie']."</td><td>".$row['wiek']."</td><td>".$row['nazwa_dzial']."</td>");
-                 echo("</tr>");
+                echo("</tr>");
              }
                         
             echo("</table>");
@@ -228,7 +228,7 @@ echo("<li>SELECT * from pracownicy where imie not like %a order by data_urodzeni
 $result = $conn->query('SELECT * from pracownicy where imie not like "%a" order by data_urodzenia asc limit 1');
         echo("<table border>");
          echo("<th>ID</th>");
-        echo("<th>Imie</th>");
+        echo("<th>Imię</th>");
         echo("<th>Dział</th>");
         echo("<th>Zarobki</th>");
             while($row=$result->fetch_assoc()){ 
