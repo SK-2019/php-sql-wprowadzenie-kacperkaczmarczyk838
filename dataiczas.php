@@ -41,6 +41,7 @@ $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek f
            echo("</table>");
   
   require("connect.php");
+  echo("<hr />");
 echo("<h2>Zadanie 2 - Wiek poszczególnych pracowników (w latach) z działu serwis.</h2>");
 echo("<li>SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial=serwis</li>");
 $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"');
@@ -61,6 +62,7 @@ $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek F
            echo("</table>");
   
    require("connect.php");
+  echo("<hr />");
 echo("<h2>Zadanie 3 - Suma lat wszystkich.</h2>");
 echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org</li>");
 $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org');
@@ -76,6 +78,7 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
   
   
    require("connect.php");
+  echo("<hr />");
 echo("<h2>Zadanie 4 - Suma lat pracowników z działu handel.</h2>");
 echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org and nazwa_dzial=handel</li>");
 $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org and nazwa_dzial="handel"');
@@ -90,6 +93,7 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
            echo("</table>");
   
     require("connect.php");
+  echo("<hr />");
 echo("<h2>Zadanie 5 - Suma lat kobiet.</h2>");
 echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie like %a</li>");
 $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie like "%a"');
@@ -104,6 +108,7 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
            echo("</table>");
   
     require("connect.php");
+  echo("<hr />");
 echo("<h2>Zadanie 6 - Suma lat mężczyzn.</h2>");
 echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like %a</li>");
 $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like "%a"');
@@ -118,12 +123,13 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
            echo("</table>");
 
     require("connect.php");
+  echo("<hr />");
 echo("<h2>Zadanie 7 - Średnia lat pracowników w poszczególnych działach.</h2>");
 echo("<li>SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
 $result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
         echo("<table border>");
         echo("<th>dzial</th>");
-        echo("<th>Średnia_wieku-działy</th>");
+        echo("<th>Średnia_wieku</th>");
         echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
@@ -132,5 +138,40 @@ $result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)
             }
    
            echo("</table>");
+  
+   require("connect.php");
+  echo("<hr />");
+echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach.</h2>");
+echo("<li>SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
+$result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
+        echo("<table border>");
+        echo("<th>dzial</th>");
+        echo("<th>Suma_wieku</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                 echo("<tr>");
+                   echo("<td>".$row["dzial"]."</td><td>".$row["suma"]."</td><td>".$row["nazwa_dzial"]."</td>");                    
+                 echo("</tr>");
+            }
+   
+           echo("</table>");
+  
+   require("connect.php");
+  echo("<hr />");
+echo("<h2>Zadanie 9 - Najstarsi pracownicy w każdym dziale.</h2>");
+echo("<li>SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)) as max, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
+$result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
+        echo("<table border>");
+        echo("<th>dzial</th>");
+        echo("<th>Wiek - najstarsi</th>");
+        echo("<th>Nazwa_Działu</th>");
+            while($row=$result->fetch_assoc()){ 
+                 echo("<tr>");
+                   echo("<td>".$row["dzial"]."</td><td>".$row["max"]."</td><td>".$row["nazwa_dzial"]."</td>");                    
+                 echo("</tr>");
+            }
+   
+           echo("</table>");
+ 
 
 ?>
