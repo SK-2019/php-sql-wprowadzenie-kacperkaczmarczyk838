@@ -65,11 +65,10 @@ echo("<h2>Zadanie 3 - Suma lat wszystkich.</h2>");
 echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org</li>");
 $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org');
         echo("<table border>");
-        echo("<th>Suma</th>");
-        echo("<th>Wiek</th>");
+        echo("<th>Wiek_wszystkich_pracownikow</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
-                   echo("<td>".$row["suma"]."</td><td>".$row["wiek"]."</td>");                    
+                   echo("<td>".$row["wiek"]."</td>");                    
                  echo("</tr>");
             }
    
