@@ -143,7 +143,7 @@ $result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)
   echo("<hr />");
 echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach.</h2>");
 echo("<li>SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
-$result = $conn->query('SELECT dzial, suma(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
+$result = $conn->query('SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
         echo("<table border>");
         echo("<th>dzial</th>");
         echo("<th>Suma_wieku</th>");
