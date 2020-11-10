@@ -221,5 +221,21 @@ $result = $conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_z
             }
    
            echo("</table>");
-
+    require("connect.php");
+  echo("<hr />");
+echo("<h2>Zadanie 13 - Najstarszy mężczyzna.</h2>");
+echo("<li>SELECT * from pracownicy where imie not like %a order by data_urodzenia asc limit 1</li>");
+$result = $conn->query('SELECT * from pracownicy where imie not like "%a" order by data_urodzenia asc limit 1');
+        echo("<table border>");
+         echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dział</th>");
+        echo("<th>Zarobki</th>");
+            while($row=$result->fetch_assoc()){ 
+                 echo("<tr>");
+                   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");                   
+                 echo("</tr>");
+            }
+   
+           echo("</table>");
 ?>
