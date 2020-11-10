@@ -119,8 +119,8 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
 
     require("connect.php");
 echo("<h2>Zadanie 7 - Średnia lat pracowników w poszczególnych działach.</h2>");
-echo("<li>SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia from pracownicy, organizacja where dzial=id_org group by dzial</li>");
-$result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia from pracownicy, organizacja where dzial=id_org group by dzial');
+echo("<li>SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
+$result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
         echo("<table border>");
         echo("<th>dzial</th>");
         echo("<th>Średnia_wieku-działy</th>");
