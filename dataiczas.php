@@ -193,8 +193,8 @@ $result = $conn->query('SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as mi
    require("connect.php");
   echo("<hr />");
 echo("<h2>Zadanie 11 - Najmłodsi pracownicy z działu: handel i serwis (Imię, nazwa_dział, wiek.</h2>");
-echo("<li>SELECT imie,min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial=handel OR nazwa_dzial=serwis) group by dzial</li>");
-$result = $conn->query('SELECT imie,min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" OR nazwa_dzial="serwis") group by dzial');
+echo("<li>SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, imie, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial=handel OR nazwa_dzial=serwis) group by dzial</li>");
+$result = $conn->query('SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, imie, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" OR nazwa_dzial="serwis") group by dzial');
         echo("<table border>");
         echo("<th>Imię</th>");
         echo("<th>Wiek_najmłodsi</th>");
