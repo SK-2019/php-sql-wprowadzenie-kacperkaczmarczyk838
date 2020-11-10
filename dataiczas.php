@@ -240,23 +240,24 @@ $result = $conn->query('SELECT * from pracownicy where imie not like "%a" order 
            echo("</table>");
   
   echo("<h1>Formatowanie dat:</h1>");
-//    require("connect.php");
-//   echo("<hr />");
-// echo("<h2>Zadanie 1 - Wyświetlić nazwy dni w dacie urodzenia.</h2>");
-// echo("<li>SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy</li>");
-// $result = $conn->query('SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy');
-//         echo("<table border>");
-//          echo("<th>ID</th>");
-//         echo("<th>Imie</th>");
-//         echo("<th>Dział</th>");
-//         echo("<th>Zarobki</th>");
-//             while($row=$result->fetch_assoc()){ 
-//                  echo("<tr>");
-//                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td>");                   
-//                  echo("</tr>");
-//             }
+   require("connect.php");
+  echo("<hr />");
+echo("<h2>Zadanie 1 - Wyświetlić nazwy dni w dacie urodzenia.</h2>");
+echo("<li>SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy</li>");
+$result = $conn->query('SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy');
+        echo("<table border>");
+         echo("<th>ID</th>");
+        echo("<th>Imie</th>");
+        echo("<th>Dział</th>");
+        echo("<th>Zarobki</th>");
+           echo("<th>data_urodzenia</th>");
+            while($row=$result->fetch_assoc()){ 
+                 echo("<tr>");
+                   echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td>");                   
+                 echo("</tr>");
+            }
    
-//            echo("</table>");
+           echo("</table>");
   
   
 ?>
