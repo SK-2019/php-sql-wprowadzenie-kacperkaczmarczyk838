@@ -22,7 +22,7 @@ echo("<h1>Data i czas:</h1>");
   
 require("connect.php");
    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org';
-echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach)</h2>");
+echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach).</h2>");
 echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
@@ -45,9 +45,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
   require("connect.php");
   echo("<hr />");
+   $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"';
 echo("<h2>Zadanie 2 - Wiek poszczególnych pracowników (w latach) z działu serwis.</h2>");
-echo("<li>SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial=serwis</li>");
-$result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
@@ -66,9 +69,12 @@ $result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek F
   
    require("connect.php");
   echo("<hr />");
+    $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org';
 echo("<h2>Zadanie 3 - Suma lat wszystkich.</h2>");
-echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org</li>");
-$result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_wszystkich_pracownikow</th>");
             while($row=$result->fetch_assoc()){ 
