@@ -20,11 +20,12 @@
 <?php
 require_once('connect.php');
 echo("<h1>Funkcje agregujące:</h1>");
+	 $sql = 'SELECT sum(zarobki) as suma from pracownicy';
 echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
-echo("<li>SELECT sum(zarobki) as suma from pracownicy</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT sum(zarobki) as suma from pracownicy');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Suma</th>");
             while($row=$result->fetch_assoc()){ 
