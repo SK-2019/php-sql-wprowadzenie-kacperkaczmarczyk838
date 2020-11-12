@@ -21,11 +21,12 @@
 
 require_once('connect.php');
 echo("<h1>Pracownicy:</h1>");
+$sql = 'SELECT * FROM pracownicy WHERE dzial = 2'
 echo("<h2>Zadanie 1 - Pracownicy tylko z działu 2.</h2>");
-echo("<li>SELECT * FROM pracownicy WHERE dzial = 2</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy WHERE dzial = 2');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Dzial</th>");
