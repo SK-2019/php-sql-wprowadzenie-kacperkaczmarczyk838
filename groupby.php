@@ -21,11 +21,12 @@
 
 require_once('connect.php');
 echo("<h1>Group By:</h1>");
+	  $sql = 'SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach.</h2>");
-echo("<li>SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Dział</th>");
         echo("<th>Suma</th>");
