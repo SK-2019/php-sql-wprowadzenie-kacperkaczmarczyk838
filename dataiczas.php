@@ -21,9 +21,12 @@
 echo("<h1>Data i czas:</h1>");
   
 require("connect.php");
-echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach).</h2>");
-echo("<li>SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org</li>");
-$result = $conn->query('SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org');
+   $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org';
+echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach)</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
@@ -240,11 +243,11 @@ $result = $conn->query('SELECT * from pracownicy where imie not like "%a" order 
    
            echo("</table>");
   
-  echo("<h1>Formatowanie dat:</h1>");
-   require("connect.php");
-  echo("<hr />");
-echo("<h2>Zadanie 1 - Wyświetlić nazwy dni w dacie urodzenia.</h2>");
-echo("<li>SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy</li>");
+//   echo("<h1>Formatowanie dat:</h1>");
+//    require("connect.php");
+//   echo("<hr />");
+// echo("<h2>Zadanie 1 - Wyświetlić nazwy dni w dacie urodzenia.</h2>");
+// echo("<li>SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy</li>");
 
   
 ?>
