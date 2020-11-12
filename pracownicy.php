@@ -21,7 +21,7 @@
 
 require_once('connect.php');
 echo("<h1>Pracownicy:</h1>");
-$sql = 'SELECT * FROM pracownicy WHERE dzial = 2'
+$sql = 'SELECT * FROM pracownicy WHERE dzial = 2';
 echo("<h2>Zadanie 1 - Pracownicy tylko z działu 2.</h2>");
 echo("<li>".$sql);
 
