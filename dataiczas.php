@@ -124,9 +124,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
     require("connect.php");
   echo("<hr />");
+    $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like "%a"';
 echo("<h2>Zadanie 6 - Suma lat mężczyzn.</h2>");
-echo("<li>SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like %a</li>");
-$result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like "%a"');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_mężczyzn</th>");
             while($row=$result->fetch_assoc()){ 
@@ -139,9 +142,12 @@ $result = $conn->query('SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wi
 
     require("connect.php");
   echo("<hr />");
+    $sql = 'SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<h2>Zadanie 7 - Średnia lat pracowników w poszczególnych działach.</h2>");
-echo("<li>SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
-$result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
         echo("<th>Średnia_wieku</th>");
@@ -156,9 +162,12 @@ $result = $conn->query('SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)
   
    require("connect.php");
   echo("<hr />");
-echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach.</h2>");
-echo("<li>SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
-$result = $conn->query('SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
+    $sql = 'SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
+echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach..Suma lat pracowników w poszczególnych działach.</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
         echo("<th>Suma_wieku</th>");
