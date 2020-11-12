@@ -41,9 +41,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 
 echo("<hr />");	
+	   $sql = 'SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30';
 echo("<h2>Zadanie 2 - Średnie zarobków mężczyzn w poszczególnych działach większe od 30.</h2>");
-echo("<li>SELECT avg(zarobki) as srednia, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like %a group by dzial having avg(zarobki)>30</li>");
+echo("<li>".$sql);
 
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
         echo("<table>");
@@ -60,11 +63,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 echo("<hr />");	
+	 $sql = 'SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>3';
 echo("<h2>Zadanie 3 - Ilość pracowników w poszczególnych działach większa od 3.</h2>");
-echo("<li>SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>2</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT count(imie) as ilosc, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org group by dzial having count(imie)>2');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");
 	echo("<th>Dzial</th>");
