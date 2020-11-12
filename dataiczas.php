@@ -163,7 +163,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    require("connect.php");
   echo("<hr />");
     $sql = 'SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
-echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach..Suma lat pracowników w poszczególnych działach.</h2>");
+echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach.</h2>");
 echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
@@ -182,9 +182,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
    require("connect.php");
   echo("<hr />");
+    $sql = 'SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)) as max, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<h2>Zadanie 9 - Najstarsi pracownicy w każdym dziale.</h2>");
-echo("<li>SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)) as max, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial</li>");
-$result = $conn->query('SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)) as max, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
         echo("<th>Wiek - najstarsi</th>");
@@ -199,9 +202,12 @@ $result = $conn->query('SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)
   
    require("connect.php");
   echo("<hr />");
+    $sql = 'SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" OR nazwa_dzial="serwis") group by dzial';
 echo("<h2>Zadanie 10 - Najmłodsi pracownicy z działu: handel i serwis (nazwa_dział, wiek).</h2>");
-echo("<li>SELECT dzial, min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial=handel OR nazwa_dzial=serwis) group by dzial</li>");
-$result = $conn->query('SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" OR nazwa_dzial="serwis") group by dzial');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_najmłodsi</th>");
         echo("<th>Nazwa_Działu</th>");
