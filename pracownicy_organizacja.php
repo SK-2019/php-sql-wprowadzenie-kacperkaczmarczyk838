@@ -40,11 +40,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	   $sql = 'SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)';
 echo("<h2>Zadanie 2 - Pracownicy tylko z działu 1 i 4.</h2>");
-echo("<li>SELECT * `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)');
+ $result = $conn->query($sql);
         echo("<table>");
 	echo("<th>ID</th>");
         echo("<th>Imie</th>");
@@ -63,11 +64,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	 	  $sql = 'SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"';
 echo("<h2>Zadanie 3 - Lista kobiet z nazwami działów.</h2>");
-echo("<li>SELECT imie, nazwa_dzial `pracownicy`, `organizacja` WHERE dzial = id_org and imie like %a</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Nazwa_Działu</th>");
@@ -82,11 +84,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	   $sql = 'SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a"';
 echo("<h2>Zadanie 4 - Lista mężczyzn z nazwami działów.</h2>");
-echo("<li>SELECT imie, nazwa_dzial `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like %a</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a"');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Nazwa_Działu</th>");
