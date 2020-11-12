@@ -75,11 +75,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	  	 $sql = 'SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"';
 echo("<h2>Zadanie 4 - Średnia zarobków wszystkich mężczyzn.</h2>");
-echo("<li>SELECT avg(zarobki) as srednia from pracownicy where imie not like %a</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT avg(zarobki) as srednia from pracownicy where imie not like "%a"');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Średnia</th>");
             while($row=$result->fetch_assoc()){ 
