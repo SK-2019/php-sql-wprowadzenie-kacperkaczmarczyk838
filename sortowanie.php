@@ -44,11 +44,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
 require_once('connect.php');
 echo("<hr />");
+   $sql = 'SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and dzial=3 order by imie asc';
 echo("<h2>Zadanie 2 - Pracownicy z działu 3 posortowani rosnąco po imieniu.</h2>");
-echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and dzial=3 order by imie asc');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
@@ -66,11 +67,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
 require_once('connect.php'); 
 echo("<hr />");  
+     $sql = 'SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and imie like "%a" order by imie asc';
 echo("<h2>Zadanie 3 - Kobiety posortowane rosnąco po imieniu.</h2>");
-echo("<li>SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie asc</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org and imie like "%a" order by imie asc');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Imie</th>");
