@@ -129,11 +129,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	  $sql = 'SELECT count(imie) as ilosc FROM pracownicy';
 echo("<h2>Zadanie 7 - Ilu jest wszystkich pracowników?</h2>");
-echo("<li>SELECT count(imie) as ilosc FROM `pracownicy`</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT count(imie) as ilosc FROM `pracownicy`');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");
             while($row=$result->fetch_assoc()){ 
@@ -146,11 +147,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	 	 	 $sql = 'SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)';
 echo("<h2>Zadanie 8 - Ile kobiet pracuje łącznie w działach 1 i 3?</h2>");
-echo("<li>SELECT count(imie) as ilosc from pracownicy where imie like %a and (dzial=1 or dzial=3)</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT count(imie) as ilosc from pracownicy where imie like "%a" and (dzial=1 or dzial=3)');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");
             while($row=$result->fetch_assoc()){ 
