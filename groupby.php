@@ -41,11 +41,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
 require_once('connect.php');
 echo("<hr />");
+	   $sql = 'SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 2 - Ilość pracowników w poszczególnych działach.</h2>");
-echo("<li>SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Dział</th>");
         echo("<th>Ilość</th>");
@@ -60,11 +61,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
 require_once('connect.php');
 echo("<hr />");
+	   $sql = 'SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 3 - Średnie zarobków w poszczególnych działach.</h2>");
-echo("<li>SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Dział</th>");
         echo("<th>Średnia</th>");
