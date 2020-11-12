@@ -80,8 +80,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 require("connect.php");
 echo("<hr />");
+	  $sql = 'SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
 echo("<h2>Zadanie 4 - Suma zarobków kobiet i mężczyzn.</h2>");
-$result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec'); 
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Suma</th>");
        echo("<th>Płeć</th>");
@@ -94,8 +98,12 @@ $result = $conn->query('SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety
                 echo("</table>");   
 require("connect.php");
 echo("<hr />");
+	 $sql = 'SELECT avg(zarobki) as srednia, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
 echo("<h2>Zadanie 5 - Średnia zarobków kobiet i mężczyzn.</h2>");
-$result = $conn->query('SELECT avg(zarobki) as srednia, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec'); 
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Średnia</th>");
        echo("<th>Płeć</th>");
