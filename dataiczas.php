@@ -242,9 +242,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
    require("connect.php");
   echo("<hr />");
+   $sql = 'SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy';
 echo("<h2>Zadanie 12 - Długość życia pracowników w dniach.</h2>");
-echo("<li>SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy</li>");
-$result = $conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Imie</th>");
         echo("<th>Dni_życia</th>");
@@ -257,9 +260,12 @@ $result = $conn->query('SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_z
            echo("</table>");
     require("connect.php");
   echo("<hr />");
+      $sql = 'SELECT * from pracownicy where imie not like "%a" order by data_urodzenia asc limit 1';
 echo("<h2>Zadanie 13 - Najstarszy mężczyzna.</h2>");
-echo("<li>SELECT * from pracownicy where imie not like %a order by data_urodzenia asc limit 1</li>");
-$result = $conn->query('SELECT * from pracownicy where imie not like "%a" order by data_urodzenia asc limit 1');
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
         echo("<table border>");
          echo("<th>ID</th>");
         echo("<th>Imię</th>");
