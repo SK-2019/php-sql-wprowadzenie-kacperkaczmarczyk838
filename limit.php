@@ -20,11 +20,12 @@
 
 require_once('connect.php');
 echo("<h1>LIMIT:</h1>");
-echo("<h2>Zadanie 1 - Dwóch najlepiej zarabiających pracowników z działu 4.</h2>");
-echo("<li>SELECT * from pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2</li>");
+	  $sql = 'SELECT * from pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2';
+echo("<h2>Zadanie 1 - Dwóch najlepiej zarabiających pracowników z działu 4. </h2>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * from pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2');
+ $result = $conn->query($sql);
         echo("<table>");
 	echo("<th>ID</th>");
         echo("<th>Imie</th>");
