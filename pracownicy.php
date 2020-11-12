@@ -41,11 +41,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	 $sql = 'SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)';
 echo("<h2>Zadanie 2 - Pracownicy tylko z działu 2 i z działu 3.</h2>");
-echo("<li>SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Dzial</th>");
@@ -60,11 +61,12 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 	 
 echo("<hr />");
 require_once('connect.php');
+	 $sql = 'SELECT * FROM pracownicy WHERE zarobki<30';
 echo("<h2>Zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30.</h2>");
-echo("<li>SELECT * FROM pracownicy WHERE zarobki<30</li>");
+echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query('SELECT * FROM pracownicy WHERE zarobki<30');
+ $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
         echo("<th>Zarobki</th>");
