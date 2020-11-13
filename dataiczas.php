@@ -398,7 +398,7 @@ echo("</table>");
    
    require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT DATE_FORMAT("2003-07-09", "j, n, Y") as DataUrodzenia';
+   $sql = 'SELECT DATE_FORMAT("2003-07-09", "j") as DataUrodzenia';
 echo("<h2>Zadanie 7 - W którym dniu roku urodziłeś się/urodziłaś się?</h2>");
 echo("<li>".$sql);
 
