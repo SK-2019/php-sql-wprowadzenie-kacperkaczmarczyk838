@@ -308,15 +308,15 @@ echo("</table>");
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query($sql);
-       echo("<table border>");
-       echo("<th>Dzień</th>");
-    while($row=$result->fetch_assoc()){
-        echo("<tr>");
-        echo("<td>".$row['dzien']."</td>");
-        echo("</tr>");
-    }
-echo("</table>");
+// $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+//  $result = $conn->query($sql);
+//        echo("<table border>");
+//        echo("<th>Dzień</th>");
+//     while($row=$result->fetch_assoc()){
+//         echo("<tr>");
+//         echo("<td>".$row['dzien']."</td>");
+//         echo("</tr>");
+//     }
+// echo("</table>");
   
 ?>
