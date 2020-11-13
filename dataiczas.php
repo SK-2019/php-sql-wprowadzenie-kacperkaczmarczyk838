@@ -302,12 +302,15 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("</table>");
     require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W")';
+   $sql1 = 'SET lc_time_names = "pl_PL"';
+   $sql2 = 'SELECT DATE_FORMAT(CURDATE(), "%W")';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
-echo("<li>".$sql);
+echo("<li>".$sql1);
+echo("<li>".$sql2);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query($sql);
+$result = $conn->query($sql1);
+$result = $conn->query($sql2);
        echo("<table border>");
        echo("<th>Dzień</th>");
     while($row=$result->fetch_assoc()){
