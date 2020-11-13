@@ -303,7 +303,8 @@ echo("</table>");
   
     require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") from pracownicy';
+  SET lc_time_names = 'pl_PL';
+   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W")';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
 echo("<li>".$sql);
 
