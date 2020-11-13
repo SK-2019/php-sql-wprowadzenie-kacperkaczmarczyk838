@@ -303,21 +303,20 @@ echo("</table>");
   
     require("connect.php");
   echo("<hr />");
-//    SET lc_time_names = "pl_PL";
-//    $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") as dzien from pracownicy';
+   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") from pracownicy';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
-// echo("<li>".$sql);
+echo("<li>".$sql);
 
-// $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-//  $result = $conn->query($sql);
-//        echo("<table border>");
-//        echo("<th>Dzień</th>");
-//     while($row=$result->fetch_assoc()){
-//         echo("<tr>");
-//         echo("<td>".$row['dzien']."</td>");
-//         echo("</tr>");
-//     }
-// echo("</table>");
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>Dzień</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['DATE_FORMAT(CURDATE(), "%W")']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
   
     require("connect.php");
   echo("<hr />");
@@ -349,7 +348,7 @@ echo("<li>".$sql);
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query($sql);
        echo("<table border>");
-       echo("<th>curtime</th>");
+       echo("<th>Data</th>");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
         echo("<td>".$row['curtime()']."</td>");
