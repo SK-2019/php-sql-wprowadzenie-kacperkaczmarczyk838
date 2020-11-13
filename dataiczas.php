@@ -282,7 +282,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   echo("<h1>Formatowanie dat:</h1>");
    require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,'%W-%m-%Y') from pracownicy';
+   $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%W-%m-%Y") from pracownicy';
 echo("<h2>Zadanie 1 - Wyświetl nazwy dni w dacie urodzenia .</h2>");
 echo("<li>".$sql);
 
