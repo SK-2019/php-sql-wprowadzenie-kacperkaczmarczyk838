@@ -451,7 +451,7 @@ echo("</table>");
   
    require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT DATE_FORMAT(data_urodzenia,"%W") as dzien, Count(DATE_FORMAT(data_urodzenia, "%W")) as ilosc FROM pracownicy ORDER BY CASE WHEN dzien = "Monday" THEN 1 WHEN dzien = "Tuesday" THEN 2 WHEN dzien = "Wednesday" THEN 3 WHEN dzien= "Thursday" THEN 4 WHEN dzien = "Friday" THEN 5 WHEN dzien = "Saturday" THEN 6 WHEN dzien = "Sunday" THEN 7 END ASC group by DATE_FORMAT(data_urodzenia,"%W")';
+   $sql = 'SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) as ilosc FROM pracownicy ORDER BY CASE WHEN dzien = "Monday" THEN 1 WHEN dzien = "Tuesday" THEN 2 WHEN dzien = "Wednesday" THEN 3 WHEN dzien= "Thursday" THEN 4 WHEN dzien = "Friday" THEN 5 WHEN dzien = "Saturday" THEN 6 WHEN dzien = "Sunday" THEN 7 END ASC';
 echo("<h2>Zadanie 10 - Ilu pracowników urodziło się w poszczególne dni tygodnia (wpisz w pierwszej kolumnie nazwę dnia tygodnia a w drugiej ile osób się wtedy urodziło). Dni powinny być posortowane od Poniedziałku do Niedzieli.</h2>");
 echo("<li>".$sql);
 
