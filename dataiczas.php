@@ -319,4 +319,25 @@ echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedział
 //     }
 // echo("</table>");
   
+    require("connect.php");
+  echo("<hr />");
+   $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%M") from pracownicy';
+echo("<h2>Zadanie 3 - Wyświetl nazwy miesięcy w dacie urodzenia.</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>ID</th>");
+       echo("<th>Imie</th>");
+       echo("<th>Dzial</th>");
+       echo("<th>Zarobki</th>");
+       echo("<th>Data urodzenia</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['DATE_FORMAT(data_urodzenia,"%M")']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
+  
 ?>
