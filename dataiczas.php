@@ -398,7 +398,7 @@ echo("</table>");
    
    require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT DATE_FORMAT("2003-07-09", "%Y-%j-%D") as DataUrodzenia';
+   $sql = 'SELECT DATE_FORMAT("2003-07-09", "%Y-%M-%D") as DataUrodzenia';
 echo("<h2>Zadanie 7 - W którym dniu roku urodziłeś się/urodziłaś się?</h2>");
 echo("<li>".$sql);
 
@@ -409,6 +409,24 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
         echo("<td>".$row['DataUrodzenia']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
+  
+   require("connect.php");
+  echo("<hr />");
+   $sql = 'SELECT DATE_FORMAT(data_urodzenia,"%W") as dzien, imie, data_urodzenia FROM pracownicy ORDER BY CASE WHEN dzien = 'Monday' THEN 1 WHEN dzien = 'Tuesday' THEN 2 WHEN dzien = 'Wednesday' THEN 3 WHEN dzien= 'Thursday' THEN 4 WHEN dzien = 'Friday' THEN 5 WHEN dzien = 'Saturday' THEN 6 WHEN dzien = 'Sunday' THEN 7 END ASC';
+echo("<h2>Zadanie 8 - Pracownicy z nazwami dni tygodnia, w których się urodzili od poniedziałku do niedzieli</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>Imie</th>");
+       echo("<th>Dzień</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['imie']."</td><td>".$row['dzien']."</td>");
         echo("</tr>");
     }
 echo("</table>");
