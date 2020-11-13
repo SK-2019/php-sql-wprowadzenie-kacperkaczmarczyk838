@@ -340,4 +340,21 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
+   require("connect.php");
+  echo("<hr />");
+   $sql = 'SELECT curtime(4)';
+echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund).</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>curtime</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['curtime']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
+  
 ?>
