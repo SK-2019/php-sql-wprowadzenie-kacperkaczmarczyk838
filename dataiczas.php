@@ -343,14 +343,11 @@ echo("</table>");
   
    require("connect.php");
   echo("<hr />");
-   $sql1 = 'SET lc_time_names = "pl_PL"';
-   $sql2 = 'SELECT curtime(4) as godzina';
+   $sql2 = 'SELECT curtime() as godzina';
 echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund).</h2>");
-echo("<li>".$sql1);
 echo("<li>".$sql2);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
-$result = $conn->query($sql1);
 $result = $conn->query($sql2);
        echo("<table border>");
        echo("<th>Godzina</th>");
