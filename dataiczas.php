@@ -357,7 +357,7 @@ echo("</table>");
   
     require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%Y") from pracownicy;';
+   $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%Y-%M-%W") from pracownicy';
 echo("<h2>Zadanie 5 - Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ.</h2>");
 echo("<li>".$sql);
 
@@ -371,7 +371,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
        echo("<th>Data urodzenia</th>");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
-        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['DATE_FORMAT(data_urodzenia,"%Y"']."</td>");
+        echo("<td>".$row['id_pracownicy']."</td><td>".$row['imie']."</td><td>".$row['dzial']."</td><td>".$row['zarobki']."</td><td>".$row['DATE_FORMAT(data_urodzenia,"%Y-%M-%W"']."</td>");
         echo("</tr>");
     }
 echo("</table>");
