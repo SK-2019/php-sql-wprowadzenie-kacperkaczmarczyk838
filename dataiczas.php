@@ -318,7 +318,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
        echo("<th>Data urodzenia</th>");
     while($wiersz=$result->fetch_assoc()){
         echo("<tr>");
-        echo("<td>".$wiersz['id_pracownicy']."</td><td>".$wiersz['imie']."</td><td>".$wiersz['dzial']."</td><td>".$wiersz['zarobki']."</td><td>".$wiersz['DATE_FORMAT(data_urodzenia,"%W")']."</td>");
+        echo("<td>".$wiersz['id_pracownicy']."</td><td>".$wiersz['imie']."</td><td>".$wiersz['dzial']."</td><td>".$wiersz['zarobki']."</td><td>".$wiersz['DATE_FORMAT(CURDATE(), "%W")']."</td>");
         echo("</tr>");
     }
 echo("</table>");
