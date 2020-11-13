@@ -379,7 +379,7 @@ echo("</table>");
     require("connect.php");
   echo("<hr />");
    $sql = 'SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy';
-echo("<h2>Zadanie 6 - Ile godzin, minut już żyjesz?.</h2>");
+echo("<h2>Zadanie 6 - Ile dni, godzin, minut żyje poszczególny pracownik?</h2>");
 echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
@@ -396,5 +396,21 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
    
+   require("connect.php");
+  echo("<hr />");
+   $sql = 'SELECT DATE_FORMAT("2003-07-09", "%j") as DataUrodzenia';
+echo("<h2>Zadanie 7 - W którym dniu roku urodziłeś się/urodziłaś się?</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>Data_Urodzenia</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['DataUrodzenia']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
   
 ?>
