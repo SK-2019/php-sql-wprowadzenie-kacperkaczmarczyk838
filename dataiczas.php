@@ -303,22 +303,18 @@ echo("</table>");
   
     require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") from pracownicy';
-  SET lc_time_names = "pl_PL";
+   SET lc_time_names = "pl_PL";
+   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") as dzien from pracownicy';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
 echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query($sql);
        echo("<table border>");
-       echo("<th>ID</th>");
-       echo("<th>Imie</th>");
-       echo("<th>Dzial</th>");
-       echo("<th>Zarobki</th>");
-       echo("<th>Data urodzenia</th>");
+       echo("<th>Dzień</th>");
     while($wiersz=$result->fetch_assoc()){
         echo("<tr>");
-        echo("<td>".$wiersz['id_pracownicy']."</td><td>".$wiersz['imie']."</td><td>".$wiersz['dzial']."</td><td>".$wiersz['zarobki']."</td><td>".$wiersz['DATE_FORMAT(CURDATE(), "%W")']."</td>");
+        echo("<td>".$wiersz['dzien']."</td>");
         echo("</tr>");
     }
 echo("</table>");
