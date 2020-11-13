@@ -461,7 +461,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
-  echo("<h1>Zadanie 10 - Ilu pracowników urodziło się w poszczególne dni tygodnia </h1>");
+echo("<h2>Zadanie 10 - Ilu pracowników urodziło się w poszczególne dni tygodnia </h1>");
                 $sql1 = ("SET lc_time_names = 'pl_PL'");
                 $sql2 = ("SELECT DATE_FORMAT(data_urodzenia,'%W') as dzien, Count(DATE_FORMAT(data_urodzenia,'%W')) as ilosc FROM pracownicy group by dzien ORDER BY 
                              CASE
