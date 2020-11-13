@@ -229,12 +229,12 @@ echo("<li>".$sql);
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query($sql);
         echo("<table border>");
+  echo("<th>Nazwa_Działu</th>");
         echo("<th>Wiek</th>");
         echo("<th>Imię</th>");
-        echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
-                   echo("<td>".$wiersz['imie']."</td><td>".$wiersz['wiek']."</td><td>".$wiersz['nazwa_dzial']."</td>");                    
+                   echo("<td>".$wiersz['nazwa_dzial']."</td><td>".$wiersz['imie']."</td><td>".$wiersz['wiek']."</td>");                    
                  echo("</tr>");
             }
    
