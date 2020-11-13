@@ -352,7 +352,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
        echo("<th>curtime</th>");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
-        echo("<td>".$row['curtime']."</td>");
+        echo("<td>".$row['curtime(4)']."</td>");
         echo("</tr>");
     }
 echo("</table>");
