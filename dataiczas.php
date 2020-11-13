@@ -220,25 +220,25 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
            echo("</table>");
  
  
-   require("connect.php");
-  echo("<hr />");
-  $sql = 'SELECT *, min(YEAR(curdate())-YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja where dzial = id_org and dzial in(1, 2) group by dzial';
-echo("<h2>Zadanie 11 - Najmłodsi pracownicy z działu: handel i serwis (imię, nazwa_dział, wiek).</h2>");
-echo("<li>".$sql);
+//    require("connect.php");
+//   echo("<hr />");
+//   $sql = 'SELECT *, min(YEAR(curdate())-YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja where dzial = id_org and dzial in(1, 2) group by dzial';
+// echo("<h2>Zadanie 11 - Najmłodsi pracownicy z działu: handel i serwis (imię, nazwa_dział, wiek).</h2>");
+// echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query($sql);
-        echo("<table border>");
-  echo("<th>Nazwa_Działu</th>");
-        echo("<th>Wiek</th>");
-        echo("<th>Imię</th>");
-            while($row=$result->fetch_assoc()){ 
-                 echo("<tr>");
-                   echo("<td>".$wiersz['nazwa_dzial']."</td><td>".$wiersz['imie']."</td><td>".$wiersz['wiek']."</td>");                    
-                 echo("</tr>");
-            }
+// $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+//  $result = $conn->query($sql);
+//         echo("<table border>");
+//   echo("<th>Nazwa_Działu</th>");
+//         echo("<th>Wiek</th>");
+//         echo("<th>Imię</th>");
+//             while($row=$result->fetch_assoc()){ 
+//                  echo("<tr>");
+//                    echo("<td>".$wiersz['nazwa_dzial']."</td><td>".$wiersz['imie']."</td><td>".$wiersz['wiek']."</td>");                    
+//                  echo("</tr>");
+//             }
    
-           echo("</table>");
+//            echo("</table>");
   
    require("connect.php");
   echo("<hr />");
