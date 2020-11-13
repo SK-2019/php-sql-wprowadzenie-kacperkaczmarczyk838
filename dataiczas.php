@@ -303,10 +303,10 @@ echo("</table>");
   
     require("connect.php");
   echo("<hr />");
-   SET lc_time_names = "pl_PL";
-   $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") as dzien from pracownicy';
+//    SET lc_time_names = "pl_PL";
+//    $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W") as dzien from pracownicy';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
-echo("<li>".$sql);
+// echo("<li>".$sql);
 
 // $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 //  $result = $conn->query($sql);
