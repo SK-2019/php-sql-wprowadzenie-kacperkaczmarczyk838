@@ -308,7 +308,6 @@ echo("<li>".$sql);
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query($sql);
-  SET lc_time_names = 'pl_PL';
        echo("<table border>");
        echo("<th>Dzień</th>");
     while($row=$result->fetch_assoc()){
