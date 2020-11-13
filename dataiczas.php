@@ -460,10 +460,11 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
        echo("<table border>");
        echo("<th>Dzień</th>");
        echo("<th>Ilość</th>");
+   echo("<th>Data_urodzenia</th>");
   echo("<th>Data_urodzenia</th>");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
-        echo("<td>".$row['dzien']."</td><td>".$row['ilosc']."</td>");
+        echo("<td>".$row['dzien']."</td><td>".$row['ilosc']."</td><td>".$row['data_urodzenia']."</td>");
         echo("</tr>");
     }
 echo("</table>");
