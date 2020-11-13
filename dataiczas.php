@@ -222,7 +222,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  
    require("connect.php");
   echo("<hr />");
-  $sql = 'Select min(year(curdate())-year(data_urodzenia)) as minwiek, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" or nazwa_dzial="serwis") group by nazwa_dzial';
+  $sql = 'SELECT *, min(YEAR(curdate())-YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja where dzial = id_org and dzial in(1, 2) group by dzial';
 echo("<h2>Zadanie 11 - Najmłodsi pracownicy z działu: handel i serwis (imię, nazwa_dział, wiek).</h2>");
 echo("<li>".$sql);
 
@@ -234,7 +234,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("<th>Nazwa_Działu</th>");
             while($row=$result->fetch_assoc()){ 
                  echo("<tr>");
-                   echo("<td>".$row["imie"]."</td><td>".$row["minwiek"]."</td><td>".$row["nazwa_dzial"]."</td>");                    
+                   echo("<td>".$wiersz['imie']."</td><td>".$wiersz['wiek']."</td><td>".$wiersz['nazwa_dzial']."</td>");                    
                  echo("</tr>");
             }
    
@@ -343,7 +343,7 @@ echo("</table>");
   
    require("connect.php");
   echo("<hr />");
-   $sql2 = 'SELECT curtime() as godzina';
+   $sql2 = 'SELECT curtime(4) as godzina';
 echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund).</h2>");
 echo("<li>".$sql2);
 
