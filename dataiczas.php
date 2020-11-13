@@ -432,4 +432,21 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
+   require("connect.php");
+  echo("<hr />");
+   $sql = 'SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) as ilosc FROM pracownicy where DATE_FORMAT(data_urodzenia, "%W")="Monday"';
+echo("<h2>Zadanie 9 - Ilu pracowników urodziło się w poniedziałek?</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>Ilość</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['ilosc']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
+  
 ?>
