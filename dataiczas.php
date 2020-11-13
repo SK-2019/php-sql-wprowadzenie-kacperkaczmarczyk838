@@ -389,10 +389,9 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
        echo("<th>Dni</th>");
        echo("<th>Godziny</th>");
        echo("<th>Minuty</th>");
-       echo("<th>Data urodzenia</th>");
     while($row=$result->fetch_assoc()){
         echo("<tr>");
-        echo("<td>".$row['dni']."</td><td>".$row['imie']."</td><td>".$row['godziny']."</td><td>".$row['minuty']."</td>");
+        echo("<td>".$row['imie']."</td><td>".$row['dni']."</td><td>".$row['godziny']."</td><td>".$row['minuty']."</td>");
         echo("</tr>");
     }
 echo("</table>");
