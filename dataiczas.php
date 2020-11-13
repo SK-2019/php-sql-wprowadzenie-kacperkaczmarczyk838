@@ -375,6 +375,27 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</tr>");
     }
 echo("</table>");
+  
+    require("connect.php");
+  echo("<hr />");
+   $sql = 'SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy';
+echo("<h2>Zadanie 6 - Ile godzin, minut już żyjesz?.</h2>");
+echo("<li>".$sql);
+
+$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+ $result = $conn->query($sql);
+       echo("<table border>");
+       echo("<th>Imie</th>");
+       echo("<th>Dni</th>");
+       echo("<th>Godziny</th>");
+       echo("<th>Minuty</th>");
+       echo("<th>Data urodzenia</th>");
+    while($row=$result->fetch_assoc()){
+        echo("<tr>");
+        echo("<td>".$row['dni']."</td><td>".$row['imie']."</td><td>".$row['godziny']."</td><td>".$row['minuty']."</td>");
+        echo("</tr>");
+    }
+echo("</table>");
    
   
 ?>
