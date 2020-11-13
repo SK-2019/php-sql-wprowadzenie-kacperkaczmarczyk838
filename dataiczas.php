@@ -88,21 +88,18 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
   
    require("connect.php");
   echo("<hr />");
-   $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org and nazwa_dzial="handel"';
-echo("<h2>Zadanie 4 - Suma lat pracowników z działu handel.</h2>");
-echo("<li>".$sql);
-
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
- $result = $conn->query($sql);
-        echo("<table border>");
-        echo("<th>Wiek_pracownikow_handel</th>");
-            while($row=$result->fetch_assoc()){ 
-                 echo("<tr>");
-                   echo("<td>".$row["wiek"]."</td>");                    
-                 echo("</tr>");
-            }
-   
-           echo("</table>");
+    echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund) </h1>");
+  $sql2 = ("SELECT curtime(4)");
+echo("<li>".$sql2);
+$result=$conn->query($sql2);
+echo("<table border>");
+echo("<th>curtime(4)</th>");
+       while($row=$result->fetch_assoc()) {
+            echo("<tr>");
+             echo("<td>".$row["curtime(4)"]."</td>");
+            echo("</tr>");
+                            }
+                        echo("</table>");
   
     require("connect.php");
   echo("<hr />");
