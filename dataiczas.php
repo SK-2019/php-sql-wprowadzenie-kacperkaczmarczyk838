@@ -300,13 +300,13 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</tr>");
     }
 echo("</table>");
-SET lc_time_names = 'pl_PL';
     require("connect.php");
   echo("<hr />");
    $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W")';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
 echo("<li>".$sql);
 
+SET lc_time_names = 'pl_PL';
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query($sql);
        echo("<table border>");
