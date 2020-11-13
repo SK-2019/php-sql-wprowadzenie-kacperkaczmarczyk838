@@ -300,10 +300,9 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</tr>");
     }
 echo("</table>");
-  
+SET lc_time_names = 'pl_PL';
     require("connect.php");
   echo("<hr />");
-//   SET lc_time_names = 'pl_PL';
    $sql = 'SELECT DATE_FORMAT(CURDATE(), "%W")';
 echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedziałek).</h2>");
 echo("<li>".$sql);
