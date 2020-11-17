@@ -19,7 +19,7 @@
 </div>
   
    <form action="strona.php" method="POST">
-     <input type="text" name="asd"></br>
+     <input type="text" name="imie"></br>
      <input type="submit" value="wyślij do strona.php">
   </form>
   
