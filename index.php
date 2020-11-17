@@ -19,7 +19,7 @@
 <a class="nav8" href="dataiczas.php">Data i czas</a>
 </div>
   
-   <form action="strona.php" method="POST">
+   <form action="formularz.php" method="POST">
      <input type="text" name="imie"></br>
      <input type="text" name="dzial"></br>
      <input type="text" name="zarobki"></br>
