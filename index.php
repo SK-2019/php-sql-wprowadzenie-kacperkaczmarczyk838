@@ -19,13 +19,6 @@
 <a class="nav8" href="dataiczas.php">Data i czas</a>
 </div>
   
-   <form action="formularz.php" method="POST">
-     <input type="text" name="imie"></br>
-     <input type="text" name="dzial"></br>
-     <input type="text" name="zarobki"></br>
-     <input type="submit" value="wyślij do strona.php">
-  </form>
-  
 <?php
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
