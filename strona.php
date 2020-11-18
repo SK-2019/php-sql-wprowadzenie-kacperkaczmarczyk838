@@ -9,7 +9,7 @@
 echo("<li>imię:".$_POST["imie"]);
 echo("<li>dział:".$_POST["dzial"]);
 echo("<li>zarobki:".$_POST["zarobki"]);
-echo("<li>data urodzenia:".$_POST["data_urodzenia"]);
+echo("<li>data urodzenia:".$_POST["data_ur"]);
 
 
  require_once("connect.php");
