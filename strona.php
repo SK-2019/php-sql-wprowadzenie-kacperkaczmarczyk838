@@ -8,8 +8,7 @@
 
 echo("witam :D");
 
-echo($_POST["imie"]);
-echo($_POST['dzial']);
-echo($_POST['zarobki']);
-
+echo("<li>imię:".$_POST["imie"]);
+echo("<li>nazwisko:".$_POST["nazwisko"]);
+echo("<li>klasa:".$_POST["klasa"]);
 ?>
