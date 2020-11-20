@@ -1,5 +1,7 @@
 <html>
         <head>
+<meta charset="UTF-8">
+ <link rel="stylesheet" href="mystyles.css">
 		 <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
  <div class="nav">
 <a class="nav0" href="formularz.html">Formularz</a>
@@ -15,7 +17,6 @@
          
     <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
     <h1>Dodano:</h1>
-        <link rel="stylesheet" href="mstyle.css">
         </head>
 
   
