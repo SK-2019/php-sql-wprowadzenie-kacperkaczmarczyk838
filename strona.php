@@ -1,5 +1,6 @@
 <html>
         <head>
+		 <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
 <meta charset="UTF-8">
  <link rel="stylesheet" href="mystyles.css">
 		 <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
@@ -15,8 +16,7 @@
 <a class="nav7" href="limit.php">LIMIT</a>
 <a class="nav8" href="dataiczas.php">Data i czas</a>
 </div>
-         
-    <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
+   
     <h1>Dodano:</h1>
         </head>
 
