@@ -21,14 +21,13 @@ echo("delete.php <br>");
 echo $_POST['id'];
 require_once("connect.php");
 
-      $sql = "DELETE FROM pracownicy WHERE id= $_POST['id'];";
-      echo $sql;
+ $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 
 if ($conn->query($sql) === TRUE) {
-  echo "pracownik został usunięty";
-} else {
-  echo "Error: " . $sql . "<br>" . $conn->error;
-}
+        echo("<p class='precord'> Usunięto pracownika </p>");
+      } else {
+        echo("<p class='precord'>'Error: ' . $sql . '<br>' . $conn->error</p>");
+      }
 
 $conn->close();
       
