@@ -17,7 +17,20 @@
 </div>
 
 <?php
+echo("delete.php <br>");
+echo $_POST['id'];
+require_once("connect.php");
 
+      $sql = "DELETE FROM pracownicy WHERE id= $_POST['id'];";
+      echo $sql;
+
+if ($conn->query($sql) === TRUE) {
+  echo "pracownik został usunięty";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
       
 ?>
 
