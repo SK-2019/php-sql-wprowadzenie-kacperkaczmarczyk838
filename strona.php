@@ -1,7 +1,7 @@
 <html>
 <head>
 		 <title>Kacper Kaczmarczyk 2Ti</title>
-		 <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
+		 <h1>💎 Kacper Kaczmarczyk nr 13 </h1>
 <meta charset="UTF-8">
  <link rel="stylesheet" href="mstyles.css">
 		 <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
