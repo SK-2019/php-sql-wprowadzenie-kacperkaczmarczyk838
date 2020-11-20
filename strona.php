@@ -34,7 +34,7 @@ echo("<li>data urodzenia: ".$_POST['data_ur']."</li>");
 	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
 	
 if ($conn->query($sql) === TRUE) {
-        echo("<p class='precord'>New record created successfully :D </p>");
+        echo("<p class='precord'>Dodano nowego pracownika 💎 </p>");
       } else {
         echo "Error: " . $sql . "<br>" . $conn->error;
       }
