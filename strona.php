@@ -25,11 +25,11 @@
 echo("<li>imię:".$_POST["imie"]);
 echo("<li>dział:".$_POST["dzial"]);
 echo("<li>zarobki:".$_POST["zarobki"]);
-
+echo("<li>zarobki:".$_POST["data_ur"]);
 
 
  require_once("connect.php");
-	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."')";
+	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, 'data_urodzenia') VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
 	
 if ($conn->query($sql) === TRUE) {
         echo("<p class='precord'>New record created successfully :D </p>");
