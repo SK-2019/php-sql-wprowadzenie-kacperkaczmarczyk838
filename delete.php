@@ -18,19 +18,16 @@
 
 <?php
 
-  echo("<li>ID: ".$_POST['id']."</li>");
+  echo $_POST['id'];
+require_once("connect.php");
 
-  require_once("connect.php");
+ $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 
-  $sql = "DELETE FROM pracownicy where id_pracownicy='".$_POST['id']."'";
-  
-  
-  if ($conn->query($sql) === TRUE) {
-    echo "Pracownik został usunięty.";
-  } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
-  $conn->close();
+if ($conn->query($sql) === TRUE) {
+        echo("<h1 class='precord'> Usunięto pracownika </h1>");
+      } else {
+        echo("<h1 class='precord'>'Error: ' . $sql . '<br>' . $conn->error</h1>");
+      }
       
 ?>
 
