@@ -29,6 +29,8 @@
     <input type="submit" value="Dodaj">
 </form>
        
+       echo("<hr />");
+       
         <h1>Usuwanie pracownika:</h1>
        
 <form action="delete.php" method="POST">
@@ -41,7 +43,7 @@
 
 <?php
 
-
+echo("<hr />");
     echo("<h1>Tabela Wszystkich Pracowników (z możliwością usuwania):</h1>");
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
