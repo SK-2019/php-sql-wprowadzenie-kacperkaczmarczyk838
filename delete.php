@@ -28,7 +28,7 @@ require_once("connect.php");
 
 if ($conn->query($sql) === TRUE) {
         echo("<h1 class='precord'> Usunięto pracownika </h1>");
-       header('Location: https://php-test-tabd.herokuapp.com/danedobazy.php');
+       header('Location: https://php-test-tabd.herokuapp.com/index.php');
       } else {
         echo("<h1 class='precord'>'Error: ' . $sql . '<br>' . $conn->error</h1>");
       }
