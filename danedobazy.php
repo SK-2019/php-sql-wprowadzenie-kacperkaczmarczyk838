@@ -35,7 +35,7 @@
        
 <form action="delete.php" method="POST">
        <input type="text" name="id" placeholder="ID"></br>
-   <input type="submit" value="ok">
+   <input type="submit" value="Usuń">
 </form>
 </body>
 </head>
@@ -54,13 +54,13 @@ $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = 
         echo("<th>Zarobki</th>");
         echo("<th>Data_Urodzenia</th>");
         echo("<th>Nazwa_Działu</th>");
-        echo("<th>DELETE</th>");
+        echo("<th>Usuwanie</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
                     echo("<td><form action='delete.php' method=POST>");
                      echo("<input type='hidden' name='id' value='".$row['id_pracownicy']."'>");
-                     echo("<input type=submit value='X'>");
+                     echo("<input type=submit value='Usuń'>");
                     echo("</form></td>");
                 echo("</tr>");
             }
