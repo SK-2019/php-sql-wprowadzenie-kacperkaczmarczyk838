@@ -41,7 +41,8 @@
 
 <?php
 
-echo("<h1>Tabela Wszystkich Pracowników:</h1>");
+
+    echo("<h1>Tabela Wszystkich Pracowników:</h1>");
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
@@ -51,12 +52,15 @@ $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = 
         echo("<th>Zarobki</th>");
         echo("<th>Data_Urodzenia</th>");
         echo("<th>Nazwa_Działu</th>");
+        echo("<th>DELETE</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
                     echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
-
+                    echo("<td><form action='delete.php' method=POST>");
+                    echo("<input type='hidden' name='id' value='".$row['id_pracownicy']."'><input id='delemp1' type='submit' value='X'>");
+                    echo("</form></td>");
                 echo("</tr>");
             }
         echo("</table>");
-
+           
 ?>
