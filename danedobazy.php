@@ -45,7 +45,7 @@
 
 echo("<hr />");
     echo("<h1>Tabela Wszystkich Pracowników (z możliwością usuwania):</h1>");
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+require_once('connect.php');
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");
