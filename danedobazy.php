@@ -29,7 +29,7 @@
     <input type="submit" value="Dodaj">
 </form>
        
-       echo("<hr />");
+      <hr/>
        
         <h1>Usuwanie pracownika:</h1>
        
