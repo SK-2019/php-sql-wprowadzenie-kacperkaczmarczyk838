@@ -91,7 +91,7 @@ echo("<li>".$sql);
         echo("<th>Tytuł</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
-                    echo("<td>".$row["id"]."</td><td>".$row["biblAutor"]."</td><td>".$row["biblTytul"]."</td>"); 
+                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytuł"]."</td>"); 
 
                 echo("</tr>");
             }
