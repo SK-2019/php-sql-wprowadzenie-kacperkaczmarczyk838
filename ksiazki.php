@@ -68,10 +68,30 @@ echo("<li>".$sql);
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
-        echo("<th>Tytuł</th>");
+        echo("<th>ID Autor</th>");
+        echo("<th>ID Tytuł</th>");
             while($row=$result->fetch_assoc()){ 
                 echo("<tr>");
                     echo("<td>".$row["id"]."</td><td>".$row["biblAutor_id"]."</td><td>".$row["biblTytul_id"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
+  
+   require_once('connect.php');
+$sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id';
+echo("<h2>Cała tabelka:</h2>");
+echo("<li>".$sql);
+
+ $result = $conn->query($sql);
+        echo("<table>");
+        echo("<th>ID</th>");
+        echo("<th>Autor</th>");
+        echo("<th>Tytuł</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id"]."</td><td>".$row["biblAutor"]."</td><td>".$row["biblTytul"]."</td>"); 
 
                 echo("</tr>");
             }
