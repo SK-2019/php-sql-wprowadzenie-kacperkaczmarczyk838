@@ -41,6 +41,25 @@ echo("<li>".$sql);
             }
 
         echo("</table>");
+  
+   require_once('connect.php');
+echo("<h1>Książki i autorzy:</h1>");
+$sql = 'SELECT * FROM biblAutor';
+echo("<h2>Autorzy:</h2>");
+echo("<li>".$sql);
+
+ $result = $conn->query($sql);
+        echo("<table>");
+        echo("<th>ID</th>");
+        echo("<th>Tytuł</th>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
         
 ?>
