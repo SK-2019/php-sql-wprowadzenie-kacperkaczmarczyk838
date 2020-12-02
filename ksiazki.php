@@ -23,17 +23,24 @@
   
 <?php
   
-  require_once("connect.php");
-        $sql="Select * From biblTytul";
-        $result=$conn->query($sql);
-        echo("<table border>");
+ require_once('connect.php');
+echo("<h1>Książki i autorzy:</h1>");
+$sql = 'SELECT * FROM biblTytul';
+echo("<h2>Tytuł</h2>");
+echo("<li>".$sql);
+
+ $result = $conn->query($sql);
+        echo("<table>");
         echo("<th>ID</th>");
         echo("<th>Tytuł</th>");
-        while($row=$result->fetch_assoc()){
-      echo("<tr>");
-      echo("<td>".$row["id"]."</td><td>".$row["tytuł"]."</td>");
-      echo("</tr>");}
-              echo("</table>");
+            while($row=$result->fetch_assoc()){ 
+                echo("<tr>");
+                    echo("<td>".$row["id_pracwonicy"]."</td><td>".$row["tytuł"]."</td>"); 
+
+                echo("</tr>");
+            }
+
+        echo("</table>");
 
         
 ?>
