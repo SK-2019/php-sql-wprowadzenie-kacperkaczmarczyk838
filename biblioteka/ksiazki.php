@@ -2,7 +2,7 @@
 <html> 
 <head>
  <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
