@@ -2,7 +2,7 @@
 <html> 
 <head>
 <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
@@ -21,7 +21,7 @@
 </div>
 <?php
 
-require_once('connect.php');
+require_once('../connect.php');
 echo("<h1>LIMIT:</h1>");
 	  $sql = 'SELECT * from pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2';
 echo("<h2>Zadanie 1 - Dwóch najlepiej zarabiających pracowników z działu 4. </h2>");
