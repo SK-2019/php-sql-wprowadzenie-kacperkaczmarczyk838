@@ -46,18 +46,20 @@ $sql = 'SELECT * FROM biblAutor';
 echo("<h2>Autorzy:</h2>");
 echo("<li>".$sql);
 
- $result = $conn->query($sql);
+$result = $conn->query($sql);
 echo("<select name='title' id='title'>");
 while($row=$result->fetch_assoc()){
 echo("<option value=".$row['id'].">".$row['autor']."</option>");
         }
     echo("</select>");
 
+  
 echo("<hr />");
 $sql = 'SELECT * FROM biblTytul';
 echo("<h2>Tytuły:</h2>");
 echo("<li>".$sql);
 
+$result=$conn->query($sql);
 echo("<select name='title' id='title'>");
 while($row=$result->fetch_assoc()){ 
 echo("<option value=".$row['id'].">".$row['tytul']."</option>");
