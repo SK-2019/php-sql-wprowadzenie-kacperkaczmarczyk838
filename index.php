@@ -19,7 +19,7 @@
 <a class="nav7" href="limit.php">LIMIT</a>
 <a class="nav8" href="dataiczas.php">Data i czas</a>
 <a class="nav0" href="function.php">Funkcja</a>
-<a class="nav0" href="ksiazki.php">Książki</a>
+<a class="nav0" href="/biblioteka/ksiazki.php">Książki</a>
 </div>
   
 <?php
