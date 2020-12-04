@@ -24,7 +24,7 @@
   
 <?php
   
- require_once(/'connect.php');
+ require_once('../connect.php');
 echo("<h1>Książki i autorzy:</h1>");
 $sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id';
 echo("<h2>Cała tabelka:</h2>");
