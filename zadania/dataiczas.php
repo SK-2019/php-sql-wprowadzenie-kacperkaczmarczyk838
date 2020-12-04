@@ -2,7 +2,7 @@
 <html> 
 <head>
  <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
@@ -22,7 +22,7 @@
 
 echo("<h1>Data i czas:</h1>");
   
-require("connect.php");
+require("../connect.php");
    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org';
 echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach).</h2>");
 echo("<li>".$sql);
@@ -45,7 +45,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-  require("connect.php");
+ 
   echo("<hr />");
    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek FROM pracownicy, organizacja WHERE dzial=id_org AND nazwa_dzial="serwis"';
 echo("<h2>Zadanie 2 - Wiek poszczególnych pracowników (w latach) z działu serwis.</h2>");
@@ -69,7 +69,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-   require("connect.php");
+
   echo("<hr />");
     $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja WHERE dzial=id_org';
 echo("<h2>Zadanie 3 - Suma lat wszystkich.</h2>");
@@ -88,7 +88,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
            echo("</table>");
   
   
-   require("connect.php");
+   
   echo("<hr />");
     echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund) </h1>");
   $sql2 = ("SELECT curtime(4)");
@@ -103,7 +103,7 @@ echo("<th>curtime(4)</th>");
                             }
                         echo("</table>");
   
-    require("connect.php");
+    
   echo("<hr />");
    $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie like "%a"';
 echo("<h2>Zadanie 5 - Suma lat kobiet.</h2>");
@@ -121,7 +121,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-    require("connect.php");
+  
   echo("<hr />");
     $sql = 'SELECT sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as wiek FROM pracownicy where imie not like "%a"';
 echo("<h2>Zadanie 6 - Suma lat mężczyzn.</h2>");
@@ -139,7 +139,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
 
-    require("connect.php");
+   
   echo("<hr />");
     $sql = 'SELECT dzial, avg(YEAR(CURDATE()) - YEAR(data_urodzenia)) as srednia, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<h2>Zadanie 7 - Średnia lat pracowników w poszczególnych działach.</h2>");
@@ -159,7 +159,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-   require("connect.php");
+ 
   echo("<hr />");
     $sql = 'SELECT dzial, sum(YEAR(CURDATE()) - YEAR(data_urodzenia)) as suma, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach.</h2>");
@@ -179,7 +179,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-   require("connect.php");
+  
   echo("<hr />");
     $sql = 'SELECT dzial, max(YEAR(CURDATE()) - YEAR(data_urodzenia)) as max, nazwa_dzial from pracownicy, organizacja where dzial=id_org group by dzial';
 echo("<h2>Zadanie 9 - Najstarsi pracownicy w każdym dziale.</h2>");
@@ -199,7 +199,6 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-   require("connect.php");
   echo("<hr />");
     $sql = 'SELECT min(YEAR(CURDATE()) - YEAR(data_urodzenia)) as min, nazwa_dzial from pracownicy, organizacja where dzial=id_org and (nazwa_dzial="handel" OR nazwa_dzial="serwis") group by dzial';
 echo("<h2>Zadanie 10 - Najmłodsi pracownicy z działu: handel i serwis (nazwa_dział, wiek).</h2>");
@@ -219,7 +218,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
            echo("</table>");
  
  
-//    require("connect.php");
+
 //   echo("<hr />");
 //   $sql = 'SELECT *, min(YEAR(curdate())-YEAR(data_urodzenia)) as wiek FROM pracownicy, organizacja where dzial = id_org and dzial in(1, 2) group by dzial';
 // echo("<h2>Zadanie 11 - Najmłodsi pracownicy z działu: handel i serwis (imię, nazwa_dział, wiek).</h2>");
@@ -239,7 +238,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
 //            echo("</table>");
   
-   require("connect.php");
+ 
   echo("<hr />");
    $sql = 'SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni_zycia from pracownicy';
 echo("<h2>Zadanie 12 - Długość życia pracowników w dniach.</h2>");
@@ -257,7 +256,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
    
            echo("</table>");
-    require("connect.php");
+  
   echo("<hr />");
       $sql = 'SELECT * from pracownicy where imie not like "%a" order by data_urodzenia asc limit 1';
 echo("<h2>Zadanie 13 - Najstarszy mężczyzna.</h2>");
@@ -278,7 +277,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
    
            echo("</table>");
   
-   require("connect.php");
+ 
   echo("<hr />");
    echo("<h1>Formatowanie dat:</h1>");
    $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%W") from pracownicy';
@@ -299,7 +298,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</tr>");
     }
 echo("</table>");
-    require("connect.php");
+  
   echo("<hr />");
    $sql1 = 'SET lc_time_names = "pl_PL"';
    $sql2 = 'SELECT DATE_FORMAT(CURDATE(), "%W")';
@@ -319,7 +318,7 @@ $result = $conn->query($sql2);
     }
 echo("</table>");
   
-    require("connect.php");
+    
   echo("<hr />");
    $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%M") from pracownicy';
 echo("<h2>Zadanie 3 - Wyświetl nazwy miesięcy w dacie urodzenia.</h2>");
@@ -340,7 +339,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
-   require("connect.php");
+ 
   echo("<hr />");
    $sql2 = 'SELECT curtime(4) as godzina';
 echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund).</h2>");
@@ -357,7 +356,7 @@ $result = $conn->query($sql2);
     }
 echo("</table>");
   
-     require("connect.php");
+    
   echo("<hr />");
    $sql = 'SELECT *, DATE_FORMAT(data_urodzenia,"%Y-%M-%W") from pracownicy';
 echo("<h2>Zadanie 5 - Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ.</h2>");
@@ -378,7 +377,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
-    require("connect.php");
+   
   echo("<hr />");
    $sql = 'SELECT imie, DATEDIFF(CURDATE(),data_urodzenia) as dni, DATEDIFF(CURDATE(),data_urodzenia)*24 as godziny, DATEDIFF(CURDATE(),data_urodzenia)*24*60 as minuty FROM pracownicy';
 echo("<h2>Zadanie 6 - Ile dni, godzin, minut żyje poszczególny pracownik?</h2>");
@@ -398,7 +397,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
    
-   require("connect.php");
+  
   echo("<hr />");
    $sql = 'SELECT DATE_FORMAT("2003-07-09", "%Y-%M-%D") as DataUrodzenia';
 echo("<h2>Zadanie 7 - W którym dniu roku urodziłeś się/urodziłaś się?</h2>");
@@ -415,7 +414,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
-   require("connect.php");
+  
   echo("<hr />");
    $sql = 'SELECT DATE_FORMAT(data_urodzenia,"%W") as dzien, imie, data_urodzenia FROM pracownicy 
    ORDER BY CASE 
@@ -443,7 +442,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
     }
 echo("</table>");
   
-   require("connect.php");
+ 
   echo("<hr />");
    $sql = 'SELECT Count(DATE_FORMAT(data_urodzenia, "%W")) as ilosc FROM pracownicy where DATE_FORMAT(data_urodzenia, "%W")="Monday"';
 echo("<h2>Zadanie 9 - Ilu pracowników urodziło się w poniedziałek?</h2>");
