@@ -8,7 +8,7 @@
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
  <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
  <div class="nav">
-<a class="nav1" href="/zadania/index.php">Strona Główna</a>
+<a class="nav1" href="index.php">Strona Główna</a>
 <a class="nav0" href="/danedobazy/danedobazy.php">DaneDoBazy</a>
 <a class="nav0" href="/danedobazy/formularz.html">Formularz</a>
 <a class="nav1" href="/zadania/pracownicy.php">Pracownicy</a>
