@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
@@ -21,7 +21,7 @@
 </div>
 <?php
 	 
-require_once('connect.php');
+require_once('../connect.php');
 echo("<h1>Pracownicy i Organizacja:</h1>");
 	  $sql = 'SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org';
 echo("<h2>Zadanie 1 - Pracownicy z nazwą działów.</h2>");
@@ -41,7 +41,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 echo("<hr />");
-require_once('connect.php');
+
 	   $sql = 'SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org and (dzial=1 or dzial=4)';
 echo("<h2>Zadanie 2 - Pracownicy tylko z działu 1 i 4.</h2>");
 echo("<li>".$sql);
@@ -65,7 +65,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 echo("<hr />");
-require_once('connect.php');
+
 	 	  $sql = 'SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie like "%a"';
 echo("<h2>Zadanie 3 - Lista kobiet z nazwami działów.</h2>");
 echo("<li>".$sql);
@@ -85,7 +85,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 echo("<hr />");
-require_once('connect.php');
+
 	   $sql = 'SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org and imie not like "%a"';
 echo("<h2>Zadanie 4 - Lista mężczyzn z nazwami działów.</h2>");
 echo("<li>".$sql);
