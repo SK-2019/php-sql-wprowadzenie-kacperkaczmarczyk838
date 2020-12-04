@@ -12,7 +12,6 @@
 <a class="nav0" href="/danedobazy/danedobazy.php">DaneDoBazy</a>
 <a class="nav0" href="/danedobazy/formularz.html">Formularz</a>
 <a class="nav1" href="/zadania/pracownicy.php">Pracownicy</a>
-<a class="nav3" href="/zadania/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
 <a class="nav4" href="/zadania/sortowanie.php">Sortowanie</a>
 <a class="nav5" href="/zadania/groupby.php">Group by</a>
 <a class="nav6" href="/zadania/having.php">Having</a>
