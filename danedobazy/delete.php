@@ -3,7 +3,7 @@
       <title>Kacper Kaczmarczyk 2Ti</title>
       <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
      <meta charset="UTF-8">
-    <link rel="stylesheet" href="mstyles.css">
+    <link rel="stylesheet" href="/mstyles.css">
      <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
  <div class="nav">
 <a class="nav1" href="index.php">Strona Główna</a>
@@ -22,7 +22,7 @@
 <?php
 
   echo ("<h1>id: ".$_POST['id']."</h1>");
-require_once("connect.php");
+require_once("../connect.php");
 
  $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 
