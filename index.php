@@ -20,6 +20,7 @@
 <a class="nav8" href="/zadania/dataiczas.php">Data i czas</a>
 <a class="nav0" href="/zadania/function.php">Funkcja</a>
 <a class="nav0" href="/biblioteka/ksiazki.php">Książki</a>
+<a class="nav0" href="/biblioteka/wypozyczone.php">Wypożyczone</a>
 </div>
   
 <?php
