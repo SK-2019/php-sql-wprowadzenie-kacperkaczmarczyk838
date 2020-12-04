@@ -28,7 +28,6 @@ echo("<h2>Cała tabelka:</h2>");
 echo("<li>".$sql);
 
 $result=$conn->query($sql);
-    echo("<h3>Biblioteka Autor i Tytul</h3>");
     echo("<table border=1>");
     echo("<th>id</th>");
     echo("<th>autor</th>");
