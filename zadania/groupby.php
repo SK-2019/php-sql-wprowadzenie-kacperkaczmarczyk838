@@ -2,7 +2,7 @@
 <html> 
 <head>
  <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
@@ -21,7 +21,7 @@
 </div>
 <?php
 
-require_once('connect.php');
+require_once('../connect.php');
 echo("<h1>Group By:</h1>");
 	  $sql = 'SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach.</h2>");
@@ -41,7 +41,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 
-require_once('connect.php');
+
 echo("<hr />");
 	   $sql = 'SELECT dzial, count(imie) as ilosc, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 2 - Ilość pracowników w poszczególnych działach.</h2>");
@@ -61,7 +61,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
   
-require_once('connect.php');
+
 echo("<hr />");
 	   $sql = 'SELECT dzial, avg(zarobki) as srednia, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 3 - Średnie zarobków w poszczególnych działach.</h2>");
@@ -80,7 +80,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
             }
         echo("</table>");
 	 
-require("connect.php");
+
 echo("<hr />");
 	  $sql = 'SELECT sum(zarobki) as suma, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
 echo("<h2>Zadanie 4 - Suma zarobków kobiet i mężczyzn.</h2>");
@@ -98,7 +98,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
                     }
 
                 echo("</table>");   
-require("connect.php");
+
 echo("<hr />");
 	 $sql = 'SELECT avg(zarobki) as srednia, if(imie like "%a", "Kobiety", "Mężczyźni") as plec FROM pracownicy group by plec';
 echo("<h2>Zadanie 5 - Średnia zarobków kobiet i mężczyzn.</h2>");
