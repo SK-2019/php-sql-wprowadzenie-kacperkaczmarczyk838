@@ -30,7 +30,7 @@ echo("<li>".$sql);
  $result = $conn->query($sql);
         echo("<select name='title' id='title'>");
 while($row=$result->fetch_assoc()){
-echo("<option value=".$row['id'].">".$row['auto']." | ".$row['tytul']."</option>");
+echo("<option value=".$row['id'].">".$row['autor']." | ".$row['tytul']."</option>");
         }
     echo("</select>");
   
