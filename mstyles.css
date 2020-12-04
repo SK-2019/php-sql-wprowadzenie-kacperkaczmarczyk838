@@ -1,7 +1,7 @@
 select {
-  margin-bottom:20px; 
-  margin-top:30px; 
-  margin-left:400px;
+  margin-bottom:auto; 
+  margin-top:auto; 
+  margin-left:auto;
 }
 body {
   background-color: #0066CC;
