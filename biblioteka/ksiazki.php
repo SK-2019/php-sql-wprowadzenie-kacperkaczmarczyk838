@@ -27,12 +27,18 @@ $sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_
 echo("<h2>Cała tabelka:</h2>");
 echo("<li>".$sql);
 
- $result = $conn->query($sql);
-        echo("<select name='title' id='title'>");
-while($row=$result->fetch_assoc()){
-echo("<option value=".$row['id'].">".$row['autor']." | ".$row['tytul']."</option>");
+$result=$conn->query($sql);
+    echo("<h3>Biblioteka Autor i Tytul</h3>");
+    echo("<table border=1>");
+    echo("<th>id</th>");
+    echo("<th>autor</th>");
+    echo("<th>tytul</th>");
+        while($row=$result->fetch_assoc()){
+            echo("<tr>");
+                   echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>"); 
+            echo("</tr>");
         }
-    echo("</select>");
+    echo("</table>");
   
 
   echo("<hr />");
