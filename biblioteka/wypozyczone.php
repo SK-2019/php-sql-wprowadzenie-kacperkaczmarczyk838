@@ -20,7 +20,6 @@
 <a class="nav7" href="/zadania/limit.php">LIMIT</a>
 <a class="nav0" href="/zadania/function.php">Funkcja</a>
 <a class="nav0" href="/biblioteka/ksiazki.php">Książki</a>
-<a class="nav0" href="danedobazy.php">DaneDoBazy</a>
 </div>
 <?php
 
