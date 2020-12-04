@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mstyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
@@ -21,7 +21,7 @@
 </div>	 
 <?php
 
-require_once('connect.php');
+require_once('../connect.php');
 echo("<h1>Pracownicy:</h1>");
 $sql = 'SELECT * FROM pracownicy WHERE dzial = 2';
 echo("<h2>Zadanie 1 - Pracownicy tylko z działu 2.</h2>");
@@ -42,7 +42,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 echo("<hr />");
-require_once('connect.php');
+
 	 $sql = 'SELECT * FROM pracownicy WHERE (dzial = 2 or dzial = 3)';
 echo("<h2>Zadanie 2 - Pracownicy tylko z działu 2 i z działu 3.</h2>");
 echo("<li>".$sql);
@@ -62,7 +62,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
         echo("</table>");
 	 
 echo("<hr />");
-require_once('connect.php');
+
 	 $sql = 'SELECT * FROM pracownicy WHERE zarobki<30';
 echo("<h2>Zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30.</h2>");
 echo("<li>".$sql);
