@@ -10,7 +10,7 @@
  <div class="nav">
 <a class="nav0" href="danedobazy.php">DaneDoBazy</a>
 <a class="nav0" href="formularz.html">Formularz</a>
-<a class="nav1" href="pracownicy.php">Pracownicy</a>
+<a class="nav1" href="/pracownicy/pracownicy.php">Pracownicy</a>
 <a class="nav2" href="funkcAgregujace.php">Funkcje Agregujace</a>
 <a class="nav3" href="pracownicy_organizacja.php">Pracownicy i Organizacja</a>
 <a class="nav4" href="sortowanie.php">Sortowanie</a>
