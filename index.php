@@ -17,7 +17,7 @@
       <div class="item colorBlue">
      Menu Boczne:
        <ul>
-        <li class="item_link"><a class="/danedobazy/danedobazy.php" href="">Dane Do Bazy</a></li>
+        <li class="item_link"><a class="https://php-test-tabd.herokuapp.com/danedobazy/danedobazy.php" href="">Dane Do Bazy</a></li>
        </ul>
      </div>
       <div class="item colorGreen">
