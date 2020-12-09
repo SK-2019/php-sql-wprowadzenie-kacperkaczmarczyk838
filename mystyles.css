@@ -1,5 +1,5 @@
 .container {
-  background-color: #0066CC;
+  background-color: #E2BAB1;
   display: flex;
   flex-wrap: wrap;
 }
@@ -33,7 +33,7 @@ select {
   margin-left: 80px;
 }
 body {
-  background-color: #0066CC;
+  background-color: #E2BAB1;
 }
 table {
   border: 3px solid black;
