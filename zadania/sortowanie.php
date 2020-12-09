@@ -5,21 +5,33 @@
  <link rel="stylesheet" href="/mstyles.css">
 </head>
  
- <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
- <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
- <div class="nav">
-<a class="nav1" href="index.php">Strona Główna</a>
-<a class="nav0" href="/danedobazy/danedobazy.php">DaneDoBazy</a>
-<a class="nav0" href="/danedobazy/formularz.html">Formularz</a>
-<a class="nav1" href="/zadania/pracownicy.php">Pracownicy</a>
-<a class="nav3" href="/zadania/pracownicy_organizacja.php">Pracownicy i Organizacja</a>
-<a class="nav5" href="/zadania/groupby.php">Group by</a>
-<a class="nav6" href="/zadania/having.php">Having</a>
-<a class="nav7" href="/zadania/limit.php">LIMIT</a>
-<a class="nav8" href="/zadania/dataiczas.php">Data i czas</a>
-<a class="nav0" href="/zadania/function.php">Funkcja</a>
-<a class="nav0" href="/biblioteka/ksiazki.php">Książki</a>
-</div>
+ <body>
+    <div class="container">
+      <div class="item colorRed">
+        <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
+
+        <h1 class="tltle"></h1>
+      </div>
+      <div class="item colorBlue">
+     Menu Boczne:
+       <ul>
+        <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a></li>
+        <li class="item_link"><a class="" href="/danedobazy/danedobazy.php">Dane Do Bazy</a></li>
+        <li class="item_link"><a class="" href="/danedobazy/formularz.html">Formularz</a></li>
+        <li class="item_link"><a class="" href="/zadania/pracownicy.php">Pracownicy</a></li>
+        <li class="item_link"><a class="" href="/zadania/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
+        <li class="item_link"><a class="" href="/zadania/funkcAgregujace.php">Funkcje Agregujace</a></li>
+        <li class="item_link"><a class="" href="/zadania/sortowanie.php">Sorotwanie</a></li>
+        <li class="item_link"><a class="" href="/zadania/groupby.php">Group By</a></li>
+        <li class="item_link"><a class="" href="/zadania/having.php">Having</a></li>
+        <li class="item_link"><a class="" href="/zadania/limit.php">Limit</a></li>
+        <li class="item_link"><a class="" href="/zadania/dataiczas.php">Data i Czas</a></li>
+        <li class="item_link"><a class="" href="/zadania/function.php">Funkcja</a></li>
+        <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
+       </ul>
+       
+    </div>
+      <div class="item colorGreen">
 <?php
   
 require_once('../connect.php');
@@ -139,3 +151,5 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 
 
    ?>
+</div>
+  </body>
