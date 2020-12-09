@@ -21,10 +21,8 @@
        </ul>
      </div>
       <div class="item colorGreen">
-        https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838
-      </div>
-    </div>
-  </body>
+       
+     
  
  <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
  <div class="nav">
@@ -83,5 +81,7 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
     }
     echo("</table>");
 
-
+  </div>
+    </div>
+  </body>
 ?>
