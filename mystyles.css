@@ -2,6 +2,8 @@
   background-color: #F7EDE2;
   display: flex;
   flex-wrap: wrap;
+  height: 50px;
+  width: 50px;
 }
 
 .item_link {
@@ -23,8 +25,7 @@
 .colorRed {
   background-color: #AA9D94;
   width: 100%;
-  height: 50px;
-  width: 50px;
+ 
 }
 
 .colorBlue {
