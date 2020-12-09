@@ -32,7 +32,10 @@
        </ul>
        
 <img 
-src="https://i.pinimg.com/564x/58/51/a6/5851a6e4f7ab9e3213ea3e37db194a0f.jpg"
+src="https://i.pinimg.com/564x/28/7a/6d/287a6df932ebc720cfc33b7fa52f090f.jpg"
+</img>
+<img 
+src="https://i.pinimg.com/564x/df/ae/d9/dfaed90625ef84c541b9b0007885b614.jpg"
 </img>
        
     </div>
