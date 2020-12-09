@@ -14,7 +14,12 @@
 
         <h1 class="tltle"></h1>
       </div>
-      <div class="item colorBlue">LINK DO GITHUBA:</div>
+      <div class="item colorBlue">
+     Menu Boczne:
+       <ul>
+        <li class="item_link"><a class="danedobazy.php" href="">Dane Do Bazy</a></li>
+       </ul>
+     </div>
       <div class="item colorGreen">
         https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838
       </div>
