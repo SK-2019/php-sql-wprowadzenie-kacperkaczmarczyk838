@@ -7,7 +7,7 @@
  <body>
     <div class="container">
       <div class="item colorRed">
-        <h1> 💎 Kacper Kaczmarczyk 2Ti 💎</h1>
+        <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
 
         <h1 class="tltle"></h1>
       </div>
