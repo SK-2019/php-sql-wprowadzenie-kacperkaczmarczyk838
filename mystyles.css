@@ -1,5 +1,5 @@
 .container {
-  background-color: lightgray;
+  background-color: #0066CC;
   display: flex;
   flex-wrap: wrap;
 }
