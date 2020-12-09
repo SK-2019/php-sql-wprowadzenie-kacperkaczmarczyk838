@@ -54,7 +54,7 @@
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
 			 </div> 
        </ul>
-	    </div>
+	    
 	    </div>
       <div class="item colorGreen">
 
