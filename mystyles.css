@@ -5,6 +5,7 @@
 }
 
 .item_link {
+  display: block;
   text-align: center;
   margin: 10px;
   padding: 10px;
