@@ -6,6 +6,21 @@
 </head>
  
  <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
+ 
+ <body>
+    <div class="container">
+      <div class="item colorRed">
+        <h1>Kacper Kaczmarczyk 2Ti</h1>
+
+        <h1 class="tltle"></h1>
+      </div>
+      <div class="item colorBlue">LINK DO GITHUBA:</div>
+      <div class="item colorGreen">
+        https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838
+      </div>
+    </div>
+  </body>
+ 
  <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
  <div class="nav">
 <a class="nav0" href="/danedobazy/danedobazy.php">DaneDoBazy</a>
