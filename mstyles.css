@@ -29,6 +29,8 @@
 .colorBlue {
   background-color: #5F97AA;
   width: 20%;
+  border:10px solid #000;
+  padding:15px;
 }
 
 .colorGreen {
