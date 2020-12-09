@@ -2,7 +2,7 @@
 <html>
 <head>
 <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="/mstyles.css">
+ <link rel="stylesheet" href="/mystyles.css">
 </head>
  
   <body>
@@ -19,7 +19,6 @@
         <li class="item_link"><a class="" href="/danedobazy/danedobazy.php">Dane Do Bazy</a></li>
         <li class="item_link"><a class="" href="/danedobazy/formularz.html">Formularz</a></li>
         <li class="item_link"><a class="" href="/zadania/pracownicy.php">Pracownicy</a></li>
-        <li class="item_link"><a class="" href="/zadania/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
         <li class="item_link"><a class="" href="/zadania/funkcAgregujace.php">Funkcje Agregujace</a></li>
         <li class="item_link"><a class="" href="/zadania/sortowanie.php">Sorotwanie</a></li>
         <li class="item_link"><a class="" href="/zadania/groupby.php">Group By</a></li>
