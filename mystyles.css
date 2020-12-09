@@ -5,6 +5,7 @@
 }
 
 .item_link {
+  font-color: #black; 
   background-color:#E7D7CB;
   color: #F7EDE2;
   border: 2px solid;
