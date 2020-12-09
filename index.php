@@ -23,7 +23,7 @@
         <li class="item_link"><a class="" href="/zadania/sortowanie.php">Sorotwanie</a></li>
         <li class="item_link"><a class="" href="/zadania/groupby.php">Group By</a></li>
         <li class="item_link"><a class="" href="/zadania/having.php">Having</a></li>
-        <li class="item_link"><a class="" href="/zadania/limit.ph">Limit</a></li>
+        <li class="item_link"><a class="" href="/zadania/limit.php">Limit</a></li>
         <li class="item_link"><a class="" href="/zadania/dataiczas.php">Data i Czas</a></li>
         <li class="item_link"><a class="" href="/zadania/function.php">Funkcja</a></li>
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
