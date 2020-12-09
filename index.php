@@ -30,10 +30,7 @@
         <li class="item_link"><a class="" href="/zadania/function.php">Funkcja</a></li>
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
        </ul>
-       
-	       <img 
-					src="https://i.pinimg.com/564x/74/83/3f/74833fe8f8b4822016284f27a2a2bcbc.jpg"
-			</img>
+     
     </div>
       <div class="item colorGreen">
 
@@ -78,6 +75,9 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
     }
     echo("</table>");
 
+	       <img 
+					src="https://i.pinimg.com/564x/74/83/3f/74833fe8f8b4822016284f27a2a2bcbc.jpg"
+			</img>
 ?>
   </div>
   </body>
