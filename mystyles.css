@@ -5,19 +5,19 @@
 }
 
 .item_link {
-  background-color:#ACAEC5;
-  color: black;
+  background-color:#E7D7CB;
+  color: #F7EDE2;
   border: 2px solid;
   padding: 10px 20px;
   text-align: center;
   display: inline-block;
-  font-size: 20px;
+  font-size: 15px;
   margin-left: 20px;
 
 }
 .item_link:hover {
-    background-color:#E7D7CB;
-    color: #F7EDE2;
+    background-color:#D2C1B3;
+    color: #BBADA1;
 }
 .colorRed {
   background-color: #AA9D94;
