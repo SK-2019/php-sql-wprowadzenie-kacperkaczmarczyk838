@@ -4,9 +4,7 @@
   flex-wrap: wrap;
 }
 
-.item {
-  /*  width: 200px;*/
-  /*height: 100px;*/
+.item_link {
   margin: 10px;
 }
 
