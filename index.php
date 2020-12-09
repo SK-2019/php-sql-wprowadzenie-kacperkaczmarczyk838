@@ -29,11 +29,10 @@
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
        </ul>
        
-     </div>
-      <div class="item colorGreen">
-         </div>
     </div>
-  </body>
+      <div class="item colorGreen">
+         
+ 
      
 <?php
 echo("<h1>Strona Główna</h1>");
@@ -76,3 +75,5 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
     echo("</table>");
 
 ?>
+  </div>
+  </body>
