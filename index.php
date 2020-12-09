@@ -40,11 +40,11 @@ src="https://i.pinimg.com/564x/34/97/d1/3497d1b697d9079b2450d0a620ab883e.jpg"
 </img>
 
        
-    <style>
+    <mystyle>
         body{
             background-image:url(https://i.pinimg.com/564x/fc/de/dc/fcdedc432b3ba47db409611d3da20d76.jpg);          
         }
-                </style>   
+                </mystyle>   
        <img 
 src="https://i.pinimg.com/564x/fc/de/dc/fcdedc432b3ba47db409611d3da20d76.jpg"
 </img>
