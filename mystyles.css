@@ -1,8 +1,7 @@
-.img {
-  max-height: 20%;
-  max-width: 20%;
+.obrazek {
+    height: 100px;
+    width: 100px;
 }
-
 .container {
   background-color: #F7EDE2;
   display: flex;
