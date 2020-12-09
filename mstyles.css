@@ -6,7 +6,7 @@
 
 .item_link {
   font-color: #black; 
-  background-color:#E7D7CB;
+  background-color: #2D5F6E;
   color: #F7EDE2;
   border: 2px solid;
   padding: 10px 20px;
@@ -17,8 +17,8 @@
 
 }
 .item_link:hover {
-    background-color:#D2C1B3;
-    color: #BBADA1;
+    background-color: #5F97AA ;
+    color: #18363E;
 }
 .colorRed {
   background-color: #2D5F6E;
@@ -27,7 +27,7 @@
 }
 
 .colorBlue {
-  background-color: #FFDAF5;
+  background-color: #5F97AA;
   width: 20%;
 }
 
