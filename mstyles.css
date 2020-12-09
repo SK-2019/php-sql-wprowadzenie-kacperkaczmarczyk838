@@ -1,5 +1,5 @@
 .container {
-  background-color: #DEFFFA;
+  background-color: #B0E1FF;
   display: flex;
   flex-wrap: wrap;
 }
@@ -21,7 +21,7 @@
     color: #BBADA1;
 }
 .colorRed {
-  background-color: #FFDAF5;
+  background-color: #BEFCFF;
   width: 100%;
  
 }
@@ -32,7 +32,7 @@
 }
 
 .colorGreen {
-  background-color: #DEFFFA;
+  background-color: #B0E1FF;
   width: 70%;
 }
 .a {
@@ -66,7 +66,7 @@ th {
 td {
   font-color: #000000;
   border: 3px solid black;
-  background-color: #B0E1FF;
+  background-color: #FFDAF5;
   align: center;
 
 }
