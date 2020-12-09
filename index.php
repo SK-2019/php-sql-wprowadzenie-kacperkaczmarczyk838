@@ -7,7 +7,11 @@
  <body>
     <div class="container">
       <div class="item colorRed">
-        <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
+        <h1> <img 
+					src="https://i.pinimg.com/564x/74/83/3f/74833fe8f8b4822016284f27a2a2bcbc.jpg"
+			</img> ☆ Kacper Kaczmarczyk 2Ti ☆  <img 
+					src="https://i.pinimg.com/564x/74/83/3f/74833fe8f8b4822016284f27a2a2bcbc.jpg"
+			</img></h1>
 
         <h1 class="tltle"></h1>
       </div>
