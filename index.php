@@ -4,24 +4,26 @@
  <title>Kacper Kaczmarczyk 2Ti</title>
  <link rel="stylesheet" href="mstyles.css">
 </head>
- 
- <h1>💎 Kacper Kaczmarczyk nr 13 💎</h1>
- 
  <body>
     <div class="container">
       <div class="item colorRed">
-        <h1>Kacper Kaczmarczyk 2Ti</h1>
+        <h1> 💎 Kacper Kaczmarczyk 2Ti 💎</h1>
 
         <h1 class="tltle"></h1>
       </div>
       <div class="item colorBlue">
      Menu Boczne:
        <ul>
+        <li class="item_link"><a class="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838" href="">GITHUB</a></li>
+        <li class="item_link"><a class="https://php-test-tabd.herokuapp.com/danedobazy/danedobazy.php" href="">Dane Do Bazy</a></li>
         <li class="item_link"><a class="https://php-test-tabd.herokuapp.com/danedobazy/danedobazy.php" href="">Dane Do Bazy</a></li>
        </ul>
+       
      </div>
       <div class="item colorGreen">
-       
+         </div>
+    </div>
+  </body>
      
  
  <h3><a href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a><h3>
@@ -81,7 +83,4 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
     }
     echo("</table>");
 
-  </div>
-    </div>
-  </body>
 ?>
