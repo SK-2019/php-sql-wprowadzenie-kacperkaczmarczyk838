@@ -32,7 +32,7 @@
        </ul>
        
        <img 
-					src="https://i.pinimg.com/564x/89/ae/2a/89ae2a90ff91425113ac97c2dfb98191.jpg"
+					src="https://i.pinimg.com/564x/89/ae/2a/89ae2a90ff91425113ac97c2dfb98191.jpg  width="150" height="150""
 			</img>
        
     </div>
