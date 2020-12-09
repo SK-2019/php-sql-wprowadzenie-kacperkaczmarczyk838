@@ -6,9 +6,9 @@
 </head>
  <body>
     <div class="container">
-	    <marquee direction="left" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
+	    <span><marquee direction="left" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
 Wesołych Świąt! 
-</marquee>
+</marquee></span>
       <div class="item colorRed">
         <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
 
