@@ -31,11 +31,12 @@
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
        </ul>
        
-    </div>
-      <div class="item colorGreen">
-       <img 
+	       <img 
 					src="https://i.pinimg.com/564x/1b/58/6d/1b586de72d0291ec2b44b86ddc9d3bf9.jpg"
 			</img>
+    </div>
+      <div class="item colorGreen">
+
      
 <?php
 echo("<h1>Strona Główna</h1>");
