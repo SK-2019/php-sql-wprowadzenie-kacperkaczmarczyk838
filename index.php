@@ -15,6 +15,7 @@
       <div class="item colorBlue">
      <h1>  MENU:</h1>
        
+	<div class="bloki">      
        <ul>
 	       <div>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a></li>
@@ -56,6 +57,7 @@
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
 			 </div> 
        </ul>
+	    </div>
 	    </div>
       <div class="item colorGreen">
 
