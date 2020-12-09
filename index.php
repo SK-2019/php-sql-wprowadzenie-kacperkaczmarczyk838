@@ -15,45 +15,45 @@
       <div class="item colorBlue">
      <h1>  MENU:</h1>
        
-	<div class="bloki">      
+	      
        <ul>
-	       <div>
+	       <div class="bloki">
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a></li>
 	       </div>
-	       <div>
+	       <div class="bloki">
         <li class="item_link"><a class="" href="/danedobazy/danedobazy.php">Dane Do Bazy</a></li>
 	       </div>
-	       <div>
+	       <div class="bloki">
         <li class="item_link"><a class="" href="/danedobazy/formularz.html">Formularz</a></li>
 		    </div>   
-		      <div>  
+		    <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/pracownicy.php">Pracownicy</a></li>
 			      </div> 
-	        <div> 
+	        <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
 			 </div> 
-	        <div> 
+	    <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/funkcAgregujace.php">Funkcje Agregujace</a></li>
 			 </div> 
-	        <div> 
+	        <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/sortowanie.php">Sorotwanie</a></li>
 			 </div> 
-	        <div> 
+	        <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/groupby.php">Group By</a></li>
 			 </div> 
-	        <div> 
+	        <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/having.php">Having</a></li>
 			 </div> 
-	        <div> 
+	       <div class="bloki"> 
         <li class="item_link"><a class="" href="/zadania/limit.php">Limit</a></li>
 			 </div> 
-	        <div> 
+	      <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/dataiczas.php">Data i Czas</a></li>
 			 </div> 
-	        <div> 
+	    <div class="bloki">
         <li class="item_link"><a class="" href="/zadania/function.php">Funkcja</a></li>
 			 </div> 
-	        <div> 
+	   <div class="bloki">
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
 			 </div> 
        </ul>
