@@ -8,9 +8,8 @@
     <div class="container">
       <div class="item colorRed">
 	     
-	      <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50"> 
-	      <h1> ☆ Kacper Kaczmarczyk 2Ti ☆ </h1> <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50">
- 
+	      <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50"> <h1> ☆ Kacper Kaczmarczyk 2Ti ☆ </h1> <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50">
+	      
 	      </div>
        
 	      <h1 class="tltle"></h1>
