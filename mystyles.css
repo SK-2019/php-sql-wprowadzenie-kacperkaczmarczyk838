@@ -5,7 +5,9 @@
 }
 
 .item_link {
+  text-align: center;
   margin: 10px;
+  padding: 10px;
 }
 
 .colorRed {
