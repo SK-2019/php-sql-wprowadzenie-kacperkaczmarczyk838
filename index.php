@@ -9,9 +9,9 @@
       <div class="item colorRed">
 	     
         <h1> <img 
-					src="https://i.pinimg.com/564x/74/83/3f/74833fe8f8b4822016284f27a2a2bcbc.jpg"
+					src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg"
 			</img> ☆ Kacper Kaczmarczyk 2Ti ☆  <img 
-					src="https://i.pinimg.com/564x/74/83/3f/74833fe8f8b4822016284f27a2a2bcbc.jpg"
+					src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg"
 			</img></h1>
 	      </div>
        
