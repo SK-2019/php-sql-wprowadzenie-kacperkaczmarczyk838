@@ -8,15 +8,11 @@
     <div class="container">
       <div class="item colorRed">
 	     
-	      <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50">
-
-	      
-        <h1> 
-			</img> ☆ Kacper Kaczmarczyk 2Ti ☆  <img 
-<!-- 				
-	    </h1>
+	      <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50"> 
+	      /img>
+        <h1> ☆ Kacper Kaczmarczyk 2Ti ☆	</h1>		
 	    <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="50" width="50">
-
+ /img>
 	      </div>
        
 	      <h1 class="tltle"></h1>
@@ -44,7 +40,6 @@
     </div>
       <div class="item colorGreen">
 
-     
 <?php
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
