@@ -11,7 +11,7 @@
         <h1 class="tltle"></h1>
       </div>
       <div class="item colorBlue">
-     Menu Boczne:
+     <h1>  MENU:</h1>
        <ul>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a></li>
         <li class="item_link"><a class="" href="index.php">Strona Główna</a></li>
