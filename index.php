@@ -5,17 +5,15 @@
  <link rel="stylesheet" href="mystyles.css">
 </head>
  <body>
+ 
     <div class="container">
       <div class="item colorRed">
-	     <h1> ☆ Kacper Kaczmarczyk 2Ti ☆ </h1>
-	      
-	      </div>
-       
-	      <h1 class="tltle"></h1>
+        <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
+
+        <h1 class="tltle"></h1>
       </div>
       <div class="item colorBlue">
-      
-  <h1>  MENU:</h1>
+     <h1>  MENU:</h1>
        
        <ul>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a></li>
