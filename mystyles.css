@@ -2,8 +2,6 @@
   background-color: #F7EDE2;
   display: flex;
   flex-wrap: wrap;
-  height: 50px;
-  width: 50px;
 }
 
 .item_link {
