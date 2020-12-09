@@ -22,17 +22,39 @@
 	       <div>
         <li class="item_link"><a class="" href="/danedobazy/danedobazy.php">Dane Do Bazy</a></li>
 	       </div>
+	       <div>
         <li class="item_link"><a class="" href="/danedobazy/formularz.html">Formularz</a></li>
+		    </div>   
+		      <div>  
         <li class="item_link"><a class="" href="/zadania/pracownicy.php">Pracownicy</a></li>
+			      </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/pracownicy_organizacja.php">Pracownicy i Organizacja</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/funkcAgregujace.php">Funkcje Agregujace</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/sortowanie.php">Sorotwanie</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/groupby.php">Group By</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/having.php">Having</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/limit.php">Limit</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/dataiczas.php">Data i Czas</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/zadania/function.php">Funkcja</a></li>
+			 </div> 
+	        <div> 
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
+			 </div> 
        </ul>
 	    </div>
       <div class="item colorGreen">
