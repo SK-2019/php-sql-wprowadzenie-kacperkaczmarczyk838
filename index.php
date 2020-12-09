@@ -30,9 +30,7 @@
         <li class="item_link"><a class="" href="/zadania/function.php">Funkcja</a></li>
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
        </ul>
-    <img src="https://i.pinimg.com/564x/71/95/60/7195601aabb8f2fbf2a28ee28d3b3cc0.jpg" alt="kot" height="75" width="75">
-	      </img
-    </div>
+    
       <div class="item colorGreen">
 
 <?php
