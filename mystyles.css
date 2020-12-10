@@ -1,5 +1,5 @@
 .container {
-  background-color: #93C4D1;
+  background-color: #F7EDE2;
   display: flex;
   flex-wrap: wrap;
 }
@@ -50,7 +50,7 @@ select {
   margin-left: 80px;
 }
 body {
-  background-color: #DEFFFA;
+  background-color: #F7EDE2;
 }
 table {
   border: 3px solid black;
