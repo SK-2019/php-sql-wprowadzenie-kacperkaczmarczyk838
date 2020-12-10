@@ -6,8 +6,8 @@
 
 .item_link {
   font-color: #black; 
-  background-color: #93C4D1;
-  color: #18363E;
+  background-color: #D2C1B3;
+  color: #E7D7CB;
   border: 3px solid;
   padding: 10px;
   text-align: center;
@@ -18,8 +18,8 @@
 
 }
 .item_link:hover {
-    background-color: #2D5F6E ;
-    color: #93C4D1;
+    background-color: #BBADA1;
+    color:  #D2C1B3;
 }
 .colorRed {
   background-color: #BBADA1;
@@ -33,7 +33,7 @@
 }
 
 .colorGreen {
-  background-color: #93C4D1;
+  background-color: #AA9D94;
   width: 70%;
 }
 .href {
