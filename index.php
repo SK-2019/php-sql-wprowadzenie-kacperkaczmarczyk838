@@ -6,8 +6,8 @@
 </head>
  <body>
     <div class="container">
-	    <marquee direction="left" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
-| MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS |   
+	    <marquee direction="left" BEHAVIOR="ALTERNATE" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
+| MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS |  
 </marquee>
       <div class="item colorRed">
         <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
