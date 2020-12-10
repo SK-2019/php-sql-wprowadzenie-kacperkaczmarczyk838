@@ -64,7 +64,7 @@
 <?php
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
-require_once('../connect.php');
+require_once('connect.php');
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");
