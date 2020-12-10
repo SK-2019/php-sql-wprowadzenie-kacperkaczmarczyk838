@@ -2,7 +2,7 @@
 <html> 
 <head>
  <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="mystyles.css">
+ <link rel="stylesheet" href="/mystyles.css">
 </head>
  <body>
     <div class="container">
@@ -64,7 +64,7 @@
 <?php
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
-require_once('connect.php');
+require_once('../connect.php');
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");
