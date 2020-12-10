@@ -6,30 +6,9 @@
 </head>
  <body>
     <div class="container">
-	    <span><marquee direction="left" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
-▄───▄
-█▀█▀█
-█▄█▄█
-─███──▄▄
-─████▐█─█
-─████───█
-─▀▀▀▀▀▀▀
-─────▄───▄
-─▄█▄─█▀█▀█─▄█▄
-▀▀████▄█▄████▀▀
-─────▀█▀█▀
-▄───▄
-█▀█▀█
-█▄█▄█
-─███──▄▄
-─████▐█─█
-─████───█
-─▀▀▀▀▀▀▀
-─────▄───▄
-─▄█▄─█▀█▀█─▄█▄
-▀▀████▄█▄████▀▀
-─────▀█▀█▀
-</marquee></span>
+	    <marquee direction="left" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
+| MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS |   
+</marquee>
       <div class="item colorRed">
         <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
 
