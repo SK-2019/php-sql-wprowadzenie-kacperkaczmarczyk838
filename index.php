@@ -22,6 +22,7 @@
 	       <div>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">☆ GITHUB ☆</a></li>
 		       
+		       
         <li class="item_link"><a class="" href="/danedobazy/danedobazy.php"> ✦ Dane Do Bazy  ✦</a></li>
 	      
         <li class="item_link"><a class="" href="/danedobazy/formularz.html"> ✧ Formularz ✧ </a></li>
