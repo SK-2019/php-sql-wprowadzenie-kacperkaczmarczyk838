@@ -1,6 +1,5 @@
-.css-s1 tr:nth-child(2n+1) {
-    background: #ccc;
-    padding: 9px;
+tr:nth-child(even){background-color:#eecbcb}
+tr:hover{background-color:#e7b9b9;
 }
 
 
