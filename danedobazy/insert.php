@@ -40,9 +40,9 @@
 <?php
 
 echo("<li1>imię: ".$_POST['imie']."</li1>");
-echo("<li>dział: ".$_POST['dzial']."</li>");
-echo("<li>zarobki: ".$_POST['zarobki']."</li>");
-echo("<li>data urodzenia: ".$_POST['data_ur']."</li>");
+echo("<li1>dział: ".$_POST['dzial']."</li1>");
+echo("<li1>zarobki: ".$_POST['zarobki']."</li1>");
+echo("<li1>data urodzenia: ".$_POST['data_ur']."</li1>");
 
 
  require_once("../connect.php");
