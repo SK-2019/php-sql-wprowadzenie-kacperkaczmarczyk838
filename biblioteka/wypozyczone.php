@@ -31,7 +31,7 @@
     </div>
       <div class="item colorGreen">
          
-    <h1>Wypozyczenie książki:</h1>
+    <h1>Wypożyczenie książki:</h1>
 
 <body>
 <form class="formularz" action="insert.php" method="POST">
@@ -55,10 +55,9 @@
 <?php
 
 require_once('../connect.php');
-echo("<h1>Książki i autorzy:</h1>");
+echo("<h2>Wszystkie książki:</h2>");
 $sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id';
-echo("<h2>Cała tabelka:</h2>");
-echo("<li>".$sql);
+
 
 $result=$conn->query($sql);
     echo("<table border=1>");
