@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
  <title>Kacper Kaczmarczyk 2Ti </title>
- <link rel="stylesheet" href="/mystyles.css">
+ <link rel="stylesheet" href="/mstyles.css">
 </head>
  <body>
     <div class="container">
