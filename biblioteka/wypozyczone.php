@@ -31,20 +31,18 @@
     </div>
       <div class="item colorGreen">
          
-    <h1>Dodawanie pracownika:</h1>
+    <h1>Wypozyczenie książki:</h1>
 
 <body>
 <form class="formularz" action="insert.php" method="POST">
-    <input type="text" name="imie" placeholder="imie"></br>
-    <input type="text" name="dzial" placeholder="dzial"></br>
-    <input type="text" name="zarobki" placeholder="zarobki"></br>
-    <input type="date" name="data_ur" ></br>
-    <input type="submit" value="Dodaj">
+    <input type="select" name="autor" placeholder="autor"></br>
+    <input type="select" name="tytul" placeholder="tytul"></br>
+    <input type="submit" value="Wypożycz">
 </form>
        
       <hr/>
        
-        <h1>Usuwanie pracownika:</h1>
+        <h1>Oddawanie:</h1>
        
 <form action="delete.php" method="POST">
        <input type="text" name="id" placeholder="ID"></br>
@@ -56,28 +54,23 @@
 
 <?php
 
-echo("<hr />");
-    echo("<h1>Tabela Wszystkich Pracowników (z możliwością usuwania):</h1>");
 require_once('../connect.php');
-$result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
-        echo("<table>");      
-        echo("<th>ID</th>");
-        echo("<th>Imie</th>");
-        echo("<th>Dział</th>");
-        echo("<th>Zarobki</th>");
-        echo("<th>Data_Urodzenia</th>");
-        echo("<th>Nazwa_Działu</th>");
-        echo("<th>Usuwanie</th>");
-            while($row=$result->fetch_assoc()){ 
-                echo("<tr>");
-                    echo("<td>".$row["id_pracownicy"]."</td><td>".$row["imie"]."</td><td>".$row["dzial"]."</td><td>".$row["zarobki"]."</td><td>".$row["data_urodzenia"]."</td><td>".$row["nazwa_dzial"]."</td>"); 
-                    echo("<td><form action='delete.php' method=POST>");
-                     echo("<input type name='id' value='".$row['id_pracownicy']."'hidden>");
-                     echo("<input type='submit' value='Usuń'>");
-                    echo("</form></td>");
-                echo("</tr>");
-            }
-        echo("</table>");
+echo("<h1>Książki i autorzy:</h1>");
+$sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id';
+echo("<h2>Cała tabelka:</h2>");
+echo("<li>".$sql);
+
+$result=$conn->query($sql);
+    echo("<table border=1>");
+    echo("<th>id</th>");
+    echo("<th>autor</th>");
+    echo("<th>tytul</th>");
+        while($row=$result->fetch_assoc()){
+            echo("<tr>");
+                   echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>"); 
+            echo("</tr>");
+        }
+    echo("</table>");
            
 ?>
  </div>
