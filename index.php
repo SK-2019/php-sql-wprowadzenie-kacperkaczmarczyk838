@@ -11,7 +11,7 @@
 | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS | | MERRY XMAS |  
 </marquee>
       <div class="item colorRed">
-        <h1> ☆ Kacper Kaczmarczyk 2Ti ☆</h1>
+        <h4> ☆ Kacper Kaczmarczyk 2Ti ☆</h4>
 
         <h1 class="tltle"></h1>
       </div>
