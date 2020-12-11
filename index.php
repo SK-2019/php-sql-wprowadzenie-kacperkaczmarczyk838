@@ -61,7 +61,7 @@
 	    </div>
       <div class="item colorGreen">
 <div class="css-s4">
-	<p>
+	
 <?php
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
@@ -104,7 +104,7 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
 
 	 
 ?>
-	</p>
+
 </div>
   </div>
   </body>
