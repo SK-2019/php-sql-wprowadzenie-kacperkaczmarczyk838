@@ -1,5 +1,5 @@
 h6 {
-    color: #404e63;
+    color: #black;
   }
 
 h4 {
@@ -39,14 +39,14 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 .container {
-  background-color: #e3eeff;
+  background-color: #F7EDE2;
   display: flex;
   flex-wrap: wrap;
 }
 
 .item_link {
   text-decoration: none;
-  background-color: #aec9f5;
+  background-color: #D2C1B3;
   border: 1px solid;
   padding: 10px;
   text-align: center;
@@ -57,7 +57,7 @@ a, a:hover, a:focus, a:active, a:visited {
 
 }
 .item_link:hover {
-    background-color: #96acd0;
+    background-color: #E7D7CB;
 }
 .colorRed {
   background-color: #AA9D94;
