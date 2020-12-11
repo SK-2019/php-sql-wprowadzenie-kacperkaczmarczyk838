@@ -96,7 +96,6 @@ table {
   margin-left: 350px;
   border-collapse: collapse;
   text-align:center;
-  display: flex;
 }
 th {
   color: black;
