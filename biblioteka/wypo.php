@@ -41,12 +41,12 @@
 
 echo("<li1>imię: ".$_POST['autor']."</li1>");
 echo("<li1>dział: ".$_POST['tytul']."</li1>");
+echo("<li1>data wypożyczenia: ".$_POST['data_wyp']."</li1>");
+
 
 
  require_once("../connect.php");
-	$sql = "INSERT INTO `bibl_wypo`(`autor`, `tytul`, `data_wyp`) VALUES('".$_POST['autor']."', '".$_POST['tytul']."', '".$_POST['data_wyp']."')";
-  
- 
+	$sql = "INSERT INTO `bibl_wypo`(`id`, `autor`, `tytul`, `data_wyp`) VALUES(NULL,'".$_POST['autor']."', '".$_POST['tytul']."', '".$_POST['data_wyp']."')";
 	
 if ($conn->query($sql) === TRUE) {
         echo("<p class='precord'>Wypożyczono książkę ☆ </p>");
