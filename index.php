@@ -95,7 +95,7 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
 ?>
   <p>Kliknij przycisk, żeby zobaczyć niespodzianke! :D</p>
 
-<button onclick="myFunction()">Try it</button>
+<button onclick="myFunction()">Kliknij mnie ;)</button>
 
 <p id="demo"></p>
 
@@ -106,9 +106,9 @@ function myFunction() {
   if (time < 10) {
     greeting = "Miłego Dnia :)";
   } else if (time < 20) {
-    greeting = "Good day";
+    greeting = "Miłego Dnia :)";
   } else {
-    greeting = "Good evening";
+    greeting = "Miłego Dnia :)";
   }
   document.getElementById("demo").innerHTML = greeting;
 }
