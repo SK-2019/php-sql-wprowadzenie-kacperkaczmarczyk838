@@ -1,6 +1,15 @@
-tr:nth-child(even){background-color:#eecbcb}
-tr:hover{background-color:#e7b9b9;
-}
+li1 {
+    margin-bottom:10px; 
+    margin-top:20px; 
+    font-color: #black; 
+    background-color: #D2C1B3;
+    color: #E7D7CB;
+    border: 3px solid;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    font-size: 15px;
+  }
 
 
 a, a:hover, a:focus, a:active, a:visited {
