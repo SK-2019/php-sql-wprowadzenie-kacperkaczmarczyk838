@@ -18,6 +18,7 @@
       <div class="item colorBlue">
      <h1>  MENU:</h1>      
        <ul>
+	       <h6>
 	       <div>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">GITHUB</a></li>
 
@@ -45,6 +46,7 @@
 		
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">Książki</a></li>
 			 </div> 
+	       </h6>
        </ul>
 	    
 	    </div>
