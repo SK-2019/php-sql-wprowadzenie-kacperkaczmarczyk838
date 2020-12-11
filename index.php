@@ -49,6 +49,26 @@
 	    
 	    </div>
       <div class="item colorGreen">
+	       <p>Kliknij przycisk, żeby zobaczyć niespodzianke! :D</p>
+
+<button onclick="myFunction()">Kliknij mnie ;)</button>
+
+<p id="demo"></p>
+
+<script>
+function myFunction() {
+  var greeting;
+  var time = new Date().getHours();
+  if (time < 10) {
+    greeting = "Miłego Dnia :)";
+  } else if (time < 20) {
+    greeting = "Miłego Dnia :)";
+  } else {
+    greeting = "Miłego Dnia :)";
+  }
+  document.getElementById("demo").innerHTML = greeting;
+}
+</script>
 <div class="css-s4">
 	
 <?php
@@ -93,26 +113,7 @@ $result = $conn->query('SELECT dzial, sum(zarobki) as suma, avg(zarobki) as sred
 
 	 
 ?>
-  <p>Kliknij przycisk, żeby zobaczyć niespodzianke! :D</p>
-
-<button onclick="myFunction()">Kliknij mnie ;)</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var greeting;
-  var time = new Date().getHours();
-  if (time < 10) {
-    greeting = "Miłego Dnia :)";
-  } else if (time < 20) {
-    greeting = "Miłego Dnia :)";
-  } else {
-    greeting = "Miłego Dnia :)";
-  }
-  document.getElementById("demo").innerHTML = greeting;
-}
-</script>
+ 
 </div>
   </div>
   </body>
