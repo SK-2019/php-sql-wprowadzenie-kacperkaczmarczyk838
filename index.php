@@ -62,7 +62,7 @@ function myFunction() {
   if (time < 10) {
     greeting = "(=^･ｪ･^=))ﾉ彡☆";
   } else if (time < 20) {
-    greeting = "ᶠᵉᵉᵈ ᵐᵉ/ᐠ-ⱉ-ᐟ\ﾉ";
+    greeting = "(⌯’▾’⌯)∫";
   } else {
     greeting = "*:･ﾟ✧(=✪ ᆺ ✪=)*:･ﾟ✧";
   }
