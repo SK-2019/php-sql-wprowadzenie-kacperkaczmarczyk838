@@ -61,7 +61,7 @@ $result=$conn->query($sql);
         while($row=$result->fetch_assoc()){
             echo("<tr>");
                    echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>");
-                   echo("<td><form action='delete.php' method=POST>");
+                   echo("<td><form action='odd.php' method=POST>");
                    echo("<input type name='id' value='".$row['id_pracownicy']."'hidden>");
                    echo("<input type='submit' value='Usuń'>");
                    echo("</form></td>");
