@@ -47,7 +47,7 @@
        
 <form action="delete.php" method="POST">
        <input type="text" name="id" placeholder="ID"></br>
-   <input type="submit" value="Usuń">
+   <input type="submit" value="Oddaj">
 </form>
 </body>
 </head>
@@ -57,7 +57,7 @@
 
 require_once('../connect.php');
 echo("<h2>Wszystkie książki:</h2>");
-$sql = 'SELECT * FROM biblAutor, biblTytul, biblAutor_biblTytul WHERE biblAutor_id=biblAutor.id and biblTytul_id=biblTytul.id';
+$sql = 'SELECT * FROM `bibl_wypo';
 
 
 $result=$conn->query($sql);
@@ -65,9 +65,10 @@ $result=$conn->query($sql);
     echo("<th>id</th>");
     echo("<th>autor</th>");
     echo("<th>tytul</th>");
+    echo("<th>data_wyp</th>");
         while($row=$result->fetch_assoc()){
             echo("<tr>");
-                   echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td>"); 
+                   echo("<td>".$row["id"]."</td><td>".$row["autor"]."</td><td>".$row["tytul"]."</td><td>".$row["data_wyp"]."</td>"); 
             echo("</tr>");
         }
     echo("</table>");
