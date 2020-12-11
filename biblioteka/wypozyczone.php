@@ -34,7 +34,7 @@
     <h1>Wypożyczenie książki:</h1>
 
 <body>
-<form class="formularz" action="insert.php" method="POST">
+<form class="formularz" action="wypo.php" method="POST">
     <input type="select" name="autor" placeholder="autor"></br>
     <input type="select" name="tytul" placeholder="tytul"></br>
     <input type="submit" value="Wypożycz">
