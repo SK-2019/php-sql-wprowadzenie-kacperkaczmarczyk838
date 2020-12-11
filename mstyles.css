@@ -1,11 +1,13 @@
 p {
     display: flex;
     justify-content: center;
-    font-size:40px; 
+    font-size:20px; 
     margin-bottom:10px; 
     margin-top:20px;
+    border: 2px solid black;
   }
 li1 {
+    display: block;
     margin-bottom:10px; 
     margin-top:20px; 
     font-color: #black; 
@@ -15,6 +17,7 @@ li1 {
     text-align: center;
     display: block;
     font-size: 15px;
+    width: 30%;
   }
 
 
