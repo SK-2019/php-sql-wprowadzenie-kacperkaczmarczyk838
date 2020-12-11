@@ -34,7 +34,7 @@
     <h1>Dodawanie pracownika:</h1>
 
 <body>
-<form class="formularz" action="insert.php" method="POST">
+<form class="formularz" action="wypo.php" method="POST">
     <input type="text" name="imie" placeholder="imie"></br>
     <input type="text" name="dzial" placeholder="dzial"></br>
     <input type="text" name="zarobki" placeholder="zarobki"></br>
