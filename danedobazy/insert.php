@@ -39,7 +39,7 @@
 </html> 
 <?php
 
-echo("<li>imię: ".$_POST['imie']."</li>");
+echo("<li1>imię: ".$_POST['imie']."</li1>");
 echo("<li>dział: ".$_POST['dzial']."</li>");
 echo("<li>zarobki: ".$_POST['zarobki']."</li>");
 echo("<li>data urodzenia: ".$_POST['data_ur']."</li>");
