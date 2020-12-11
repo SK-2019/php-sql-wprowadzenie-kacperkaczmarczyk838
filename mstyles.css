@@ -1,3 +1,10 @@
+p {
+    display: flex;
+    justify-content: center;
+    font-size:40px; 
+    margin-bottom:10px; 
+    margin-top:20px;
+  }
 li1 {
     margin-bottom:10px; 
     margin-top:20px; 
