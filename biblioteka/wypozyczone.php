@@ -37,6 +37,7 @@
 <form class="formularz" action="wypo.php" method="POST">
     <input type="select" name="autor" placeholder="autor"></br>
     <input type="select" name="tytul" placeholder="tytul"></br>
+    <input type="date" name="data_wyp" ></br>
     <input type="submit" value="Wypożycz">
 </form>
        
