@@ -60,11 +60,17 @@ function myFunction() {
   var greeting;
   var time = new Date().getHours();
   if (time < 10) {
-    greeting = "Miłego Dnia :)";
+    greeting = "<img 
+					src="https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
+			</img>";
   } else if (time < 20) {
-    greeting = "Miłego Dnia :)";
+    greeting = "<img 
+					src="https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
+			</img>";
   } else {
-    greeting = "Miłego Dnia :)";
+    greeting = "<img 
+					src="https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
+			</img>";
   }
   document.getElementById("demo").innerHTML = greeting;
 }
