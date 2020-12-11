@@ -60,12 +60,11 @@ function myFunction() {
   var greeting;
   var time = new Date().getHours();
   if (time < 10) {
-    greeting = "<img 
-					src="https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
+    greeting = "src="https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
 			</img>";
   } else if (time < 20) {
     greeting = "<img 
-					src="https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
+					"https://sm.ign.com/ign_pl/screenshot/default/tom-and-jerry_2qz1.jpg"
 			</img>";
   } else {
     greeting = "<img 
