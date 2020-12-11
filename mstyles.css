@@ -70,12 +70,12 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 .colorBlue {
-  background-color: #AA9D94;
+  background-color: #b19586;
   width: 20%;
 }
 
 .colorGreen {
-  background-color: #F2D8C9;
+  background-color: #f8e8dff8e;
   width: 70%;
 }
 .href {
@@ -92,7 +92,7 @@ select {
   margin-left: 80px;
 }
 body {
-  background-color: #F2D8C9;
+  background-color: #f8e8dff8e;
 }
 table {
   background-color:#ffe6e6;
