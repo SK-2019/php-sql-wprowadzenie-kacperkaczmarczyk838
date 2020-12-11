@@ -43,7 +43,7 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 .container {
-  background-color: #F7EDE2;
+  background-color: #e3eeff;
   display: flex;
   flex-wrap: wrap;
 }
@@ -75,7 +75,7 @@ a, a:hover, a:focus, a:active, a:visited {
 }
 
 .colorGreen {
-  background-color:#F7EDE2;
+  background-color: #e3eeff;
   width: 70%;
 }
 .href {
