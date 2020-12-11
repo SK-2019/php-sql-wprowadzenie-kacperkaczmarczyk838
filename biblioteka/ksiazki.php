@@ -30,8 +30,6 @@
        </ul>
        
     </div>
-
- </div>
       <div class="item colorGreen">
 <?php
   
