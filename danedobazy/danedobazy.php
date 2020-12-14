@@ -13,7 +13,6 @@
       <div class="item colorBlue">
      <h1>  MENU:</h1>
        <ul>
-         <ul>
         <h6>
 	       <div>
         <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">☆ GITHUB ☆</a></li>
