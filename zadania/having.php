@@ -42,6 +42,8 @@
         <li class="item_link"><a class="" href="/zadania/dataiczas.php">✧ Data i Czas ✧</a></li>
 		
         <li class="item_link"><a class="" href="/zadania/function.php">✦ Funkcja ✦</a></li>
+		        
+	<li class="item_link"><a class="" href="/biblioteka/ksiazki.php">✧ Książki ✧ </a></li>
 	
 			 </div> 
 	       </h6>
