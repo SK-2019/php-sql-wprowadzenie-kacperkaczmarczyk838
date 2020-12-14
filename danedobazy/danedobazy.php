@@ -45,7 +45,7 @@
 			 </div> 
 	       </h6>
        </ul>
-       </ul>
+   
        
     </div>
       <div class="item colorGreen">
