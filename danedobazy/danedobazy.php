@@ -2,7 +2,7 @@
 <head>
        <title>Kacper Kaczmarczyk 2Ti</title>
      <meta charset="UTF-8">
-    <link rel="stylesheet" href="/mstyles.css">
+    <link rel="stylesheet" href="/mystyles.css">
      <body>
     <div class="container">
       <div class="item colorRed">
