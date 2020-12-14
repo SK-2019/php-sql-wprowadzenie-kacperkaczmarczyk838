@@ -99,7 +99,7 @@ echo("<h2>Wyświetalnie książek danego autora:</h2>");
 <form id="mForm">
 <select id="mSelect">
 
-    <option value='1'>Henryk SIenkiewicz</option>
+    <option value='1'>Henryk Sienkiewicz</option>
     <option value='2'>Adam Mickiewicz</option>
     <option value='3'>Tolkien</option>
     <option value='4'>William Shakespeare</option>
