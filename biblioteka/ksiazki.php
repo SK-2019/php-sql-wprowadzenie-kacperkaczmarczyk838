@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html> 
 <head>
- <title>Kacper Kaczmarczyk 2Ti hej</title>
+ <title>Kacper Kaczmarczyk 2Ti hej hej</title>
  <link rel="stylesheet" href="/mystyles.css">
 </head>
  <body>
