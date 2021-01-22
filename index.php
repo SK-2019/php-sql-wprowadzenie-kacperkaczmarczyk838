@@ -2,7 +2,7 @@
 <html> 
 <head>
     <meta charset="UTF-8" />
- <title>Kacper Kaczmarczyk 2Ti </title>
+ <title>Kacper Kaczmarczyk 2Ti hejka</title>
  <link rel="stylesheet" href="/mystyles.css">
 </head>
  <body>
