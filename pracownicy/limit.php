@@ -52,7 +52,7 @@
       <div class="item colorGreen">
 <?php
 
-require_once('../connect.php');
+require_once('assets/connect.php');
 echo("<h1>LIMIT:</h1>");
 	  $sql = 'SELECT * from pracownicy, organizacja where dzial=id_org and dzial=4 order by zarobki desc limit 2';
 echo("<h2>Zadanie 1 - Dwóch najlepiej zarabiających pracowników z działu 4. </h2>");

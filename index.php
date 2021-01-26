@@ -2,7 +2,7 @@
 <html> 
 <head>
     <meta charset="UTF-8" />
- <title>Kacper Jakub Kaczmarczyk 2Ti</title>
+ <title>Kacper Kaczmarczyk 2Ti</title>
  <link rel="stylesheet" href="/assets/mystyles.css">
 </head>
  <body>
@@ -10,7 +10,7 @@
 	    <marquee direction="left" BEHAVIOR="ALTERNATE" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
 </marquee>
       <div class="item colorRed">
-        <h4> ☆ Kacper Kaczmarczyk  2Ti ☆</h4>
+        <h4> ☆ Kacper Kaczmarczyk 2Ti ☆</h4>
 
         <h1 class="tltle"></h1>
       </div>
@@ -24,7 +24,7 @@
 		       
         <li class="item_link"><a class="" href="/pracownicy/danedobazy.php"> ✦ Dane Do Bazy  ✦</a></li>
 	      
-        <li class="item_link"><a class="" href="/pracownicy/formularz.html"> ✧ Formularz ✧ </a></li>
+        <li class="item_link"><a class="" href="/ćwiczenia/formularz.html"> ✧ Formularz ✧ </a></li>
 		   
         <li class="item_link"><a class="" href="/pracownicy/pracownicy.php"> ✦ Pracownicy ✦</a></li>
 		
@@ -42,7 +42,7 @@
 		
         <li class="item_link"><a class="" href="/pracownicy/dataiczas.php">✧ Data i Czas ✧</a></li>
 		
-        <li class="item_link"><a class="" href="pracownicy/function.php">✦ Funkcja ✦</a></li>
+        <li class="item_link"><a class="" href="/ćwiczenia/function.php">✦ Funkcja ✦</a></li>
 		
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">✧ Książki ✧ </a></li>
 			 </div> 

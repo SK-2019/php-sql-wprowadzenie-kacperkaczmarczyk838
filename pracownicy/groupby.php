@@ -52,7 +52,7 @@
       <div class="item colorGreen">
 <?php
 
-require_once('../connect.php');
+require_once('assets/connect.php');
 echo("<h1>Group By:</h1>");
 	  $sql = 'SELECT dzial, sum(zarobki) as suma, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org group by dzial';
 echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach.</h2>");

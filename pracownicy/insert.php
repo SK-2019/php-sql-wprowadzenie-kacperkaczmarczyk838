@@ -62,7 +62,7 @@ echo("<li1>zarobki: ".$_POST['zarobki']."</li1>");
 echo("<li1>data urodzenia: ".$_POST['data_ur']."</li1>");
 
 
- require_once("../connect.php");
+ require_once("assets/connect.php");
 	$sql = "INSERT INTO pracownicy(`id_pracownicy`, `imie`, `dzial`, `zarobki`, `data_urodzenia`) VALUES(NULL,'".$_POST['imie']."', '".$_POST['dzial']."', '".$_POST['zarobki']."', '".$_POST['data_ur']."')";
 	
 if ($conn->query($sql) === TRUE) {
