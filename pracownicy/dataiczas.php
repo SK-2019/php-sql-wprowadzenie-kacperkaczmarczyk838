@@ -2,7 +2,7 @@
 <html> 
 <head>
  <title>Kacper Kaczmarczyk 2Ti</title>
- <link rel="stylesheet" href="/mystyles.css">
+ <link rel="stylesheet" href="/assets/mystyles.css">
 </head>
  
   <body>
