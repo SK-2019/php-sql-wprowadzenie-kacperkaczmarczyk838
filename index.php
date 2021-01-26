@@ -76,7 +76,7 @@ function myFunction() {
 <?php
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
-require_once('connect.php');
+require_once('/connect.php');
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");
@@ -94,7 +94,7 @@ $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = 
         echo("</table>");
 
 echo("<hr />");
-require_once('/assets/connect.php');
+require_once('connect.php');
 echo("<h2>Tabela Funkcji Agregujących:</h2>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
