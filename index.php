@@ -94,7 +94,7 @@ $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = 
         echo("</table>");
 
 echo("<hr />");
-require_once('connect.php');
+require_once('/assets/sconnect.php');
 echo("<h2>Tabela Funkcji Agregujących:</h2>");
 
 $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
