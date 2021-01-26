@@ -10,7 +10,7 @@
 	    <marquee direction="left" BEHAVIOR="ALTERNATE" scrollamount="2" scrolldelay="1" onmouseover="this.stop()" onmouseout="this.start()">
 </marquee>
       <div class="item colorRed">
-        <h4> ☆ Kacper Kaczmarczyk 2Ti ☆</h4>
+        <h4> ☆ Kacper Kaczmarczyk  2Ti ☆</h4>
 
         <h1 class="tltle"></h1>
       </div>
