@@ -53,7 +53,7 @@
       <div class="item colorGreen">
 <?php
 
-require_once('assets/connect.php');
+require_once('/assets/connect.php');
 echo("<h1>Pracownicy:</h1>");
 $sql = 'SELECT * FROM pracownicy WHERE dzial = 2';
 echo("<h2>Zadanie 1 - Pracownicy tylko z działu 2.</h2>");
