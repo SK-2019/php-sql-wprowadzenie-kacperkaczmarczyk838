@@ -76,7 +76,7 @@
 
 echo("<hr />");
     echo("<h1>Tabela Wszystkich Pracowników (z możliwością usuwania):</h1>");
-require_once('assets/connect.php');
+require_once('../assets/connect.php');
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");

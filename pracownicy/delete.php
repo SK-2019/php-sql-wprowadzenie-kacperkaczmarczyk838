@@ -52,7 +52,7 @@
       <?php
 
   echo ("<h1>id: ".$_POST['id']."</h1>");
-require_once("assets/connect.php");
+require_once("../assets/connect.php");
 
  $sql = "DELETE FROM pracownicy WHERE id_pracownicy='".$_POST['id']."'";
 

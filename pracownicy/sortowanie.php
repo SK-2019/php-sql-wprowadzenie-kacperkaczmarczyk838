@@ -52,7 +52,7 @@
       <div class="item colorGreen">
 <?php
   
-require_once('assets/connect.php');
+require_once('../assets/connect.php');
 echo("<h1>Sortowanie:</h1>");
    $sql = 'SELECT  * FROM pracownicy,organizacja WHERE dzial=id_org order by imie desc';
 echo("<h2>Zadanie 1 - Pracownicy posortowani malejąco.</h2>");

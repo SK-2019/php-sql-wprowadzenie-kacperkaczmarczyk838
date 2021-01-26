@@ -52,7 +52,7 @@
     </div>
       <div class="item colorGreen">	 
 <?php
-require_once('assets/connect.php');
+require_once('../assets/connect.php');
 echo("<h1>Funkcje agregujące:</h1>");
 	 $sql = 'SELECT sum(zarobki) as suma from pracownicy';
 echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");

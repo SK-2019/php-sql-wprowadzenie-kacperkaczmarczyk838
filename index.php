@@ -19,31 +19,18 @@
        <ul>
 	       <h6>
 	       <div>
-        <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">☆ GITHUB ☆</a></li>
-		       
-		       
+        <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">☆ GITHUB ☆</a></li>		       		       
         <li class="item_link"><a class="" href="/pracownicy/danedobazy.php"> ✦ Dane Do Bazy  ✦</a></li>
-	      
         <li class="item_link"><a class="" href="/ćwiczenia/formularz.html"> ✧ Formularz ✧ </a></li>
-		   
-        <li class="item_link"><a class="" href="/pracownicy/pracownicy.php"> ✦ Pracownicy ✦</a></li>
-		
-        <li class="item_link"><a class="" href="/pracownicy/pracownicy_organizacja.php">✧ Pracownicy i Org. ✧</a></li>
-			
-        <li class="item_link"><a class="" href="/pracownicy/funkcAgregujace.php">✦ Funkcje Agregujace ✦</a></li>
-			
-        <li class="item_link"><a class="" href="/pracownicy/sortowanie.php">✧ Sorotwanie ✧</a></li>
-			
-        <li class="item_link"><a class="" href="/pracownicy/groupby.php"> ✦ Group By ✦ </a></li>
-		
-        <li class="item_link"><a class="" href="/pracownicy/having.php">✧ Having ✧</a></li>
-		
-        <li class="item_link"><a class="" href="/pracownicy/limit.php">✦ Limit ✦</a></li>
-		
-        <li class="item_link"><a class="" href="/pracownicy/dataiczas.php">✧ Data i Czas ✧</a></li>
-		
-        <li class="item_link"><a class="" href="/ćwiczenia/function.php">✦ Funkcja ✦</a></li>
-		
+        <li class="item_link"><a class="" href="/pracownicy/pracownicy.php"> ✦ Pracownicy ✦</a></li>		
+        <li class="item_link"><a class="" href="/pracownicy/pracownicy_organizacja.php">✧ Pracownicy i Org. ✧</a></li>			
+        <li class="item_link"><a class="" href="/pracownicy/funkcAgregujace.php">✦ Funkcje Agregujace ✦</a></li>			
+        <li class="item_link"><a class="" href="/pracownicy/sortowanie.php">✧ Sorotwanie ✧</a></li>			
+        <li class="item_link"><a class="" href="/pracownicy/groupby.php"> ✦ Group By ✦ </a></li>		
+        <li class="item_link"><a class="" href="/pracownicy/having.php">✧ Having ✧</a></li>		
+        <li class="item_link"><a class="" href="/pracownicy/limit.php">✦ Limit ✦</a></li>		
+        <li class="item_link"><a class="" href="/pracownicy/dataiczas.php">✧ Data i Czas ✧</a></li>		
+        <li class="item_link"><a class="" href="/ćwiczenia/function.php">✦ Funkcja ✦</a></li>		
         <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">✧ Książki ✧ </a></li>
 			 </div> 
 	       </h6>

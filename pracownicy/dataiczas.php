@@ -55,7 +55,7 @@
 
 echo("<h1>Data i czas:</h1>");
   
-require("assets/connect.php");
+require("../assets/connect.php");
    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org';
 echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach).</h2>");
 echo("<li>".$sql);

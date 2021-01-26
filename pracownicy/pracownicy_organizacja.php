@@ -52,7 +52,7 @@
       <div class="item colorGreen">
 <?php
 	 
-require_once('assets/connect.php');
+require_once('../assets/connect.php');
 echo("<h1>Pracownicy i Organizacja:</h1>");
 	  $sql = 'SELECT imie, nazwa_dzial FROM `pracownicy`, `organizacja` WHERE dzial = id_org';
 echo("<h2>Zadanie 1 - Pracownicy z nazwą działów.</h2>");

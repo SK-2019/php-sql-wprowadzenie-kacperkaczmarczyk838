@@ -53,7 +53,7 @@
       <div class="item colorGreen">
 <?php
 
-require_once('assets/connect.php');
+require_once('../assets/connect.php');
 echo("<h1>Having:</h1>");
 	  $sql = 'SELECT sum(zarobki) as suma, dzial, nazwa_dzial from pracownicy, organizacja where dzial=id_org GROUP BY dzial HAVING sum(zarobki)<28';
 echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach mniejsza od 28.</h2>");
