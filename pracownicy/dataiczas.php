@@ -29,7 +29,7 @@
         <li class="item_link"><a class="" href="/pracownicy/having.php">✧ Having ✧</a></li>		
         <li class="item_link"><a class="" href="/pracownicy/limit.php">✦ Limit ✦</a></li>			
         <li class="item_link"><a class="" href="/cwiczenia/function.php">✦ Funkcja ✦</a></li>		
-        <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">✧ Książki ✧ </a></li>
+        <li class="item_link"><a class="" href="/biblioteka/ksiazki.php">✧ Biblioteka ✧ </a></li>
 	
 			 </div> 
 	       </h6>
