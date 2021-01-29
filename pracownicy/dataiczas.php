@@ -18,7 +18,7 @@
         <h6>
 	       <div>
          <li class="item_link"><a class="" href="https://github.com/SK-2019/php-sql-wprowadzenie-kacperkaczmarczyk838">☆ GITHUB ☆</a></li>		       		       
-         <li class="item_link"><a class="" href="index.php"> ✦ Strona Główna  ✦</a></li>
+         <li class="item_link"><a class="" href="/index.php"> ✦ Strona Główna  ✦</a></li>	
         <li class="item_link"><a class="" href="/pracownicy/danedobazy.php"> ✦ Dane Do Bazy  ✦</a></li>
         <li class="item_link"><a class="" href="/cwiczenia/formularz.html"> ✧ Formularz ✧ </a></li>
         <li class="item_link"><a class="" href="/pracownicy/pracownicy.php"> ✦ Pracownicy ✦</a></li>		
@@ -39,7 +39,7 @@
       <div class="item colorGreen">
 <?php
 
-echo("<h1>Data i czas:</h1>");
+echo("<h1>Data i czas & Formatowanie dat:</h1>");
   
 require("../assets/connect.php");
    $sql = 'SELECT *, YEAR(curdate())-YEAR(data_urodzenia) as wiek from pracownicy, organizacja where dzial=id_org';
