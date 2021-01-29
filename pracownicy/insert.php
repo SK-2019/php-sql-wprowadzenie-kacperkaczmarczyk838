@@ -1,6 +1,6 @@
 <html>
 <head>
-		 <title>Kacper Kaczmarczyk 2Ti</title>
+<title>Kacper Kaczmarczyk 2Ti gr. 2</title>
 		
 <meta charset="UTF-8">
  <link rel="stylesheet" href="/assets/mystyles.css">
