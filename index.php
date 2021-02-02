@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <title>Kacper Kaczmarczyk 2Ti gr. 2</title>
  <link rel="stylesheet" href="/assets/mystyles.css">
+ <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 </head>
  <body>
     <div class="container">
