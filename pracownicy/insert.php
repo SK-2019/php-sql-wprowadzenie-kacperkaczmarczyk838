@@ -4,6 +4,7 @@
 		
 <meta charset="UTF-8">
  <link rel="stylesheet" href="/assets/mystyles.css">
+ <link rel="icon" href="https://image.flaticon.com/icons/png/512/616/616430.png">
 		    <body>
     <div class="container">
       <div class="item colorRed">
