@@ -1,4 +1,4 @@
-<?php include '../kacper/body1.html' ?>
+<?php include '../assets/body1.html' ?>
 	
 <?php
 echo("<h1>Strona Główna</h1>");
