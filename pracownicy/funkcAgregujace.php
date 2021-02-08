@@ -1,4 +1,4 @@
-<?php include "assets/body2.html" ?>
+<?php include "../assets/body2.html" ?>
 
 <?php
 require_once('../assets/connect.php');
