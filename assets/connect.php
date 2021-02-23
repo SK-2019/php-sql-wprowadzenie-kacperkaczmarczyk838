@@ -1,13 +1,10 @@
 <?php
-$servername = "remotemysql.com";
-$username = "17wQgisS2h";
-$password = "QCoNVtdlto";
-$dbname = "17wQgisS2h";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
+//require_once("config.php");
+    $conn= new mysqli($_SERVER['servername'],$_SERVER['username'],$_SERVER['password'],$_SERVER['dbname']);
+    if ($conn->connect_error) {
+        die("connection failed: ".mysqli_connect_error());
+    }
+
+
 ?>
