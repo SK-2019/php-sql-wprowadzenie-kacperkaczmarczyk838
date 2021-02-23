@@ -2,13 +2,6 @@
 	
 <?php
 
-$hostname = $_SERVER['HTTP_HOST'];
-
-if ($hostname == 'localhost:8003') {
-    require_once ("config.php");
-}
-echo("<li> hostname : ".$hostname);
-echo("<li> SERVER passsword: ".$_SERVER['pass']);
 
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
