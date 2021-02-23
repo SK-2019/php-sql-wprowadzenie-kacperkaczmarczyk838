@@ -1,6 +1,9 @@
 <?php include 'assets/body1.html' ?>
 	
 <?php
+
+echo("<li> hostname : ".$_SERVER['HTTP_HOST']);
+
 echo("<h1>Strona Główna</h1>");
 echo("<h2>Tabela Wszystkich Pracowników:</h2>");
 require_once('assets/connect.php');
