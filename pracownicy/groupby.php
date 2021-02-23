@@ -8,7 +8,7 @@ echo("<h1>Group By:</h1>");
 echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Dział</th>");
@@ -28,7 +28,7 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Ilość pracowników w poszczególnych działach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Dział</th>");
@@ -48,7 +48,7 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Średnie zarobków w poszczególnych działach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Dział</th>");
@@ -67,7 +67,7 @@ echo("<hr />");
 echo("<h2>Zadanie 4 - Suma zarobków kobiet i mężczyzn.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Suma</th>");
@@ -85,7 +85,7 @@ echo("<hr />");
 echo("<h2>Zadanie 5 - Średnia zarobków kobiet i mężczyzn.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Średnia</th>");

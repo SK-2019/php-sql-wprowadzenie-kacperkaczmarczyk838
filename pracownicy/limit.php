@@ -8,7 +8,7 @@ echo("<h1>LIMIT:</h1>");
 echo("<h2>Zadanie 1 - Dwóch najlepiej zarabiających pracowników z działu 4. </h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
 	echo("<th>ID</th>");
@@ -31,7 +31,7 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Trzy najlepiej zarabiające kobiety z działu 4 i 2.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
 	echo("<th>ID</th>");
@@ -55,7 +55,7 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Najstarszy pracownik.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
 	echo("<th>ID</th>");

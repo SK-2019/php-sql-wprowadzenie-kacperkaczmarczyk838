@@ -9,7 +9,7 @@ require("../assets/connect.php");
 echo("<h2>Zadanie 1 - Wiek poszczególnych pracowników (w latach).</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>ID</th>");
@@ -33,7 +33,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 2 - Wiek poszczególnych pracowników (w latach) z działu serwis.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>ID</th>");
@@ -57,7 +57,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 3 - Suma lat wszystkich.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_wszystkich_pracownikow</th>");
@@ -91,7 +91,7 @@ echo("<th>curtime(4)</th>");
 echo("<h2>Zadanie 5 - Suma lat kobiet.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_kobiet</th>");
@@ -109,7 +109,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 6 - Suma lat mężczyzn.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_mężczyzn</th>");
@@ -127,7 +127,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 7 - Średnia lat pracowników w poszczególnych działach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
@@ -147,7 +147,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 8 - Suma lat pracowników w poszczególnych działach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
@@ -167,7 +167,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 9 - Najstarsi pracownicy w każdym dziale.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>dzial</th>");
@@ -186,7 +186,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 10 - Najmłodsi pracownicy z działu: handel i serwis (nazwa_dział, wiek).</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Wiek_najmłodsi</th>");
@@ -226,7 +226,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 12 - Długość życia pracowników w dniach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
         echo("<th>Imie</th>");
@@ -244,7 +244,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 13 - Najstarszy mężczyzna.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table border>");
          echo("<th>ID</th>");
@@ -266,7 +266,7 @@ $conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
 echo("<h2>Zadanie 1 - Wyświetl nazwy dni w dacie urodzenia .</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>ID</th>");
@@ -288,7 +288,7 @@ echo("<h2>Zadanie 2 - Wypisz dzisiejszą nazwę dnia po polsku (np. poniedział
 echo("<li>".$sql1);
 echo("<li>".$sql2);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
 $result = $conn->query($sql1);
 $result = $conn->query($sql2);
        echo("<table border>");
@@ -306,7 +306,7 @@ echo("</table>");
 echo("<h2>Zadanie 3 - Wyświetl nazwy miesięcy w dacie urodzenia.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>ID</th>");
@@ -327,7 +327,7 @@ echo("</table>");
 echo("<h2>Zadanie 4 - Obecna, dokładna godzina (z dokładnością do milisekund).</h2>");
 echo("<li>".$sql2);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
 $result = $conn->query($sql2);
        echo("<table border>");
        echo("<th>Godzina</th>");
@@ -344,7 +344,7 @@ echo("</table>");
 echo("<h2>Zadanie 5 - Wyświetl datę urodzenia w formie: ROK-MIESIĄC-DZIEŃ.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>ID</th>");
@@ -365,7 +365,7 @@ echo("</table>");
 echo("<h2>Zadanie 6 - Ile dni, godzin, minut żyje poszczególny pracownik?</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Imie</th>");
@@ -385,7 +385,7 @@ echo("</table>");
 echo("<h2>Zadanie 7 - W którym dniu roku urodziłeś się/urodziłaś się?</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Data_Urodzenia</th>");
@@ -411,7 +411,7 @@ echo("</table>");
 echo("<h2>Zadanie 8 - Pracownicy z nazwami dni tygodnia, w których się urodzili od poniedziałku do niedzieli</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Imie</th>");
@@ -430,7 +430,7 @@ echo("</table>");
 echo("<h2>Zadanie 9 - Ilu pracowników urodziło się w poniedziałek?</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
        echo("<table border>");
        echo("<th>Ilość</th>");
@@ -454,7 +454,7 @@ echo("<h2>Zadanie 10 - Ilu pracowników urodziło się w poszczególne dni tygod
                                   WHEN dzien = 'Niedziela' THEN 7
                              END ASC");
                 echo("<li>".$sql2);
-                $conn = new mysqli("remotemysql.com","gQvQ0qIoDC","4HAPys5ynL","gQvQ0qIoDC");
+                
                 $result=$conn->query($sql1);
                 $result=$conn->query($sql2);
                 include("connect.php");

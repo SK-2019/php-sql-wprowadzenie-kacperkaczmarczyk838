@@ -8,7 +8,7 @@ echo("<h1>Pracownicy i Organizacja:</h1>");
 echo("<h2>Zadanie 1 - Pracownicy z nazwą działów.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
@@ -27,7 +27,7 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Pracownicy tylko z działu 1 i 4.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
 	echo("<th>ID</th>");
@@ -51,7 +51,6 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Lista kobiet z nazwami działów.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
@@ -71,7 +70,7 @@ echo("<hr />");
 echo("<h2>Zadanie 4 - Lista mężczyzn z nazwami działów.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");

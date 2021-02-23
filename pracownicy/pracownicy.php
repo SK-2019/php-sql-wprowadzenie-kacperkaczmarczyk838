@@ -8,7 +8,7 @@ $sql = 'SELECT * FROM pracownicy WHERE dzial = 2';
 echo("<h2>Zadanie 1 - Pracownicy tylko z działu 2.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
@@ -28,7 +28,7 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Pracownicy tylko z działu 2 i z działu 3.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");
@@ -48,7 +48,7 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Pracownicy tylko z zarobkami mniejszymi niż 30.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Imie</th>");

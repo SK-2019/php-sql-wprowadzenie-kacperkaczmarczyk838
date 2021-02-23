@@ -16,7 +16,7 @@ if ($conn->query($sql) === TRUE) {
       
            echo("<hr />");
            echo("<h1>Tabela Wszystkich Pracowników:</h1>");
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
 $result = $conn->query('SELECT * FROM `pracownicy`, `organizacja` WHERE dzial = id_org');       
         echo("<table>");      
         echo("<th>ID</th>");

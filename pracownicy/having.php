@@ -8,7 +8,7 @@ echo("<h1>Having:</h1>");
 echo("<h2>Zadanie 1 - Suma zarobków w poszczególnych działach mniejsza od 28.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Suma</th>");
@@ -28,9 +28,9 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Średnie zarobków mężczyzn w poszczególnych działach większe od 30.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query('SELECT avg(zarobki) as srednia, dzial, nazwa_dzial FROM pracownicy, organizacja WHERE dzial=id_org AND imie not like "%a" group by dzial having avg(zarobki)>30');
         echo("<table>");
         echo("<th>Średnia</th>");
@@ -50,7 +50,7 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Ilość pracowników w poszczególnych działach większa od 3.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");

@@ -8,7 +8,7 @@ echo("<h1>Sortowanie:</h1>");
 echo("<h2>Zadanie 1 - Pracownicy posortowani malejąco.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
@@ -31,7 +31,7 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Pracownicy z działu 3 posortowani rosnąco po imieniu.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
@@ -54,7 +54,7 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Kobiety posortowane rosnąco po imieniu.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
@@ -77,7 +77,7 @@ echo("<hr />");
 echo("<h2>Zadanie 4 - Kobiety z działu 1 i 3 posortowane rosnąco po zarobkach.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");
@@ -100,7 +100,7 @@ echo("<hr />");
 echo("<h2>Zadanie 5 - Mężczyźni posortowani rosnąco: po nazwie działu a następnie po wysokości zarobków.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
   $result = $conn->query($sql);
         echo("<table>");
         echo("<th>ID</th>");

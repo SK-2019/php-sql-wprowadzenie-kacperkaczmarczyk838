@@ -7,7 +7,7 @@ echo("<h1>Funkcje agregujące:</h1>");
 echo("<h2>Zadanie 1 - Suma zarobków wszystkich pracowników.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Suma</th>");
@@ -25,7 +25,7 @@ echo("<hr />");
 echo("<h2>Zadanie 2 - Suma zarobków wszystkich kobiet.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
 $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Suma</th>");
@@ -42,7 +42,7 @@ echo("<hr />");
 echo("<h2>Zadanie 3 - Suma zarobków mężczyzn pracujących w dziale 2 i 3.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Suma</th>");
@@ -59,7 +59,7 @@ echo("<hr />");
 echo("<h2>Zadanie 4 - Średnia zarobków wszystkich mężczyzn.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Średnia</th>");
@@ -77,7 +77,7 @@ echo("<hr />");
 echo("<h2>Zadanie 5 - Średnia zarobków pracowników z działu 4.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Średnia</th>");
@@ -95,7 +95,7 @@ echo("<hr />");
 echo("<h2>Zadanie 6 - Średnia zarobków mężczyzn z działu 1 i 2.</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Średnia</th>");
@@ -113,7 +113,7 @@ echo("<hr />");
 echo("<h2>Zadanie 7 - Ilu jest wszystkich pracowników?</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");
@@ -131,7 +131,7 @@ echo("<hr />");
 echo("<h2>Zadanie 8 - Ile kobiet pracuje łącznie w działach 1 i 3?</h2>");
 echo("<li>".$sql);
 
-$conn = new mysqli("remotemysql.com","17wQgisS2h","QCoNVtdlto","17wQgisS2h");
+
  $result = $conn->query($sql);
         echo("<table>");
         echo("<th>Ilość</th>");
